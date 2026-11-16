@@ -28,7 +28,7 @@ from flag import classify, load_lexicon
 
 HERE = Path(__file__).parent
 WEB_DATA = Path(os.environ.get("DV_WEB_DATA", HERE.parent / "web" / "data"))
-UA = "dv-law-index/1.0 (+https://github.com/tusandia/ps158-reproduce)"
+UA = "dv-law-index/1.0 (+https://github.com/tusandia/ca-dv-law-index-)"
 MAX_ITEMS = 300
 MAX_AGE_DAYS = 365
 BILL_RX = re.compile(r"\b(AB|SB)\s?-?(\d{1,4})\b")
