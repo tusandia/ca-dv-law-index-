@@ -57,6 +57,14 @@ def parse_date(s):
     return d.astimezone(dt.timezone.utc).isoformat(timespec="minutes")
 
 
+def first(fields, *names):
+    # Not `a or b`: an XML element with no children is falsy, even when it has text.
+    for n in names:
+        if fields.get(n) is not None:
+            return fields[n]
+    return None
+
+
 def parse_feed(xml_bytes, feed_name):
     root = ET.fromstring(xml_bytes)
     out = []
@@ -66,26 +74,41 @@ def parse_feed(xml_bytes, feed_name):
         f = {local(c.tag): c for c in item}
         link = f.get("link")
         href = (link.get("href") or link.text or "").strip() if link is not None else ""
-        source = f.get("source")
+        source = text_of(f.get("source")) or feed_name
+        title = text_of(f.get("title"))
+        if source and title.endswith(" - " + source):   # Google News appends the source
+            title = title[: -len(source) - 3].rstrip()
         out.append({
-            "title": text_of(f.get("title")),
-            "summary": text_of(f.get("description") or f.get("summary"))[:600],
+            "title": title,
+            "summary": text_of(first(f, "description", "summary", "content"))[:600],
             "link": href,
-            "published": parse_date(text_of(f.get("pubDate") or f.get("published") or f.get("updated"))),
-            "source": text_of(source) if source is not None else feed_name,
+            "published": parse_date(text_of(first(f, "pubDate", "published", "updated"))),
+            "source": source,
             "feed": feed_name,
         })
     return out
 
 
+CA_RX = re.compile(
+    r"california|\bCalif\.|\bCA\b|newsom|\b(AB|SB) ?\d+|cal ?oes|calmatters|"
+    r"los angeles|\bL\.?A\.?\b|san francisco|oakland|san diego|san jose|sacramento|fresno|bay area|"
+    r"silicon valley|alameda|contra costa|santa clara|san mateo|orange county|riverside|san bernardino|"
+    r"long beach|bakersfield|stockton|napa|sonoma|ventura|santa barbara|santa monica|berkeley|"
+    r"arden-arcade|inland empire|central valley")
+LAW_RX = re.compile(r"\b(bills?|laws?|legislat\w*|statutes?|codes?|courts?|judges?|rulings?|polic(y|ies)|"
+                    r"ordinances?|ballot|measures?|restraining orders?|protective orders?|assembly|senate|"
+                    r"governor|gov\.|signs?|signed|vetoe?d?|veto|lawmakers?|attorney general|prosecut\w*|"
+                    r"sentenc\w*|charged?|funding|budget|grants?)\b", re.I)
+
+
 def relevant(item, lexicon):
+    """Keep a story only if it is about California, about law or policy, and the
+    lexicon finds it DV-relevant."""
     text = f"{item['title']}. {item['summary']}"
+    if not re.search(CA_RX.pattern, f"{text} {item['source']}", re.I) or not LAW_RX.search(text):
+        return None
     r = classify(text, lexicon)
-    if r["pred_label"] == "direct":
-        return r
-    if r["pred_label"] == "indirect" and re.search(r"california|sacramento|\bCA\b", text, re.I):
-        return r
-    return None
+    return r if r["pred_label"] in ("direct", "indirect") else None
 
 
 def norm_title(t):
@@ -96,12 +119,15 @@ def norm_title(t):
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--sources", default=WEB_DATA / "news_sources.json")
+    p.add_argument("--reset", action="store_true", help="drop saved headlines and start over")
     args = p.parse_args()
 
     lexicon = load_lexicon()
     sources = json.loads(Path(args.sources).read_text(encoding="utf-8"))
     path = WEB_DATA / "news.json"
     items = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
+    if args.reset:
+        items = []
     seen = {i["link"] for i in items} | {norm_title(i["title"]) for i in items}
     added = 0
     for src in sources:

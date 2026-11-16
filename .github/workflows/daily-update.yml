@@ -25,6 +25,10 @@ on:
         description: "Rebuild from the whole session file (about 1.2 GB) instead of this week's change files"
         type: boolean
         default: false
+      reset_news:
+        description: "Drop saved headlines and collect them again"
+        type: boolean
+        default: false
   push:
     paths:
       - "web/**"
@@ -79,16 +83,17 @@ jobs:
         if: steps.when.outputs.skip != 'true'
         working-directory: dv_index
         run: |
+          today=$(TZ=America/Los_Angeles date +%F)
           if [ "${{ inputs.full }}" = "true" ] || [ "$(TZ=America/Los_Angeles date +%u)" = "7" ]; then
-            python update.py --full
+            python update.py --full --today "$today"
           else
-            python update.py
+            python update.py --today "$today"
           fi
 
       - name: Update news headlines
         if: steps.when.outputs.skip != 'true'
         working-directory: dv_index
-        run: python news.py
+        run: python news.py ${{ inputs.reset_news && '--reset' || '' }}
 
       - name: Commit changed data
         if: steps.when.outputs.skip != 'true'

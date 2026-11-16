@@ -142,11 +142,15 @@ def test_news_filter(tmp):
     import json, os
     feed = tmp / "feed.xml"
     feed.write_text("""<?xml version="1.0"?><rss version="2.0"><channel><title>t</title>
-      <item><title>Assembly passes AB 1753 on domestic violence restraining orders</title>
+      <item><title>Assembly passes AB 1753 on domestic violence restraining orders - Example News</title>
         <link>https://example.invalid/a</link><pubDate>Mon, 16 Nov 2026 08:00:00 GMT</pubDate>
+        <description>California lawmakers voted Monday.</description>
         <source url="https://example.invalid">Example News</source></item>
       <item><title>New freeway interchange opens</title><link>https://example.invalid/b</link>
         <pubDate>Mon, 16 Nov 2026 09:00:00 GMT</pubDate></item>
+      <item><title>Domestic violence victims called 911. They were sent to jail.</title>
+        <link>https://example.invalid/c</link><pubDate>Mon, 16 Nov 2026 10:00:00 GMT</pubDate>
+        <source url="https://example.invalid">The Colorado Sun</source></item>
     </channel></rss>""")
     sources = tmp / "sources.json"
     sources.write_text(json.dumps([{"name": "Test feed", "url": feed.as_uri()}]))
@@ -154,8 +158,9 @@ def test_news_filter(tmp):
     subprocess.run([sys.executable, "news.py", "--sources", str(sources)], cwd=HERE, check=True,
                    capture_output=True, text=True, env=env)
     items = json.loads((tmp / "web" / "news.json").read_text())
-    assert [i["title"][:18] for i in items] == ["Assembly passes AB"], items
+    assert [i["title"] for i in items] == ["Assembly passes AB 1753 on domestic violence restraining orders"], items
     assert items[0]["bills"] == ["AB 1753"] and items[0]["source"] == "Example News"
+    assert items[0]["published"] == "2026-11-16T08:00+00:00"
 
 
 if __name__ == "__main__":
