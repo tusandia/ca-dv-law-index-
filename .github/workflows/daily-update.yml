@@ -14,11 +14,16 @@ name: Daily update and deploy
 
 on:
   schedule:
-    # GitHub cron is UTC. 8:00 a.m. in Los Angeles is 15:00 UTC in summer (PDT)
-    # and 16:00 UTC in winter (PST). Both fire; the "when" step keeps the one
-    # that matches today's clock. GitHub can start scheduled runs late at busy times.
-    - cron: "0 15 * * *"
-    - cron: "0 16 * * *"
+    # GitHub cron is UTC and scheduled runs often start late, sometimes by hours.
+    # So there are several tries each morning; the first one that starts at or
+    # after 8:00 a.m. California time does the update, and the rest see that
+    # today's update is already done and stop. (15:07 UTC is 7:07 a.m. PST /
+    # 8:07 a.m. PDT; the last try is 11:07 a.m. PST.)
+    - cron: "7 15 * * *"
+    - cron: "7 16 * * *"
+    - cron: "7 17 * * *"
+    - cron: "7 18 * * *"
+    - cron: "7 19 * * *"
   workflow_dispatch:
     inputs:
       full:
@@ -52,22 +57,21 @@ jobs:
     outputs:
       skipped: ${{ steps.when.outputs.skip }}
     steps:
-      - name: Decide whether this run is the 8 a.m. one
+      - uses: actions/checkout@v7
+
+      - name: Decide whether to update now
         id: when
-        env:
-          SCHEDULE: ${{ github.event.schedule }}
         run: |
+          now_hour=$(TZ=America/Los_Angeles date +%H)
+          today=$(TZ=America/Los_Angeles date +%F)
+          last=$(python3 -c "import json; print(json.load(open('web/data/meta.json')).get('updated', ''))" 2>/dev/null || true)
           skip=false
-          if [ -n "$SCHEDULE" ]; then
-            zone=$(TZ=America/Los_Angeles date +%Z)     # PDT or PST
-            if [ "$zone" = "PDT" ] && [ "$SCHEDULE" != "0 15 * * *" ]; then skip=true; fi
-            if [ "$zone" = "PST" ] && [ "$SCHEDULE" != "0 16 * * *" ]; then skip=true; fi
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            if [ "$((10#$now_hour))" -lt 8 ]; then skip=true; echo "Before 8 a.m. in California."; fi
+            if [ "$last" = "$today" ]; then skip=true; echo "Already updated today ($today)."; fi
           fi
           echo "skip=$skip" >> "$GITHUB_OUTPUT"
-          echo "Los Angeles time: $(TZ=America/Los_Angeles date), skip=$skip"
-
-      - uses: actions/checkout@v7
-        if: steps.when.outputs.skip != 'true'
+          echo "California time: $(TZ=America/Los_Angeles date); last update: ${last:-never}; skip=$skip"
 
       - uses: actions/setup-python@v7
         if: steps.when.outputs.skip != 'true'

@@ -82,6 +82,8 @@ def apply(bills, state, flagged, today, lexicon, full):
     """Re-flag changed bills (all bills when `full`); update state and the flagged
     set in place. Returns change-log entries."""
     log = []
+    if bills.empty:   # a quiet week: no bill versions in the change files
+        return log
     if full:
         changed = bills
     else:

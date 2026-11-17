@@ -136,6 +136,13 @@ def test_update_incremental(tmp):
     assert [(u["change"], u["m"], u["v"]) for u in log] == [("UPDATED", "AB 9999", "Amended Senate")], log
     meta = json.loads((tmp / "web" / "meta.json").read_text())
     assert meta["flagged"] == 1 and meta["updated"] == "2026-01-03"
+    # a quiet week: change files with no bill versions at all must not crash
+    z3 = tmp / "pubinfo_c.zip"
+    with zf.ZipFile(z3, "w") as c:
+        c.writestr("BILL_ANALYSIS_TBL.dat", "")
+    run("update.py", "--zip", z3, "--today", "2026-01-04")
+    meta = json.loads((tmp / "web" / "meta.json").read_text())
+    assert meta["flagged"] == 1 and meta["updated"] == "2026-01-04"
 
 
 def test_news_filter(tmp):
