@@ -103,6 +103,12 @@ call went to `none`. These notes are what you'll use to revise the lexicon.
 2. After two weeks, re-code a random 15% of rows in a fresh copy of the sheet
    and run `evaluate.py --recode` for intra-coder agreement (Cohen's kappa).
 3. Keep a log of rule changes; if a rule changes, re-check rows already coded.
+4. Outside check: `python legiscan_check.py` runs LegiScan's full-text search for
+   each codebook concept and lists bills it finds that the tool did not flag.
+   Code those bills by these same rules. A relevant one means a missing term or
+   rule: add it to `lexicon.csv` and note it in the change log. LegiScan is a
+   second keyword system, not a gold standard, so report it next to the
+   hand-coded evaluation, not instead of it.
 
 ## The federal layer
 
