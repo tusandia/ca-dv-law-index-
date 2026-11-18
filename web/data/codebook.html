@@ -231,6 +231,12 @@ call went to <code>none</code>. These notes are what you'll use to revise the le
 <li>
 <p>Keep a log of rule changes; if a rule changes, re-check rows already coded.</p>
 </li>
+<li>Outside check: <code>python legiscan_check.py</code> runs LegiScan's full-text search for
+   each codebook concept and lists bills it finds that the tool did not flag.
+   Code those bills by these same rules. A relevant one means a missing term or
+   rule: add it to <code>lexicon.csv</code> and note it in the change log. LegiScan is a
+   second keyword system, not a gold standard, so report it next to the
+   hand-coded evaluation, not instead of it.</li>
 </ol>
 <h2>The federal layer</h2>
 <p>Federal law sets a floor that California builds on, and many state bills only
