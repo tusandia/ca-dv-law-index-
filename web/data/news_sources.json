@@ -14,5 +14,37 @@
   {
     "name": "CalMatters",
     "url": "https://calmatters.org/feed/"
+  },
+  {
+    "name": "CNN US",
+    "url": "http://rss.cnn.com/rss/cnn_us.rss"
+  },
+  {
+    "name": "CNN via Google News",
+    "url": "https://news.google.com/rss/search?q=site:cnn.com+California+(%22domestic+violence%22+OR+%22intimate+partner%22+OR+%22restraining+order%22)+when:30d&hl=en-US&gl=US&ceid=US:en"
+  },
+  {
+    "name": "New York Times: U.S.",
+    "url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  },
+  {
+    "name": "New York Times: Politics",
+    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml"
+  },
+  {
+    "name": "New York Times via Google News",
+    "url": "https://news.google.com/rss/search?q=site:nytimes.com+California+(%22domestic+violence%22+OR+%22intimate+partner%22+OR+%22restraining+order%22)+when:30d&hl=en-US&gl=US&ceid=US:en"
+  },
+  {
+    "name": "CBC News: World",
+    "url": "https://www.cbc.ca/webfeed/rss/rss-world"
+  },
+  {
+    "name": "CBC via Google News",
+    "url": "https://news.google.com/rss/search?q=site:cbc.ca+California+(%22domestic+violence%22+OR+%22intimate+partner%22+OR+%22restraining+order%22)+when:30d&hl=en-US&gl=US&ceid=US:en"
+  },
+  {
+    "name": "CBS News (incl. CBS Los Angeles and Bay Area)",
+    "url": "https://news.google.com/rss/search?q=(site:cbsnews.com)+California+(%22domestic+violence%22+OR+%22intimate+partner%22+OR+%22restraining+order%22)+when:30d&hl=en-US&gl=US&ceid=US:en"
   }
 ]

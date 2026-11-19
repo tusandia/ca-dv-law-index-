@@ -138,6 +138,7 @@ def main():
         except Exception as e:  # noqa: BLE001 - one bad feed must not stop the others
             print(f"{src['name']}: {e}, skipped", file=sys.stderr)
             continue
+        before = added
         for e in entries:
             if not e["title"] or not e["link"] or e["link"] in seen or norm_title(e["title"]) in seen:
                 continue
@@ -151,6 +152,7 @@ def main():
             items.append(e)
             seen |= {e["link"], norm_title(e["title"])}
             added += 1
+        print(f"{src['name']}: {len(entries)} items read, {added - before} kept")
 
     cutoff = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=MAX_AGE_DAYS)).isoformat()
     items = [i for i in items if not i["published"] or i["published"] >= cutoff]
