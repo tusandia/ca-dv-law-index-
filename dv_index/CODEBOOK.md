@@ -8,7 +8,7 @@ bill text. Code **what the law does**, not what its author says it is for.
 
 | Code | Rule | Examples |
 |---|---|---|
-| `direct` | The law names domestic violence, intimate partner / dating violence or family violence, or amends a provision whose only or main subject is DV (e.g. the Domestic Violence Prevention Act, Fam. Code §6200 et seq.; Pen. Code §273.5; DV restraining orders; batterer intervention programs). | DVRO procedure; DV shelter funding; coercive control as abuse. |
+| `direct` | The law does at least one of these: **(a)** names DV with a core term, meaning one the reference sources use as a *name* for DV (domestic violence, domestic abuse, intimate partner violence, dating violence, family violence); **(b)** cites or uses a statutory DV term: the Domestic Violence Prevention Act (Fam. Code §6200 et seq.), Fam. Code §6203/§6211, Pen. Code §273.5, Evid. Code §1037, coercive control, forced marriage, emergency protective orders, or a federal DV law or program (VAWA, military protective orders); **(c)** describes abuse between people in a statutory relationship (cohabitants, household members, former spouses, dating partners, fiancés), the way California statutes define DV without saying "domestic violence"; or **(d)** uses two or more supporting terms of abuse together, such as "batterer" with "protective order," or "emotional abuse" with "power and control." | DVRO procedure; DV shelter funding; coercive control as abuse; a new crime of battery against a cohabitant. |
 | `indirect` | The law does not need to mention DV, but it **materially changes what a survivor can get or what risks they face** in at least one impact area below, *and* survivors are a group it clearly reaches more than incidentally. | Expanding eligibility for U-visa certifications; lease termination rights for crime victims; firearm relinquishment procedures; court interpreter access in family court; address confidentiality; services offered regardless of immigration status; rules on service of process or ex parte divorce; jurisdiction in custody cases that cross state or national borders; funding for culturally specific organizations. |
 | `none` | Neither. A passing mention of "victims" in a broad bill does not make it `indirect` unless the change would matter to a survivor's safety, housing, status, income, children or access to courts. | |
 
@@ -18,6 +18,30 @@ Tie-breakers:
 - Spot bills or bills whose text is only intent language: code what the digest says the bill would do; add `spot bill` in `notes`.
 - Abuse by in-laws or other family members counts as DV when the relationship meets Fam. Code §6211, which covers more than spouses. Transnational marriage abandonment is usually carried out by the husband *and* his family (Bhandari 2025).
 - A law can hurt survivors. Code it `direct` or `indirect` all the same, and say in `notes` that the effect is harmful. Examples: a law that makes interpreters harder to get, or a law that lets an abuser use a protective order or a false abuse claim against the survivor.
+
+When coding by hand, apply the same four routes. A bill that only says "victim" or "abuse" is never `direct`: those words are common in DV writing, but also appear in about 3% of all bills, mostly about crime victims in general, child abuse or substance use.
+
+### How terms are weighted
+
+The tool's weights (`lexicon.csv`, column `weight`) come from four reference sources, measured by `source_weights.py` and set by `reweight.py`. Every term's evidence is recorded in the `src_*` columns.
+
+- **Breadth:** how many of the four sources use the term.
+- **Specificity:** the weighted log-odds z-score of the term in the sources against all 4,262 bill summaries (Monroe, Colaresi & Quinn 2008), plus the share of bills that use it.
+
+| Weight | Direct terms | Victim/safety terms (anchors) |
+|---|---|---|
+| 3 | Core names for DV (in 2+ sources); statutory terms; relationship + abuse | (none) |
+| 2 | Supporting terms used by 3 or 4 sources | Used by all 4 sources and in under 2% of bills |
+| 1 | Supporting terms used by 0–2 sources | Everything else, including any word in 2%+ of bills |
+
+Decision rule for the tool: **direct** = the summed weights of distinct direct terms reach 3. That happens with one weight-3 term, or with two or more supporting terms. **Indirect** = an impact-area term plus anchor weight of 2 or more, or a strong impact-area term on its own.
+
+Three cautions, which belong in the write-up:
+1. **Advocacy and statutory words differ** (Lovell 2025). "Survivor," "abuser," "batterer" and "power and control" are common in the sources but rare in bills: "power and control" appears in no 2025–26 bill summary. Statutory terms and code citations appear in no source but define DV in California law. That's why statutory terms get weight 3 regardless of source counts.
+2. **One source can dominate.** Lovell's article *discusses* terms ("experiencer" appears 121 times, all in his article), so anchors need all four sources before they get extra weight.
+3. **Forms of abuse from other sources lose weight.** Dowry, transnational abandonment and immigration-related abuse (Bhandari 2025; Tabibi et al. 2018) aren't in these four sources, so they now count 1 each, as supporting terms. They no longer make a bill direct on their own, but they still count toward route (d).
+
+Effect on 2025–26 (summaries only): direct stays 59 (54 by core name, 5 by statutory term); indirect goes from 73 to 46, mostly bills whose only signal was "victim."
 
 ## 2. `areas` (any that apply, separated by `;`)
 
@@ -163,6 +187,14 @@ Both were already flagged.
   these absences as findings.
 
 ## Sources
+
+Term-weight sources (measured by `source_weights.py`; the texts are not stored in this repository):
+- Lovell, E. (2025). The words we choose: An analysis of terms used in domestic violence law. *Southern Illinois University Law Journal*, 49.
+- United Nations. *What is domestic abuse?* un.org/en/coronavirus/what-is-domestic-abuse. Accessed Nov. 18, 2026.
+- Kippert, A. (2015, updated 2024). *A glossary of domestic violence terms.* DomesticShelters.org, domesticshelters.org/articles/identifying-abuse/the-lingo-of-domestic-violence. Accessed Nov. 18, 2026.
+- *Glossary of domestic violence legal terms* (English; publisher not stated in the PDF). Accessed Nov. 18, 2026.
+
+Other sources:
 
 - Bhandari, S. (2025). Experiences of transnational abandonment in the lives of
   abused South Asian women in the United States. *Journal of Family Violence*,

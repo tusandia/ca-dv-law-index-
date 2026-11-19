@@ -1,288 +1,312 @@
-term,kind,area,weight,note
-# kind = direct | anchor | area | area_strong | population | exclude. Lines starting with # are ignored.,,,,
-# A term ending in * matches any ending (tenant* = tenant / tenants / tenancy). A term starting with re: is a regular expression.,,,,
-# --- direct: names DV itself. Weights add up; a bill scoring 3 or more on direct terms is predicted DIRECT. ---,,,,
-domestic violence,direct,,3,
-intimate partner violence,direct,,3,
-intimate partner,direct,,2,
-domestic abuse,direct,,3,
-dating violence,direct,,3,
-family violence,direct,,3,also CalWORKs Family Violence Option
-spousal abuse,direct,,3,
-spousal battery,direct,,3,
-battered wom*,direct,,3,
-battered spouse,direct,,3,
-batterer*,direct,,3,includes batterer's intervention programs
-coercive control,direct,,3,Fam. Code 6320(c) since SB 1141 (2020)
-domestic violence prevention act,direct,courts,3,
-violence against women act,direct,immigration,3,VAWA self-petitions
-re:section 6211 of the family code,direct,,3,definition of domestic violence
-re:section 6203 of the family code,direct,,3,definition of abuse
-re:section 273\.5 of the penal code,direct,courts,3,corporal injury on spouse/cohabitant
-re:section 243 of the penal code,direct,courts,1,243(e)(1) is DV battery but 243 is broad
-re:section 1037(\.\d+)? of the evidence code,direct,courts,3,DV counselor-victim privilege
-emergency protective order,direct,courts,3,mostly DV (Fam. Code 6240)
-military protective order*,direct,courts,3,MPOs (WomensLaw: DV in the Military)
-family advocacy program,direct,services,3,DoD Family Advocacy Program
-protective order*,direct,courts,1,also used for elder abuse / civil harassment
-restraining order*,direct,courts,1,also used for civil harassment / workplace violence
-strangulation,direct,courts,2,
-abuser*,direct,,2,
-coerced debt,direct,financial,2,
-economic abuse,direct,financial,2,
-forced marriage,direct,,3,part of the DVPA since 2024
-coerced marriage,direct,,2,
-dowry,direct,,2,dowry abuse (Bhandari 2025)
-transnational abandonment,direct,immigration,3,Bhandari 2025
-marriage abandonment,direct,immigration,2,Bhandari 2025
-immigration-related abuse,direct,immigration,3,Learning Network Issue 26
-technology-enabled abuse,direct,privacy,2,
-technological abuse,direct,privacy,2,
-re:division 10 (of|of the) (the )?family code,direct,courts,3,the Domestic Violence Prevention Act
-"re:\b(6[23]\d\d|640\d)(\.\d+)?\b[^.;]{0,250}?family code",direct,courts,3,cites a DVPA section (Fam. Code 6200-6409)
-# --- anchor: victim/safety language. An area term plus anchor weight >= 2 => predicted INDIRECT. Direct terms also count as anchors. ---,,,,
-victim*,anchor,,2,the core signal for indirect laws
-survivor*,anchor,,1,see excludes for pension 'survivor benefits'
-abuse*,anchor,,1,see excludes for substance abuse etc.
-stalking,anchor,,2,
-sexual assault,anchor,,2,
-human trafficking,anchor,,1,
-harassment,anchor,,1,
-perpetrator*,anchor,,1,
-fleeing,anchor,,1,
-violent crime*,anchor,,1,
-# --- area / area_strong: impact areas. area_strong terms are specific enough to predict INDIRECT on their own. ---,,,,
-immigra*,area,immigration,1,
-immigration status,area,immigration,1,
-undocumented,area,immigration,1,
-noncitizen*,area,immigration,1,
-deportation,area,immigration,1,
-removal proceeding*,area,immigration,1,
-immigration and customs enforcement,area,immigration,1,
-california values act,area,immigration,1,
-u visa*,area_strong,immigration,1,
-t visa*,area_strong,immigration,1,
-u-visa*,area_strong,immigration,1,
-re:\b[ut] nonimmigrant,area_strong,immigration,1,U and T visas as named in federal law
-self-petition*,area_strong,immigration,1,VAWA self-petitions
-battered spouse waiver*,area_strong,immigration,1,
-cancellation of removal,area,immigration,1,VAWA cancellation
-employment authorization,area,immigration,1,work permits (8 CFR 274a.12)
-work authorization,area,immigration,1,
-re:section 1367 of title 8,area_strong,immigration,1,VAWA confidentiality
-t-visa*,area_strong,immigration,1,
-re:form i-91[48],area_strong,immigration,1,I-918 Supp. B (U) / I-914 Supp. B (T) certifications
-re:section 679\.1[01] of the penal code,area_strong,immigration,1,U/T visa certification statutes
-immigration document*,area,immigration,1,abusers withhold or cancel them (Bhandari 2025)
-passport*,area,immigration,1,
-travel document*,area,immigration,1,
-identity document*,area,immigration,1,
-regardless of immigration status,area,immigration,1,services without proof of status (Issue 26)
-proof of immigration status,area,immigration,1,
-migrant worker*,area,immigration,1,
-international student*,area,immigration,1,
-tenant*,area,housing,1,
-landlord*,area,housing,1,
-lease*,area,housing,1,
-rental,area,housing,1,
-eviction*,area,housing,1,
-unlawful detainer,area,housing,1,
-homeless*,area,housing,1,
-shelter*,area,housing,1,
-transitional housing,area,housing,1,
-housing voucher*,area,housing,1,
-re:section 8 (housing|voucher)|housing choice voucher,area,housing,1,VAWA housing (WomensLaw federal pages)
-public housing,area,housing,1,
-housing authorit*,area,housing,1,
-bifurcat*,area_strong,housing,1,lease bifurcation removes the abuser (24 CFR 5.2009)
-emergency transfer*,area,housing,1,VAWA emergency housing transfers
-nuisance ordinance*,area,housing,1,survivors penalized as a "nuisance" for calling police (Gov. Code 53165)
-crime-free,area,housing,1,crime-free housing programs
-re:calls? for (police|law enforcement|emergency) (service|assistance),area,housing,1,
-self-certification,area,housing,1,HUD-5382 VAWA self-certification
-motel*,area,housing,1,
-re:section 1946\.7 of the civil code,area_strong,housing,1,lease termination for victims
-re:section 1161\.3 of the code of civil procedure,area_strong,housing,1,eviction protection for victims
-child custody,area,custody,1,
-physical custody,area,custody,1,
-legal custody,area,custody,1,
-custody of the child*,area,custody,1,
-visitation,area,custody,1,
-child support,area,custody,1,
-family court,area,custody,1,
-dissolution of marriage,area,custody,1,
-best interest of the child,area,custody,1,
-parenting,area,custody,1,
-family code,area,custody,1,
-re:section 3044 of the family code,area_strong,custody,1,custody presumption against abusers
-temporary emergency jurisdiction,area_strong,custody,1,UCCJEA 204
-full faith and credit,area,courts,1,18 USC 2265 (protection orders) and 28 USC 1738A (custody)
-out-of-state protective order*,area_strong,courts,1,
-foreign protection order*,area_strong,courts,1,
-tribal protection order*,area_strong,courts,1,
-child abduction,area,custody,1,abuser takes or keeps the children
-parental abduction,area,custody,1,
-hague convention,area_strong,custody,1,international custody
-uniform child custody jurisdiction,area_strong,custody,1,UCCJEA (Fam. Code 3400 et seq.)
-service of process,area,courts,1,divorce served fraudulently (Bhandari 2025)
-ex parte,area,courts,1,
-default judgment*,area,courts,1,
-firearm*,area,firearms,1,
-gun*,area,firearms,1,
-ammunition,area,firearms,1,
-relinquish*,area,firearms,1,
-armed and prohibited,area,firearms,1,
-armed prohibited person*,area,firearms,1,
-gun violence restraining order*,area_strong,firearms,1,
-misdemeanor crime of domestic violence,direct,firearms,3,18 USC 921(a)(33)
-re:922\(g\),area,firearms,1,federal gun bans
-calworks,area,benefits,1,
-calfresh,area,benefits,1,
-medi-cal,area,benefits,1,
-public assistance,area,benefits,1,
-public benefit*,area,benefits,1,
-general assistance,area,benefits,1,
-unemployment insurance,area,benefits,1,
-victim compensation,area_strong,benefits,1,CalVCB
-interpreter*,area,language,1,
-language access,area,language,1,
-limited english,area,language,1,
-translat*,area,language,1,
-bilingual,area,language,1,
-non-english,area,language,1,
-sign language,area,language,1,Deaf survivors (Issue 26)
-legal aid,area,courts,1,
-legal services,area,courts,1,
-self-help,area,courts,1,
-remote appearance*,area,courts,1,
-pretrial release,area,courts,1,
-bail,area,courts,1,
-sentenc*,area,courts,1,
-probation,area,courts,1,
-diversion,area,courts,1,
-hearsay,area,courts,1,
-testimony,area,courts,1,
-safe at home,area_strong,privacy,1,address confidentiality program
-address confidentiality,area_strong,privacy,1,
-confidential address*,area,privacy,1,
-personal information,area,privacy,1,
-location data,area,privacy,1,
-electronic tracking,area,privacy,1,
-tracking device*,area,privacy,1,
-stalkerware,area_strong,privacy,1,
-cyberstalking,area,privacy,1,18 USC 2261A
-robocall*,area,privacy,1,
-intimate image*,area,privacy,1,electronic violence (Issue 26)
-electronic surveillance,area,privacy,1,
-spyware,area,privacy,1,
-data broker*,area,privacy,1,
-doxing,area,privacy,1,
-workplace,area,employment,1,
-leave of absence,area,employment,1,
-employment discrimination,area,employment,1,
-unpaid leave,area,employment,1,
-time off,area,employment,1,
-re:section 230(\.1)? of the labor code,area_strong,employment,1,leave for victims (now Gov. Code 12945.8)
-re:section 12945\.8 of the government code,area_strong,employment,1,
-health care,area,health,1,
-hospital*,area,health,1,
-mental health,area,health,1,
-forensic exam*,area,health,1,
-reproductive,area,health,1,
-pregnan*,area,health,1,
-re:section 1116[0-3] of the penal code,area_strong,health,1,health practitioner injury reporting
-office of emergency services,area,services,1,Cal OES funds DV programs
-grant program*,area,services,1,
-grant fund*,area,services,1,
-cal oes,area,services,1,
-hotline*,area,services,1,
-crisis center*,area,services,1,
-victim service provider*,area_strong,services,1,
-culturally specific,area,services,1,culturally specific organizations (SAWOs; Bhandari 2025)
-culturally responsive,area,services,1,
-culturally appropriate,area,services,1,
-linguistically appropriate,area,services,1,
-child welfare,area,child_welfare,1,
-dependency,area,child_welfare,1,
-foster,area,child_welfare,1,
-juvenile court,area,child_welfare,1,
-title ix,area,education,1,
-campus,area,education,1,
-student*,area,education,1,
-credit report*,area,financial,1,
-debt*,area,financial,1,
-financial institution*,area,financial,1,
-# --- population: tags only; they do not change the predicted label. ---,,,,
-rural,population,rural,1,
-disabilit*,population,disability,1,
-dependent adult*,population,elder_dependent_adult,1,
-elder*,population,elder_dependent_adult,1,
-tribal,population,tribal,1,
-indian tribe*,population,tribal,1,
-native american*,population,tribal,1,
-lgbt*,population,lgbtq,1,
-gender identity,population,lgbtq,1,
-minor*,population,youth,1,
-youth,population,youth,1,
-# realm: immigrant and VAWA survivors,,,,
-immigrant*,population,immigrant_vawa,1,
-immigra*,population,immigrant_vawa,1,
-noncitizen*,population,immigrant_vawa,1,
-undocumented,population,immigrant_vawa,1,
-asylum,population,immigrant_vawa,1,
-asylee*,population,immigrant_vawa,1,
-refugee*,population,immigrant_vawa,1,
-public charge,population,immigrant_vawa,1,
-violence against women act,population,immigrant_vawa,1,
-re:\bvawa\b,population,immigrant_vawa,1,
-u visa*,population,immigrant_vawa,1,
-t visa*,population,immigrant_vawa,1,
-re:form i-91[48],population,immigrant_vawa,1,
-migrant worker*,population,immigrant_vawa,1,
-international student*,population,immigrant_vawa,1,
-passport*,population,immigrant_vawa,1,
-immigration document*,population,immigrant_vawa,1,
-# realm: women and gender,,,,
-re:\bwom[ae]n\b,population,women_gender,1,
-gender-based violence,population,women_gender,1,
-re:\bgender\b(?! identity),population,women_gender,1,
-pregnan*,population,women_gender,1,
-reproductive,population,women_gender,1,
-forced marriage,population,women_gender,1,
-coerced marriage,population,women_gender,1,
-dowry,population,women_gender,1,
-# realm: faith and religion. Only where the text itself mentions religion.,,,,
-religio*,population,faith,1,
-faith-based,population,faith,1,
-place* of worship,population,faith,1,
-house* of worship,population,faith,1,
-clergy,population,faith,1,
-faith leader*,population,faith,1,imams and other leaders can help or harm (Bhandari 2025)
-religious leader*,population,faith,1,
-spiritual,population,faith,1,shelters that meet spiritual and religious needs (Issue 26)
-religious need*,population,faith,1,
-religious accommodation*,population,faith,1,
-# realm: language access (named languages are listed so South Asian and other language communities can be found),,,,
-limited english,population,language_access,1,
-language access,population,language_access,1,
-interpreter*,population,language_access,1,
-translat*,population,language_access,1,
-re:\b(punjabi|hindi|urdu|bengali|gujarati|tamil|telugu|nepali)\b,population,south_asian_languages,1,
-re:\b(arabic|farsi|dari|pashto)\b,population,arabic_persian_languages,1,
-culturally specific,population,language_access,1,
-re:\b(deaf|sign language)\b,population,disability,1,
-service member*,population,military,1,
-servicemember*,population,military,1,
-armed forces,population,military,1,
-military,population,military,1,
-veteran*,population,military,1,
-# --- exclude: phrases deleted from the text before matching to avoid known false hits. ---,,,,
-substance abuse,exclude,,0,
-drug abuse,exclude,,0,
-alcohol abuse,exclude,,0,
-abuse of discretion,exclude,,0,
-survivor benefit*,exclude,,0,pensions
-surviving spouse*,exclude,,0,pensions
-grant of authority,exclude,,0,
-survivor allowance*,exclude,,0,pensions
-school safety plan*,exclude,,0,
+term,kind,area,weight,note,src_sources,src_per_10k,src_z,src_bill_share,weight_rule
+# kind = direct | anchor | area | area_strong | population | exclude. Lines starting with # are ignored.
+# A term ending in * matches any ending (tenant* = tenant / tenants / tenancy). A term starting with re: is a regular expression.
+# --- direct: names DV itself. Weights add up; a bill scoring 3 or more on direct terms is predicted DIRECT. ---
+domestic violence,direct,,3,,4,70.67,46.3,0.0110,core name for DV in 4/4 sources
+intimate partner violence,direct,,3,,3,5.79,11.49,0.0009,core name for DV in 3/4 sources
+intimate partner,direct,,2,,3,13.43,15.86,0.0012,supporting term in 3/4 sources
+domestic abuse,direct,,3,,3,32.27,13.79,0.0007,core name for DV in 3/4 sources
+dating violence,direct,,3,,2,5.27,9.25,0.0005,core name for DV in 2/4 sources
+family violence,direct,,3,also CalWORKs Family Violence Option,2,1.89,7.31,0.0005,core name for DV in 2/4 sources
+spousal abuse,direct,,1,,0,0.0,0.05,0.0000,supporting term in 0/4 sources
+spousal battery,direct,,1,,0,0.0,0.05,0.0000,supporting term in 0/4 sources
+battered wom*,direct,,1,,2,5.19,1.05,0.0000,supporting term in 2/4 sources
+battered spouse,direct,,1,,1,0.33,0.43,0.0000,supporting term in 1/4 sources
+batterer*,direct,,2,includes batterer's intervention programs,3,12.25,12.21,0.0002,supporting term in 3/4 sources
+coercive control,direct,,3,Fam. Code 6320(c) since SB 1141 (2020),2,1.65,5.37,0.0005,statutory term (California or federal DV law)
+domestic violence prevention act,direct,courts,3,,0,0.0,-0.18,0.0009,statutory term (California or federal DV law)
+violence against women act,direct,immigration,3,VAWA self-petitions,2,2.8,6.39,0.0002,statutory term (California or federal DV law)
+re:section 6211 of the family code,direct,,3,definition of domestic violence,0,0.0,0.05,0.0000,statutory term (California or federal DV law)
+re:section 6203 of the family code,direct,,3,definition of abuse,0,0.0,0.05,0.0000,statutory term (California or federal DV law)
+re:section 273\.5 of the penal code,direct,courts,3,corporal injury on spouse/cohabitant,0,0.0,-0.11,0.0005,statutory term (California or federal DV law)
+re:section 243 of the penal code,direct,courts,1,243(e)(1) is DV battery but 243 is broad,0,0.0,0.05,0.0000,supporting term in 0/4 sources
+re:section 1037(\.\d+)? of the evidence code,direct,courts,3,DV counselor-victim privilege,0,0.0,0.05,0.0000,statutory term (California or federal DV law)
+emergency protective order,direct,courts,3,mostly DV (Fam. Code 6240),0,0.0,0.05,0.0000,statutory term (California or federal DV law)
+military protective order*,direct,courts,3,MPOs (WomensLaw: DV in the Military),0,0.0,-0.18,0.0002,statutory term (California or federal DV law)
+family advocacy program,direct,services,3,DoD Family Advocacy Program,0,0.0,0.05,0.0000,statutory term (California or federal DV law)
+protective order*,direct,courts,1,also used for elder abuse / civil harassment,0,0.0,-0.77,0.0049,supporting term in 0/4 sources
+restraining order*,direct,courts,1,also used for civil harassment / workplace violence,2,5.03,1.95,0.0054,supporting term in 2/4 sources
+strangulation,direct,courts,1,,1,5.2,7.04,0.0005,supporting term in 1/4 sources
+abuser*,direct,,2,,4,39.79,8.65,0.0002,supporting term in 4/4 sources
+coerced debt,direct,financial,1,,0,0.0,0.05,0.0000,supporting term in 0/4 sources
+economic abuse,direct,financial,2,,3,2.42,0.58,0.0000,supporting term in 3/4 sources
+forced marriage,direct,,3,part of the DVPA since 2024,0,0.0,-0.22,0.0005,statutory term (California or federal DV law)
+coerced marriage,direct,,1,,0,0.0,-0.08,0.0002,supporting term in 0/4 sources
+dowry,direct,,1,dowry abuse (Bhandari 2025),0,0.0,0.05,0.0000,supporting term in 0/4 sources
+transnational abandonment,direct,immigration,1,Bhandari 2025,0,0.0,0.05,0.0000,supporting term in 0/4 sources
+marriage abandonment,direct,immigration,1,Bhandari 2025,0,0.0,0.05,0.0000,supporting term in 0/4 sources
+immigration-related abuse,direct,immigration,1,Learning Network Issue 26,0,0.0,0.05,0.0000,supporting term in 0/4 sources
+technology-enabled abuse,direct,privacy,1,,0,0.0,0.05,0.0000,supporting term in 0/4 sources
+technological abuse,direct,privacy,1,,0,0.0,0.05,0.0000,supporting term in 0/4 sources
+re:division 10 (of|of the) (the )?family code,direct,courts,3,the Domestic Violence Prevention Act,0,0.0,-0.08,0.0002,statutory term (California or federal DV law)
+"re:\b(6[23]\d\d|640\d)(\.\d+)?\b[^.;]{0,250}?family code",direct,courts,3,cites a DVPA section (Fam. Code 6200-6409),0,0.0,-0.29,0.0033,statutory term (California or federal DV law)
+physical abuse,direct,,2,all 4 sources,4,6.17,8.5,0.0005,supporting term in 4/4 sources
+emotional abuse,direct,,2,all 4 sources,4,5.1,0.75,0.0000,supporting term in 4/4 sources
+psychological abuse,direct,,2,all 4 sources,4,5.67,0.75,0.0000,supporting term in 4/4 sources
+verbal abuse,direct,,2,all 4 sources,4,8.77,0.85,0.0000,supporting term in 4/4 sources
+power and control,direct,,2,all 4 sources; the Duluth 'power and control wheel',4,12.31,1.42,0.0000,supporting term in 4/4 sources
+abusive relationship*,direct,,2,3 sources,3,7.97,0.85,0.0000,supporting term in 3/4 sources
+abusive partner*,direct,,1,2 sources,2,5.06,5.73,0.0002,supporting term in 2/4 sources
+protection order*,direct,courts,2,"3 sources; like 'protective order', also used for non-DV orders",3,9.47,8.74,0.0002,supporting term in 3/4 sources
+financial abuse,direct,financial,1,2 sources,2,2.51,3.16,0.0007,supporting term in 2/4 sources
+spiritual abuse,direct,,1,2 sources; abuse that uses religion or faith,2,4.28,0.51,0.0000,supporting term in 2/4 sources
+sexual coercion,direct,health,1,2 sources,2,1.65,0.51,0.0000,supporting term in 2/4 sources
+reproductive coercion,direct,health,1,1 source,1,1.49,0.43,0.0000,supporting term in 1/4 sources
+gaslighting,direct,,1,1 source,1,2.97,0.58,0.0000,supporting term in 1/4 sources
+teen dating violence,direct,education,1,2 sources; also matched by 'dating violence',2,2.88,7.04,0.0002,supporting term in 2/4 sources
+"re:\b(cohabitants?|household members?|former spouses?|dating relationships?|fianc[eé]e?s?)\b[^.;]{0,150}\b(abus\w*|batter\w*|injur\w*|threat\w*|stalk\w*|harass\w*|violen\w*)",direct,,3,"relationship + abuse in one clause, as statutes define DV (Lovell 2025)",1,0.16,2.85,0.0005,statutory relationship + abuse
+"re:\b(abus\w*|batter\w*|injur\w*|threat\w*|stalk\w*|harass\w*|violen\w*)\b[^.;]{0,150}\b(cohabitants?|household members?|former spouses?|dating relationships?|fianc[eé]e?s?)\b",direct,,3,abuse + relationship in one clause (reverse order),2,1.84,6.2,0.0009,statutory relationship + abuse
+# --- anchor: victim/safety language. An area term plus anchor weight >= 2 => predicted INDIRECT. Direct terms also count as anchors. ---
+intimidat*,anchor,,2,all 4 sources,4,10.95,11.59,0.0026,victim/safety language in 4/4 sources
+stalk*,anchor,,2,replaces 'stalking'; all 4 sources,4,19.66,13.14,0.0016,victim/safety language in 4/4 sources
+victim*,anchor,,1,the core signal for indirect laws,4,56.35,38.51,0.0275,in 4/4 sources but 2.7% of bills: too common for extra weight
+survivor*,anchor,,1,see excludes for pension 'survivor benefits',3,48.4,33.17,0.0080,victim/safety language in 3/4 sources
+abuse*,anchor,,1,see excludes for substance abuse etc.,4,191.41,54.42,0.0282,in 4/4 sources but 2.8% of bills: too common for extra weight
+sexual assault,anchor,,1,,3,8.64,11.44,0.0054,victim/safety language in 3/4 sources
+human trafficking,anchor,,1,,1,1.49,0.27,0.0110,victim/safety language in 1/4 sources
+harassment,anchor,,1,,0,0.0,-0.62,0.0070,victim/safety language in 0/4 sources
+perpetrator*,anchor,,1,,3,11.06,17.0,0.0012,victim/safety language in 3/4 sources
+fleeing,anchor,,1,,0,0.0,-0.13,0.0007,victim/safety language in 0/4 sources
+violent crime*,anchor,,1,,1,0.74,2.29,0.0009,victim/safety language in 1/4 sources
+# --- area / area_strong: impact areas. area_strong terms are specific enough to predict INDIRECT on their own. ---
+immigra*,area,immigration,1,,0,0.0,-1.43,0.0239,
+immigration status,area,immigration,1,,0,0.0,-0.6,0.0089,
+undocumented,area,immigration,1,,0,0.0,-0.3,0.0028,
+noncitizen*,area,immigration,1,,0,0.0,-0.26,0.0021,
+deportation,area,immigration,1,,0,0.0,-0.2,0.0009,
+removal proceeding*,area,immigration,1,,0,0.0,-0.13,0.0007,
+immigration and customs enforcement,area,immigration,1,,0,0.0,-0.21,0.0012,
+california values act,area,immigration,1,,0,0.0,-0.23,0.0016,
+u visa*,area_strong,immigration,1,,0,0.0,0.05,0.0000,
+t visa*,area_strong,immigration,1,,0,0.0,0.05,0.0000,
+u-visa*,area_strong,immigration,1,,0,0.0,0.05,0.0000,
+re:\b[ut] nonimmigrant,area_strong,immigration,1,U and T visas as named in federal law,0,0.0,0.05,0.0000,
+self-petition*,area_strong,immigration,1,VAWA self-petitions,0,0.0,0.05,0.0000,
+battered spouse waiver*,area_strong,immigration,1,,0,0.0,0.05,0.0000,
+cancellation of removal,area,immigration,1,VAWA cancellation,0,0.0,0.05,0.0000,
+employment authorization,area,immigration,1,work permits (8 CFR 274a.12),0,0.0,-0.08,0.0002,
+work authorization,area,immigration,1,,0,0.0,-0.21,0.0005,
+re:section 1367 of title 8,area_strong,immigration,1,VAWA confidentiality,0,0.0,0.05,0.0000,
+t-visa*,area_strong,immigration,1,,0,0.0,0.05,0.0000,
+re:form i-91[48],area_strong,immigration,1,I-918 Supp. B (U) / I-914 Supp. B (T) certifications,0,0.0,0.05,0.0000,
+re:section 679\.1[01] of the penal code,area_strong,immigration,1,U/T visa certification statutes,0,0.0,0.05,0.0000,
+immigration document*,area,immigration,1,abusers withhold or cancel them (Bhandari 2025),0,0.0,-0.08,0.0002,
+passport*,area,immigration,1,,0,0.0,-0.21,0.0005,
+travel document*,area,immigration,1,,0,0.0,0.05,0.0000,
+identity document*,area,immigration,1,,0,0.0,0.05,0.0000,
+regardless of immigration status,area,immigration,1,services without proof of status (Issue 26),0,0.0,-0.17,0.0012,
+proof of immigration status,area,immigration,1,,0,0.0,0.05,0.0000,
+migrant worker*,area,immigration,1,,0,0.0,0.05,0.0000,
+international student*,area,immigration,1,,0,0.0,0.05,0.0000,
+tenant*,area,housing,1,,0,0.0,-1.28,0.0157,
+landlord*,area,housing,1,,0,0.0,-0.91,0.0073,
+lease*,area,housing,1,,1,0.74,-0.99,0.0272,
+rental,area,housing,1,,0,0.0,-1.23,0.0218,
+eviction*,area,housing,1,,0,0.0,-0.29,0.0026,
+unlawful detainer,area,housing,1,,0,0.0,-0.44,0.0038,
+homeless*,area,housing,1,,0,0.0,-1.41,0.0185,
+shelter*,area,housing,1,,2,6.6,6.47,0.0122,
+transitional housing,area,housing,1,,1,2.23,4.1,0.0012,
+housing voucher*,area,housing,1,,0,0.0,-0.08,0.0002,
+re:section 8 (housing|voucher)|housing choice voucher,area,housing,1,VAWA housing (WomensLaw federal pages),0,0.0,0.05,0.0000,
+public housing,area,housing,1,,0,0.0,-0.18,0.0009,
+housing authorit*,area,housing,1,,0,0.0,-0.35,0.0021,
+bifurcat*,area_strong,housing,1,lease bifurcation removes the abuser (24 CFR 5.2009),0,0.0,0.05,0.0000,
+emergency transfer*,area,housing,1,VAWA emergency housing transfers,0,0.0,-0.11,0.0005,
+nuisance ordinance*,area,housing,1,"survivors penalized as a ""nuisance"" for calling police (Gov. Code 53165)",0,0.0,0.05,0.0000,
+crime-free,area,housing,1,crime-free housing programs,0,0.0,0.05,0.0000,
+re:calls? for (police|law enforcement|emergency) (service|assistance),area,housing,1,,0,0.0,0.05,0.0000,
+self-certification,area,housing,1,HUD-5382 VAWA self-certification,0,0.0,-0.11,0.0005,
+motel*,area,housing,1,,0,0.0,-0.29,0.0028,
+re:section 1946\.7 of the civil code,area_strong,housing,1,lease termination for victims,0,0.0,-0.08,0.0002,
+re:section 1161\.3 of the code of civil procedure,area_strong,housing,1,eviction protection for victims,0,0.0,0.05,0.0000,
+child custody,area,custody,1,,2,2.51,2.71,0.0023,
+physical custody,area,custody,1,,1,0.74,2.0,0.0009,
+legal custody,area,custody,1,,1,0.74,2.41,0.0007,
+custody of the child*,area,custody,1,,0,0.0,-0.32,0.0038,
+visitation,area,custody,1,,1,1.77,0.48,0.0031,
+child support,area,custody,1,,1,0.74,0.34,0.0016,
+family court,area,custody,1,,2,1.23,5.17,0.0002,
+dissolution of marriage,area,custody,1,,0,0.0,-0.18,0.0007,
+best interest of the child,area,custody,1,,0,0.0,-0.17,0.0009,
+parenting,area,custody,1,,1,1.49,3.32,0.0021,
+family code,area,custody,1,,0,0.0,-0.45,0.0084,
+re:section 3044 of the family code,area_strong,custody,1,custody presumption against abusers,0,0.0,0.05,0.0000,
+temporary emergency jurisdiction,area_strong,custody,1,UCCJEA 204,0,0.0,0.05,0.0000,
+full faith and credit,area,courts,1,18 USC 2265 (protection orders) and 28 USC 1738A (custody),0,0.0,-0.08,0.0002,
+out-of-state protective order*,area_strong,courts,1,,0,0.0,0.05,0.0000,
+foreign protection order*,area_strong,courts,1,,0,0.0,-0.08,0.0002,
+tribal protection order*,area_strong,courts,1,,0,0.0,0.05,0.0000,
+child abduction,area,custody,1,abuser takes or keeps the children,0,0.0,0.05,0.0000,
+parental abduction,area,custody,1,,0,0.0,0.05,0.0000,
+hague convention,area_strong,custody,1,international custody,0,0.0,0.05,0.0000,
+uniform child custody jurisdiction,area_strong,custody,1,UCCJEA (Fam. Code 3400 et seq.),0,0.0,0.05,0.0000,
+service of process,area,courts,1,divorce served fraudulently (Bhandari 2025),0,0.0,-0.27,0.0019,
+ex parte,area,courts,1,,1,5.31,4.4,0.0023,
+default judgment*,area,courts,1,,0,0.0,-0.23,0.0007,
+firearm*,area,firearms,1,,0,0.0,-1.51,0.0138,
+gun*,area,firearms,1,,1,0.33,2.4,0.0031,
+ammunition,area,firearms,1,,0,0.0,-0.55,0.0026,
+relinquish*,area,firearms,1,,0,0.0,-0.36,0.0023,
+armed and prohibited,area,firearms,1,,0,0.0,0.05,0.0000,
+armed prohibited person*,area,firearms,1,,0,0.0,0.05,0.0000,
+gun violence restraining order*,area_strong,firearms,1,,0,0.0,-0.31,0.0016,
+misdemeanor crime of domestic violence,direct,firearms,3,18 USC 921(a)(33),1,0.16,0.33,0.0000,statutory term (California or federal DV law)
+re:922\(g\),area,firearms,1,federal gun bans,0,0.0,0.05,0.0000,
+calworks,area,benefits,1,,0,0.0,-1.05,0.0108,
+calfresh,area,benefits,1,,0,0.0,-0.97,0.0101,
+medi-cal,area,benefits,1,,0,0.0,-2.24,0.0321,
+public assistance,area,benefits,1,,0,0.0,-0.18,0.0014,
+public benefit*,area,benefits,1,,0,0.0,-0.48,0.0073,
+general assistance,area,benefits,1,,0,0.0,-0.13,0.0007,
+unemployment insurance,area,benefits,1,,0,0.0,-0.63,0.0115,
+victim compensation,area_strong,benefits,1,CalVCB,0,0.0,-0.22,0.0012,
+interpreter*,area,language,1,,0,0.0,-0.29,0.0012,
+language access,area,language,1,,0,0.0,-0.3,0.0007,
+limited english,area,language,1,,0,0.0,-0.23,0.0016,
+translat*,area,language,1,,1,0.16,0.46,0.0049,
+bilingual,area,language,1,,0,0.0,-0.46,0.0028,
+non-english,area,language,1,,0,0.0,-0.33,0.0019,
+sign language,area,language,1,Deaf survivors (Issue 26),0,0.0,-0.13,0.0002,
+legal aid,area,courts,1,,0,0.0,-0.08,0.0002,
+legal services,area,courts,1,,1,0.16,0.52,0.0054,
+self-help,area,courts,1,,0,0.0,-0.11,0.0002,
+remote appearance*,area,courts,1,,0,0.0,-0.21,0.0009,
+pretrial release,area,courts,1,,0,0.0,-0.08,0.0002,
+bail,area,courts,1,,1,1.77,0.12,0.0031,
+sentenc*,area,courts,1,,1,1.77,-0.55,0.0183,
+probation,area,courts,1,,1,3.54,-0.3,0.0192,
+diversion,area,courts,1,,0,0.0,-0.92,0.0129,
+hearsay,area,courts,1,,0,0.0,-0.08,0.0002,
+testimony,area,courts,1,,1,3.54,2.45,0.0059,
+safe at home,area_strong,privacy,1,address confidentiality program,0,0.0,0.05,0.0000,
+address confidentiality,area_strong,privacy,1,,0,0.0,-0.13,0.0007,
+confidential address*,area,privacy,1,,0,0.0,0.05,0.0000,
+personal information,area,privacy,1,,0,0.0,-1.07,0.0141,
+location data,area,privacy,1,,0,0.0,-0.08,0.0002,
+electronic tracking,area,privacy,1,,0,0.0,0.05,0.0000,
+tracking device*,area,privacy,1,,0,0.0,0.05,0.0000,
+stalkerware,area_strong,privacy,1,,0,0.0,0.05,0.0000,
+cyberstalking,area,privacy,1,18 USC 2261A,1,0.74,0.33,0.0000,
+robocall*,area,privacy,1,,0,0.0,0.05,0.0000,
+intimate image*,area,privacy,1,electronic violence (Issue 26),0,0.0,-0.21,0.0005,
+electronic surveillance,area,privacy,1,,0,0.0,-0.15,0.0007,
+spyware,area,privacy,1,,0,0.0,0.05,0.0000,
+data broker*,area,privacy,1,,0,0.0,-0.44,0.0009,
+doxing,area,privacy,1,,0,0.0,0.05,0.0000,
+workplace,area,employment,1,,0,0.0,-0.62,0.0068,
+leave of absence,area,employment,1,,0,0.0,-0.59,0.0028,
+employment discrimination,area,employment,1,,0,0.0,-0.08,0.0002,
+unpaid leave,area,employment,1,,0,0.0,-0.11,0.0002,
+time off,area,employment,1,,0,0.0,-0.28,0.0023,
+re:section 230(\.1)? of the labor code,area_strong,employment,1,leave for victims (now Gov. Code 12945.8),0,0.0,0.05,0.0000,
+re:section 12945\.8 of the government code,area_strong,employment,1,,0,0.0,-0.08,0.0002,
+health care,area,health,1,,0,0.0,-3.24,0.0892,
+hospital*,area,health,1,,0,0.0,-1.61,0.0291,
+mental health,area,health,1,,2,0.91,-0.81,0.0275,
+forensic exam*,area,health,1,,0,0.0,-0.08,0.0002,
+reproductive,area,health,1,,2,2.39,3.16,0.0061,
+pregnan*,area,health,1,,1,0.74,-0.57,0.0115,
+re:section 1116[0-3] of the penal code,area_strong,health,1,health practitioner injury reporting,0,0.0,0.05,0.0000,
+office of emergency services,area,services,1,Cal OES funds DV programs,0,0.0,-0.85,0.0202,
+grant program*,area,services,1,,1,0.16,-1.61,0.0354,
+grant fund*,area,services,1,,0,0.0,-0.92,0.0162,
+cal oes,area,services,1,,0,0.0,-0.17,0.0002,
+hotline*,area,services,1,,2,5.68,11.0,0.0021,
+crisis center*,area,services,1,,0,0.0,-0.11,0.0002,
+victim service provider*,area_strong,services,1,,0,0.0,-0.08,0.0002,
+culturally specific,area,services,1,culturally specific organizations (SAWOs; Bhandari 2025),0,0.0,0.05,0.0000,
+culturally responsive,area,services,1,,0,0.0,-0.11,0.0005,
+culturally appropriate,area,services,1,,0,0.0,-0.08,0.0002,
+linguistically appropriate,area,services,1,,0,0.0,-0.08,0.0002,
+child welfare,area,child_welfare,1,,0,0.0,-0.84,0.0115,
+dependency,area,child_welfare,1,,1,0.49,3.36,0.0047,
+foster,area,child_welfare,1,,1,0.33,-0.76,0.0225,
+juvenile court,area,child_welfare,1,,0,0.0,-0.79,0.0150,
+title ix,area,education,1,,0,0.0,-0.26,0.0014,
+campus,area,education,1,,0,0.0,-1.14,0.0197,
+student*,area,education,1,,0,0.0,-2.51,0.0474,
+credit report*,area,financial,1,,0,0.0,-0.44,0.0023,
+debt*,area,financial,1,,0,0.0,-1.18,0.0129,
+financial institution*,area,financial,1,,0,0.0,-0.62,0.0094,
+# --- population: tags only; they do not change the predicted label. ---
+rural,population,rural,1,,,,,,
+disabilit*,population,disability,1,,,,,,
+dependent adult*,population,elder_dependent_adult,1,,,,,,
+elder*,population,elder_dependent_adult,1,,,,,,
+tribal,population,tribal,1,,,,,,
+indian tribe*,population,tribal,1,,,,,,
+native american*,population,tribal,1,,,,,,
+lgbt*,population,lgbtq,1,,,,,,
+gender identity,population,lgbtq,1,,,,,,
+minor*,population,youth,1,,,,,,
+youth,population,youth,1,,,,,,
+# realm: immigrant and VAWA survivors
+immigrant*,population,immigrant_vawa,1,,,,,,
+immigra*,population,immigrant_vawa,1,,0,0.0,-1.43,0.0239,
+noncitizen*,population,immigrant_vawa,1,,0,0.0,-0.26,0.0021,
+undocumented,population,immigrant_vawa,1,,0,0.0,-0.3,0.0028,
+asylum,population,immigrant_vawa,1,,,,,,
+asylee*,population,immigrant_vawa,1,,,,,,
+refugee*,population,immigrant_vawa,1,,,,,,
+public charge,population,immigrant_vawa,1,,,,,,
+violence against women act,population,immigrant_vawa,1,,2,2.8,6.39,0.0002,
+re:\bvawa\b,population,immigrant_vawa,1,,,,,,
+u visa*,population,immigrant_vawa,1,,0,0.0,0.05,0.0000,
+t visa*,population,immigrant_vawa,1,,0,0.0,0.05,0.0000,
+re:form i-91[48],population,immigrant_vawa,1,,0,0.0,0.05,0.0000,
+migrant worker*,population,immigrant_vawa,1,,0,0.0,0.05,0.0000,
+international student*,population,immigrant_vawa,1,,0,0.0,0.05,0.0000,
+passport*,population,immigrant_vawa,1,,0,0.0,-0.21,0.0005,
+immigration document*,population,immigrant_vawa,1,,0,0.0,-0.08,0.0002,
+# realm: women and gender
+re:\bwom[ae]n\b,population,women_gender,1,,,,,,
+gender-based violence,population,women_gender,1,,,,,,
+re:\bgender\b(?! identity),population,women_gender,1,,,,,,
+pregnan*,population,women_gender,1,,1,0.74,-0.57,0.0115,
+reproductive,population,women_gender,1,,2,2.39,3.16,0.0061,
+forced marriage,population,women_gender,1,,0,0.0,-0.22,0.0005,
+coerced marriage,population,women_gender,1,,0,0.0,-0.08,0.0002,
+dowry,population,women_gender,1,,0,0.0,0.05,0.0000,
+# realm: faith and religion. Only where the text itself mentions religion.
+religio*,population,faith,1,,,,,,
+faith-based,population,faith,1,,,,,,
+place* of worship,population,faith,1,,,,,,
+house* of worship,population,faith,1,,,,,,
+clergy,population,faith,1,,,,,,
+faith leader*,population,faith,1,imams and other leaders can help or harm (Bhandari 2025),,,,,
+religious leader*,population,faith,1,,,,,,
+spiritual,population,faith,1,shelters that meet spiritual and religious needs (Issue 26),,,,,
+religious need*,population,faith,1,,,,,,
+religious accommodation*,population,faith,1,,,,,,
+# realm: language access (named languages are listed so South Asian and other language communities can be found)
+limited english,population,language_access,1,,0,0.0,-0.23,0.0016,
+language access,population,language_access,1,,0,0.0,-0.3,0.0007,
+interpreter*,population,language_access,1,,0,0.0,-0.29,0.0012,
+translat*,population,language_access,1,,1,0.16,0.46,0.0049,
+re:\b(punjabi|hindi|urdu|bengali|gujarati|tamil|telugu|nepali)\b,population,south_asian_languages,1,,,,,,
+re:\b(arabic|farsi|dari|pashto)\b,population,arabic_persian_languages,1,,,,,,
+culturally specific,population,language_access,1,,0,0.0,0.05,0.0000,
+re:\b(deaf|sign language)\b,population,disability,1,,,,,,
+service member*,population,military,1,,,,,,
+servicemember*,population,military,1,,,,,,
+armed forces,population,military,1,,,,,,
+military,population,military,1,,,,,,
+veteran*,population,military,1,,,,,,
+# --- exclude: phrases deleted from the text before matching to avoid known false hits. ---
+substance abuse,exclude,,0,,,,,,
+drug abuse,exclude,,0,,,,,,
+alcohol abuse,exclude,,0,,,,,,
+abuse of discretion,exclude,,0,,,,,,
+survivor benefit*,exclude,,0,pensions,,,,,
+surviving spouse*,exclude,,0,pensions,,,,,
+grant of authority,exclude,,0,,,,,,
+child abuse,exclude,,0,codebook: child abuse alone is not DV,,,,,
+elder abuse,exclude,,0,codebook: elder abuse alone is not DV,,,,,
+re:abuse (or neglect )?of (an? )?(elder|dependent adult|child)\w*,exclude,,0,,,,,,
+re:(elder|dependent adult|child) (abuse|neglect)( (and|or) (abuse|neglect))?,exclude,,0,,,,,,
+abuse or neglect,exclude,,0,child welfare phrasing,,,,,
+holocaust survivor*,exclude,,0,,,,,,
+sexual abuse material,exclude,,0,CSAM laws,,,,,
+survivor allowance*,exclude,,0,pensions,,,,,
+school safety plan*,exclude,,0,,,,,,

@@ -2,8 +2,10 @@
 or that materially affect DV survivors, using the editable lexicon in
 lexicon.csv.
 
-Rules (see CODEBOOK.md for the human coding rules these approximate):
-    DIRECT    the summed weight of distinct `direct` terms is >= --direct-threshold (default 3)
+Rules (see CODEBOOK.md, "How terms are weighted", for where the weights come from):
+    DIRECT    the summed weight of distinct `direct` terms is >= --direct-threshold (default 3):
+              one weight-3 term (a core name for DV, a statutory term, or a
+              relationship + abuse pattern), or two or more supporting terms
     INDIRECT  not DIRECT, and either an `area_strong` term matches, or at least
               one `area` term matches AND the summed weight of anchors (`anchor`
               terms plus any `direct` terms) is >= --anchor-threshold (default 2)

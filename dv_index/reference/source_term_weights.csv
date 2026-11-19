@@ -1,0 +1,209 @@
+term,kind,area,weight,sources,per_10k,ref_count,bill_count,bills,z,n_hotline_glossary,n_legal_terms,n_lovell,n_un
+abuse*,anchor,,1.0,4,191.41,305,339,120,54.42,106,13,136,50
+domestic violence,direct,,3.0,4,70.67,241,135,47,46.3,29,6,202,4
+victim*,anchor,,2.0,4,56.35,162,321,117,38.51,24,4,126,8
+survivor*,anchor,,1.0,3,48.4,129,62,34,33.17,43,0,84,2
+perpetrator*,anchor,,1.0,3,11.06,40,12,5,17.0,5,1,34,0
+intimate partner,direct,,2.0,3,13.43,32,12,5,15.86,8,0,21,3
+domestic abuse,direct,,3.0,3,32.27,42,5,3,13.79,5,0,18,19
+batterer*,direct,,3.0,3,12.25,32,4,1,12.21,1,4,27,0
+stalking,anchor,,2.0,4,17.26,17,9,7,12.19,5,5,4,3
+intimate partner violence,direct,,3.0,3,5.79,14,11,4,11.49,4,0,9,1
+sexual assault,anchor,,2.0,3,8.64,19,84,23,11.44,4,2,13,0
+hotline*,area,services,1.0,2,5.68,13,23,9,11.0,0,0,10,3
+dating violence,direct,,3.0,2,5.27,11,4,2,9.25,6,0,5,0
+abuser*,direct,,2.0,4,39.79,67,1,1,8.65,34,2,26,5
+family violence,direct,,3.0,2,1.89,8,2,2,7.31,1,0,7,0
+strangulation,direct,courts,2.0,1,5.2,7,2,2,7.04,7,0,0,0
+shelter*,area,housing,1.0,2,6.6,12,139,52,6.47,8,0,4,0
+violence against women act,direct,immigration,3.0,2,2.8,10,1,1,6.39,2,0,8,0
+coercive control,direct,,3.0,2,1.65,3,4,2,5.37,2,0,1,0
+family court,area,custody,1.0,2,1.23,4,1,1,5.17,1,0,3,0
+ex parte,area,courts,1.0,1,5.31,3,15,10,4.4,0,3,0,0
+transitional housing,area,housing,1.0,1,2.23,3,19,5,4.1,3,0,0,0
+dependency,area,child_welfare,1.0,1,0.49,3,32,20,3.36,0,0,3,0
+parenting,area,custody,1.0,1,1.49,2,13,9,3.32,2,0,0,0
+reproductive,area,health,1.0,2,2.39,4,64,26,3.16,3,0,1,0
+child custody,area,custody,1.0,2,2.51,2,22,10,2.71,1,1,0,0
+testimony,area,courts,1.0,1,3.54,2,27,25,2.45,0,2,0,0
+legal custody,area,custody,1.0,1,0.74,1,6,3,2.41,1,0,0,0
+gun*,area,firearms,1.0,1,0.33,2,28,13,2.4,0,0,2,0
+violent crime*,anchor,,1.0,1,0.74,1,7,4,2.29,1,0,0,0
+physical custody,area,custody,1.0,1,0.74,1,10,4,2.0,1,0,0,0
+restraining order*,direct,courts,1.0,2,5.03,4,122,23,1.95,2,2,0,0
+battered wom*,direct,,3.0,2,5.19,14,0,0,1.05,5,0,9,0
+economic abuse,direct,financial,2.0,3,2.42,4,0,0,0.58,1,0,2,1
+legal services,area,courts,1.0,1,0.16,1,49,23,0.52,0,0,1,0
+visitation,area,custody,1.0,1,1.77,1,51,13,0.48,0,1,0,0
+translat*,area,language,1.0,1,0.16,1,52,21,0.46,0,0,1,0
+battered spouse,direct,,3.0,1,0.33,2,0,0,0.43,0,0,2,0
+child support,area,custody,1.0,1,0.74,1,59,7,0.34,1,0,0,0
+misdemeanor crime of domestic violence,direct,firearms,3.0,1,0.16,1,0,0,0.33,0,0,1,0
+cyberstalking,area,privacy,1.0,1,0.74,1,0,0,0.33,1,0,0,0
+human trafficking,anchor,,1.0,1,1.49,2,138,47,0.27,2,0,0,0
+bail,area,courts,1.0,1,1.77,1,74,13,0.12,0,1,0,0
+spousal battery,direct,,3.0,0,0.0,0,0,0,0.05,0,0,0,0
+re:section 679\.1[01] of the penal code,area_strong,immigration,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+re:section 6203 of the family code,direct,,3.0,0,0.0,0,0,0,0.05,0,0,0,0
+re:section 6211 of the family code,direct,,3.0,0,0.0,0,0,0,0.05,0,0,0,0
+spousal abuse,direct,,3.0,0,0.0,0,0,0,0.05,0,0,0,0
+t-visa*,area_strong,immigration,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+proof of immigration status,area,immigration,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+migrant worker*,area,immigration,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+travel document*,area,immigration,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+re:section 1367 of title 8,area_strong,immigration,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+re:form i-91[48],area_strong,immigration,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+out-of-state protective order*,area_strong,courts,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+tribal protection order*,area_strong,courts,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+armed and prohibited,area,firearms,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+re:922\(g\),area,firearms,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+parental abduction,area,custody,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+re:section 3044 of the family code,area_strong,custody,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+family advocacy program,direct,services,3.0,0,0.0,0,0,0,0.05,0,0,0,0
+re:section 243 of the penal code,direct,courts,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+emergency protective order,direct,courts,3.0,0,0.0,0,0,0,0.05,0,0,0,0
+re:section 1037(\.\d+)? of the evidence code,direct,courts,3.0,0,0.0,0,0,0,0.05,0,0,0,0
+immigration-related abuse,direct,immigration,3.0,0,0.0,0,0,0,0.05,0,0,0,0
+marriage abandonment,direct,immigration,2.0,0,0.0,0,0,0,0.05,0,0,0,0
+technology-enabled abuse,direct,privacy,2.0,0,0.0,0,0,0,0.05,0,0,0,0
+technological abuse,direct,privacy,2.0,0,0.0,0,0,0,0.05,0,0,0,0
+dowry,direct,,2.0,0,0.0,0,0,0,0.05,0,0,0,0
+coerced debt,direct,financial,2.0,0,0.0,0,0,0,0.05,0,0,0,0
+transnational abandonment,direct,immigration,3.0,0,0.0,0,0,0,0.05,0,0,0,0
+identity document*,area,immigration,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+international student*,area,immigration,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+u visa*,area_strong,immigration,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+u-visa*,area_strong,immigration,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+t visa*,area_strong,immigration,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+self-petition*,area_strong,immigration,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+battered spouse waiver*,area_strong,immigration,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+cancellation of removal,area,immigration,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+re:\b[ut] nonimmigrant,area_strong,immigration,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+safe at home,area_strong,privacy,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+confidential address*,area,privacy,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+tracking device*,area,privacy,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+re:section 230(\.1)? of the labor code,area_strong,employment,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+stalkerware,area_strong,privacy,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+robocall*,area,privacy,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+doxing,area,privacy,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+spyware,area,privacy,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+electronic tracking,area,privacy,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+crime-free,area,housing,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+re:calls? for (police|law enforcement|emergency) (service|assistance),area,housing,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+hague convention,area_strong,custody,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+nuisance ordinance*,area,housing,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+temporary emergency jurisdiction,area_strong,custody,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+culturally specific,area,services,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+re:section 1116[0-3] of the penal code,area_strong,health,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+child abduction,area,custody,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+re:section 1161\.3 of the code of civil procedure,area_strong,housing,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+uniform child custody jurisdiction,area_strong,custody,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+armed prohibited person*,area,firearms,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+re:section 8 (housing|voucher)|housing choice voucher,area,housing,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+bifurcat*,area_strong,housing,1.0,0,0.0,0,0,0,0.05,0,0,0,0
+full faith and credit,area,courts,1.0,0,0.0,0,1,1,-0.08,0,0,0,0
+foreign protection order*,area_strong,courts,1.0,0,0.0,0,1,1,-0.08,0,0,0,0
+employment authorization,area,immigration,1.0,0,0.0,0,1,1,-0.08,0,0,0,0
+coerced marriage,direct,,2.0,0,0.0,0,1,1,-0.08,0,0,0,0
+linguistically appropriate,area,services,1.0,0,0.0,0,1,1,-0.08,0,0,0,0
+hearsay,area,courts,1.0,0,0.0,0,1,1,-0.08,0,0,0,0
+employment discrimination,area,employment,1.0,0,0.0,0,1,1,-0.08,0,0,0,0
+pretrial release,area,courts,1.0,0,0.0,0,1,1,-0.08,0,0,0,0
+immigration document*,area,immigration,1.0,0,0.0,0,1,1,-0.08,0,0,0,0
+re:division 10 (of|of the) (the )?family code,direct,courts,3.0,0,0.0,0,1,1,-0.08,0,0,0,0
+victim service provider*,area_strong,services,1.0,0,0.0,0,1,1,-0.08,0,0,0,0
+culturally appropriate,area,services,1.0,0,0.0,0,1,1,-0.08,0,0,0,0
+re:section 1946\.7 of the civil code,area_strong,housing,1.0,0,0.0,0,1,1,-0.08,0,0,0,0
+housing voucher*,area,housing,1.0,0,0.0,0,1,1,-0.08,0,0,0,0
+forensic exam*,area,health,1.0,0,0.0,0,1,1,-0.08,0,0,0,0
+location data,area,privacy,1.0,0,0.0,0,1,1,-0.08,0,0,0,0
+legal aid,area,courts,1.0,0,0.0,0,1,1,-0.08,0,0,0,0
+re:section 12945\.8 of the government code,area_strong,employment,1.0,0,0.0,0,1,1,-0.08,0,0,0,0
+crisis center*,area,services,1.0,0,0.0,0,2,1,-0.11,0,0,0,0
+self-help,area,courts,1.0,0,0.0,0,2,1,-0.11,0,0,0,0
+culturally responsive,area,services,1.0,0,0.0,0,2,2,-0.11,0,0,0,0
+unpaid leave,area,employment,1.0,0,0.0,0,2,1,-0.11,0,0,0,0
+emergency transfer*,area,housing,1.0,0,0.0,0,2,2,-0.11,0,0,0,0
+re:section 273\.5 of the penal code,direct,courts,3.0,0,0.0,0,2,2,-0.11,0,0,0,0
+self-certification,area,housing,1.0,0,0.0,0,2,2,-0.11,0,0,0,0
+address confidentiality,area_strong,privacy,1.0,0,0.0,0,3,3,-0.13,0,0,0,0
+removal proceeding*,area,immigration,1.0,0,0.0,0,3,3,-0.13,0,0,0,0
+sign language,area,language,1.0,0,0.0,0,3,1,-0.13,0,0,0,0
+general assistance,area,benefits,1.0,0,0.0,0,3,3,-0.13,0,0,0,0
+fleeing,anchor,,1.0,0,0.0,0,3,3,-0.13,0,0,0,0
+electronic surveillance,area,privacy,1.0,0,0.0,0,4,3,-0.15,0,0,0,0
+best interest of the child,area,custody,1.0,0,0.0,0,5,4,-0.17,0,0,0,0
+regardless of immigration status,area,immigration,1.0,0,0.0,0,5,5,-0.17,0,0,0,0
+cal oes,area,services,1.0,0,0.0,0,5,1,-0.17,0,0,0,0
+military protective order*,direct,courts,3.0,0,0.0,0,6,1,-0.18,0,0,0,0
+domestic violence prevention act,direct,courts,3.0,0,0.0,0,6,4,-0.18,0,0,0,0
+dissolution of marriage,area,custody,1.0,0,0.0,0,6,3,-0.18,0,0,0,0
+public assistance,area,benefits,1.0,0,0.0,0,6,6,-0.18,0,0,0,0
+public housing,area,housing,1.0,0,0.0,0,6,4,-0.18,0,0,0,0
+deportation,area,immigration,1.0,0,0.0,0,7,4,-0.2,0,0,0,0
+immigration and customs enforcement,area,immigration,1.0,0,0.0,0,8,5,-0.21,0,0,0,0
+passport*,area,immigration,1.0,0,0.0,0,8,2,-0.21,0,0,0,0
+work authorization,area,immigration,1.0,0,0.0,0,8,2,-0.21,0,0,0,0
+remote appearance*,area,courts,1.0,0,0.0,0,8,4,-0.21,0,0,0,0
+intimate image*,area,privacy,1.0,0,0.0,0,8,2,-0.21,0,0,0,0
+forced marriage,direct,,3.0,0,0.0,0,9,2,-0.22,0,0,0,0
+victim compensation,area_strong,benefits,1.0,0,0.0,0,9,5,-0.22,0,0,0,0
+limited english,area,language,1.0,0,0.0,0,10,7,-0.23,0,0,0,0
+california values act,area,immigration,1.0,0,0.0,0,10,7,-0.23,0,0,0,0
+default judgment*,area,courts,1.0,0,0.0,0,10,3,-0.23,0,0,0,0
+title ix,area,education,1.0,0,0.0,0,13,6,-0.26,0,0,0,0
+noncitizen*,area,immigration,1.0,0,0.0,0,13,9,-0.26,0,0,0,0
+service of process,area,courts,1.0,0,0.0,0,14,8,-0.27,0,0,0,0
+time off,area,employment,1.0,0,0.0,0,15,10,-0.28,0,0,0,0
+"re:\b(6[23]\d\d|640\d)(\.\d+)?\b[^.;]{0,250}?family code",direct,courts,3.0,0,0.0,0,16,14,-0.29,0,0,0,0
+eviction*,area,housing,1.0,0,0.0,0,16,11,-0.29,0,0,0,0
+interpreter*,area,language,1.0,0,0.0,0,16,5,-0.29,0,0,0,0
+motel*,area,housing,1.0,0,0.0,0,16,12,-0.29,0,0,0,0
+probation,area,courts,1.0,1,3.54,2,208,82,-0.3,0,2,0,0
+language access,area,language,1.0,0,0.0,0,17,3,-0.3,0,0,0,0
+undocumented,area,immigration,1.0,0,0.0,0,17,12,-0.3,0,0,0,0
+gun violence restraining order*,area_strong,firearms,1.0,0,0.0,0,18,7,-0.31,0,0,0,0
+custody of the child*,area,custody,1.0,0,0.0,0,19,16,-0.32,0,0,0,0
+non-english,area,language,1.0,0,0.0,0,20,8,-0.33,0,0,0,0
+housing authorit*,area,housing,1.0,0,0.0,0,23,9,-0.35,0,0,0,0
+relinquish*,area,firearms,1.0,0,0.0,0,24,10,-0.36,0,0,0,0
+data broker*,area,privacy,1.0,0,0.0,0,37,4,-0.44,0,0,0,0
+credit report*,area,financial,1.0,0,0.0,0,36,10,-0.44,0,0,0,0
+unlawful detainer,area,housing,1.0,0,0.0,0,36,16,-0.44,0,0,0,0
+family code,area,custody,1.0,0,0.0,0,38,36,-0.45,0,0,0,0
+bilingual,area,language,1.0,0,0.0,0,40,12,-0.46,0,0,0,0
+public benefit*,area,benefits,1.0,0,0.0,0,44,31,-0.48,0,0,0,0
+ammunition,area,firearms,1.0,0,0.0,0,56,11,-0.55,0,0,0,0
+sentenc*,area,courts,1.0,1,1.77,1,147,78,-0.55,0,1,0,0
+pregnan*,area,health,1.0,1,0.74,1,150,49,-0.57,1,0,0,0
+leave of absence,area,employment,1.0,0,0.0,0,66,12,-0.59,0,0,0,0
+immigration status,area,immigration,1.0,0,0.0,0,68,38,-0.6,0,0,0,0
+workplace,area,employment,1.0,0,0.0,0,72,29,-0.62,0,0,0,0
+financial institution*,area,financial,1.0,0,0.0,0,72,40,-0.62,0,0,0,0
+harassment,anchor,,1.0,0,0.0,0,72,30,-0.62,0,0,0,0
+unemployment insurance,area,benefits,1.0,0,0.0,0,74,49,-0.63,0,0,0,0
+foster,area,child_welfare,1.0,1,0.33,2,290,96,-0.76,0,0,2,0
+protective order*,direct,courts,1.0,0,0.0,0,111,21,-0.77,0,0,0,0
+juvenile court,area,child_welfare,1.0,0,0.0,0,118,64,-0.79,0,0,0,0
+mental health,area,health,1.0,2,0.91,2,302,117,-0.81,1,0,1,0
+child welfare,area,child_welfare,1.0,0,0.0,0,132,49,-0.84,0,0,0,0
+office of emergency services,area,services,1.0,0,0.0,0,137,86,-0.85,0,0,0,0
+landlord*,area,housing,1.0,0,0.0,0,156,31,-0.91,0,0,0,0
+grant fund*,area,services,1.0,0,0.0,0,159,69,-0.92,0,0,0,0
+diversion,area,courts,1.0,0,0.0,0,159,55,-0.92,0,0,0,0
+calfresh,area,benefits,1.0,0,0.0,0,176,43,-0.97,0,0,0,0
+lease*,area,housing,1.0,1,0.74,1,230,116,-0.99,1,0,0,0
+calworks,area,benefits,1.0,0,0.0,0,209,46,-1.05,0,0,0,0
+personal information,area,privacy,1.0,0,0.0,0,215,60,-1.07,0,0,0,0
+campus,area,education,1.0,0,0.0,0,243,84,-1.14,0,0,0,0
+debt*,area,financial,1.0,0,0.0,0,260,55,-1.18,0,0,0,0
+rental,area,housing,1.0,0,0.0,0,285,93,-1.23,0,0,0,0
+tenant*,area,housing,1.0,0,0.0,0,308,67,-1.28,0,0,0,0
+homeless*,area,housing,1.0,0,0.0,0,376,79,-1.41,0,0,0,0
+immigra*,area,immigration,1.0,0,0.0,0,382,102,-1.43,0,0,0,0
+firearm*,area,firearms,1.0,0,0.0,0,428,59,-1.51,0,0,0,0
+hospital*,area,health,1.0,0,0.0,0,486,124,-1.61,0,0,0,0
+grant program*,area,services,1.0,1,0.16,1,421,151,-1.61,0,0,1,0
+medi-cal,area,benefits,1.0,0,0.0,0,946,137,-2.24,0,0,0,0
+student*,area,education,1.0,0,0.0,0,1187,202,-2.51,0,0,0,0
+health care,area,health,1.0,0,0.0,0,1978,380,-3.24,0,0,0,0
