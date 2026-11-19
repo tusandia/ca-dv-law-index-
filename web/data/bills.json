@@ -10,12 +10,10 @@
    "courts",
    "custody",
    "employment",
-   "firearms",
-   "immigration"
+   "firearms"
   ],
   "p": [
    "elder_dependent_adult",
-   "immigrant_vawa",
    "women_gender"
   ],
   "v": "Chaptered",
@@ -37,8 +35,14 @@
   ],
   "sc": 25.0,
   "rs": {
-   "immigrant_vawa": "…der in a tribunal of this state under certain conditions. The bill would expand the definition of a protection order to include any injunction or order under the federal Violence Against Women Act and would extend these provisions to orders issued by any state or other jurisdiction. The bill would make conforming changes. (7) Existing law authorizes the Department…",
-   "women_gender": "…of this state under certain conditions. The bill would expand the definition of a protection order to include any injunction or order under the federal Violence Against Women Act and would extend these provisions to orders issued by any state or other jurisdiction. The bill would make conforming changes. (7) Existing law authorizes the Depart…"
+   "elder_dependent_adult": {
+    "w": "dependent adult",
+    "q": "…person may petition the court for certain protective or restraining orders, including civil harassment restraining orders, domestic violence restraining orders, elder or dependent adult abuse restraining orders, gun violence restraining orders, postsecondary school restraining orders, and workplace violence restraining orders, to enjoin a restrained person…"
+   },
+   "women_gender": {
+    "w": "Women",
+    "q": "…tribunal of this state under certain conditions. The bill would expand the definition of a protection order to include any injunction or order under the federal Violence Against Women Act and would extend these provisions to orders issued by any state or other jurisdiction. The bill would make conforming changes. (7) Existing law authorizes the Department…"
+   }
   }
  },
  {
@@ -105,7 +109,10 @@
   ],
   "sc": 19.0,
   "rs": {
-   "women_gender": "…elatives, or other sources of support. Existing law makes an intentional and knowing violation of a protective order punishable as a misdemeanor. This bill would include forced marriage for purposes of the act. The bill would define “forced marriage” as a spousal relationship in which one or both parties do not or cannot consent and one or both parties…"
+   "women_gender": {
+    "w": "forced marriage",
+    "q": "…relatives, or other sources of support. Existing law makes an intentional and knowing violation of a protective order punishable as a misdemeanor. This bill would include forced marriage for purposes of the act. The bill would define “forced marriage” as a spousal relationship in which one or both parties do not or cannot consent and one or both parties are…"
+   }
   }
  },
  {
@@ -139,7 +146,12 @@
    "ex parte"
   ],
   "sc": 18.0,
-  "rs": {}
+  "rs": {
+   "military": {
+    "w": "service members",
+    "q": "…military installations located in whole or in part within the borders of its jurisdiction that govern the investigation and actions related to domestic violence involving service members assigned to units on those installations, as specified. This bill would incorporate additional changes to Section 6383 of the Family Code proposed by AB 1753 and SB 1395,…"
+   }
+  }
  },
  {
   "id": "202520260AB1845",
@@ -238,7 +250,12 @@
    "ex parte"
   ],
   "sc": 17.0,
-  "rs": {}
+  "rs": {
+   "elder_dependent_adult": {
+    "w": "dependent adult",
+    "q": "…court from charging a fee for a party, support person, or witness to appear remotely at a domestic violence restraining order hearing. (3) Existing law authorizes an elder or dependent adult who has suffered abuse to seek a protective order and prohibits a filing fee for a petition, response, or paper seeking the reissuance, modification, or enforcement of a…"
+   }
+  }
  },
  {
   "id": "202520260AB824",
@@ -274,7 +291,12 @@
    "relinquish"
   ],
   "sc": 17.0,
-  "rs": {}
+  "rs": {
+   "elder_dependent_adult": {
+    "w": "dependent adult",
+    "q": "…person may petition the court for certain protective or restraining orders, including civil harassment restraining orders, domestic violence restraining orders, elder or dependent adult abuse restraining orders, gun violence restraining orders, postsecondary school restraining orders, and workplace violence restraining orders, to enjoin a restrained person…"
+   }
+  }
  },
  {
   "id": "202520260AB924",
@@ -307,7 +329,12 @@
    "lease"
   ],
   "sc": 17.0,
-  "rs": {}
+  "rs": {
+   "elder_dependent_adult": {
+    "w": "dependent adult",
+    "q": "…household member, or immediate family member, as defined, was a victim of an act of domestic violence, sexual assault, stalking, human trafficking, abuse of an elder or a dependent adult, or of other specified crimes, and that the tenant intends to terminate the tenancy. Existing law prohibits a landlord from, due to the termination, requiring a tenant who…"
+   }
+  }
  },
  {
   "id": "202520260SB871",
@@ -517,7 +544,10 @@
   ],
   "sc": 11.0,
   "rs": {
-   "immigrant_vawa": "…add Section 17974.7 to the Health and Safety Code, to add Section 13837.5 to the Penal Code, and to add Section 18296.5 to the Welfare and Institutions Code, relating to immigration. The State Housing Law, among other things, requires the Department of Housing and Community Development to adopt, amend, or repeal rules and regulations for the protect…"
+   "immigrant_vawa": {
+    "w": "immigration",
+    "q": "…family justice center, or human trafficking service provider from allowing access to the nonpublic areas of those facilities, except as required by state or federal law, for immigration enforcement activity, as defined, unless specified criteria are met, including a valid judicial warrant. This bill would provide that its provisions are severable. By creating…"
+   }
   }
  },
  {
@@ -572,7 +602,12 @@
    "family code"
   ],
   "sc": 10.0,
-  "rs": {}
+  "rs": {
+   "youth": {
+    "w": "minor",
+    "q": "…determined by the court. Beginning July 1, 2027, this bill would additionally allow the court to issue a protective order, valid for up to the later of 10 years or until the minor victim reaches 18 years of age, restraining a defendant from any contact with a victim if the defendant has been convicted of a registerable sex offense involving a minor…"
+   }
+  }
  },
  {
   "id": "202520260SB421",
@@ -664,7 +699,16 @@
    "grant program"
   ],
   "sc": 9.0,
-  "rs": {}
+  "rs": {
+   "tribal": {
+    "w": "tribal",
+    "q": "…authority to certain other persons, including federal criminal investigators and park rangers and peace officers from adjoining jurisdictions. Existing federal law authorizes tribal governments to employ tribal police for the enforcement of tribal law on tribal lands. Existing federal law requires the State of California to exercise criminal jurisdiction…"
+   },
+   "youth": {
+    "w": "youth",
+    "q": "…requires the Board of State and Community Corrections to conduct a biennial inspection of each jail, juvenile hall, lockup, special purpose juvenile hall, camp, ranch, or secure youth treatment facility, as specified. Existing law specifies that a juvenile facility is unsuitable for the confinement of juveniles if the facility is not in compliance with…"
+   }
+  }
  },
  {
   "id": "202520260AB1375",
@@ -800,7 +844,12 @@
    "calworks"
   ],
   "sc": 9.0,
-  "rs": {}
+  "rs": {
+   "women_gender": {
+    "w": "gender-based violence",
+    "q": "…bill contains costs mandated by the state, reimbursement for those costs shall be made pursuant to the statutory provisions noted above. CalWORKs: family violence option and gender-based violence information."
+   }
+  }
  },
  {
   "id": "202520260SB134",
@@ -834,7 +883,16 @@
    "grant program"
   ],
   "sc": 9.0,
-  "rs": {}
+  "rs": {
+   "tribal": {
+    "w": "tribal",
+    "q": "…authority to certain other persons, including federal criminal investigators and park rangers and peace officers from adjoining jurisdictions. Existing federal law authorizes tribal governments to employ tribal police for the enforcement of tribal law on tribal lands. Existing federal law requires the State of California to exercise criminal jurisdiction…"
+   },
+   "youth": {
+    "w": "youth",
+    "q": "…requires the Board of State and Community Corrections to conduct a biennial inspection of each jail, juvenile hall, lockup, special purpose juvenile hall, camp, ranch, or secure youth treatment facility, as specified. Existing law specifies that a juvenile facility is unsuitable for the confinement of juveniles if the facility is not in compliance with…"
+   }
+  }
  },
  {
   "id": "202520260AB146",
@@ -866,7 +924,12 @@
    "foster"
   ],
   "sc": 8.0,
-  "rs": {}
+  "rs": {
+   "disability": {
+    "w": "Disability",
+    "q": "…risk of, homelessness, including, among other programs, the CalWORKs Housing Support Program, the Home Safe Program, the Bringing Families Home Program, and the Housing and Disability Income Advocacy Program. This bill would require counties opting to participate in any of those programs to have written program policies and make them available to the public,…"
+   }
+  }
  },
  {
   "id": "202520260AB1978",
@@ -895,7 +958,12 @@
    "family code"
   ],
   "sc": 8.0,
-  "rs": {}
+  "rs": {
+   "youth": {
+    "w": "minor",
+    "q": "…provides for proceedings to determine the custody of a child, and establishes a presumption, affecting the burden of proof, that joint custody is in the best interest of a minor child, as specified. This bill would, for child custody proceedings filed on or after January 1, 2027, establish a rebuttable presumption that equal parenting time is in…"
+   }
+  }
  },
  {
   "id": "202520260AB790",
@@ -926,7 +994,10 @@
   ],
   "sc": 8.0,
   "rs": {
-   "women_gender": "…ceiving state funding to address homelessness on or after January 1, 2024, to include families, people fleeing or attempting to flee domestic violence, and unaccompanied women within the vulnerable populations for whom specific system supports are developed to maintain homeless services and housing delivery. Existing law also requires the citi…"
+   "women_gender": {
+    "w": "women",
+    "q": "…receiving state funding to address homelessness on or after January 1, 2024, to include families, people fleeing or attempting to flee domestic violence, and unaccompanied women within the vulnerable populations for whom specific system supports are developed to maintain homeless services and housing delivery. Existing law also requires the cities,…"
+   }
   }
  },
  {
@@ -985,7 +1056,12 @@
    "foster"
   ],
   "sc": 8.0,
-  "rs": {}
+  "rs": {
+   "disability": {
+    "w": "Disability",
+    "q": "…risk of, homelessness, including, among other programs, the CalWORKs Housing Support Program, the Home Safe Program, the Bringing Families Home Program, and the Housing and Disability Income Advocacy Program. This bill would require counties opting to participate in any of those programs to have written program policies and make them available to the public,…"
+   }
+  }
  },
  {
   "id": "202520260AB1135",
@@ -1012,7 +1088,12 @@
    "harassment"
   ],
   "sc": 7.0,
-  "rs": {}
+  "rs": {
+   "youth": {
+    "w": "youth",
+    "q": "…internet website, and notify school districts, county offices of education, and charter schools of the availability of, a list of statewide resources that provide support to youth, and their families, who have been subjected to school-based discrimination, harassment, intimidation, or bullying. This bill would require the Superintendent, by July 1,…"
+   }
+  }
  },
  {
   "id": "202520260AB1573",
@@ -1040,7 +1121,12 @@
    "shelter"
   ],
   "sc": 7.0,
-  "rs": {}
+  "rs": {
+   "disability": {
+    "w": "disabilities",
+    "q": "…term “target population” for purposes of requirements applicable to the housing element to include certain persons, including persons with low incomes who have one or more disabilities and individuals eligible for specified developmental disability services. This bill, the Unseen and Unheard Housing Act, would provide that the definition of the term “target…"
+   }
+  }
  },
  {
   "id": "202520260AB2097",
@@ -1095,7 +1181,14 @@
   ],
   "sc": 7.0,
   "rs": {
-   "women_gender": "…artment to prioritize funding for pilot programs and projects California residents who age out of the extended foster care program at or after 21 years of age or who are pregnant individuals. Existing law requires the department, in determining the methodology and manner of distributing grants, to ensure that grant funds are awarded in an equitab…"
+   "rural": {
+    "w": "rural",
+    "q": "…the department, in determining the methodology and manner of distributing grants, to ensure that grant funds are awarded in an equitable manner to eligible entities in both rural and urban counties and in proportion to the number of individuals anticipated to be served by an eligible entity’s pilot program or project. This bill would require the department…"
+   },
+   "women_gender": {
+    "w": "pregnant",
+    "q": "…department to prioritize funding for pilot programs and projects California residents who age out of the extended foster care program at or after 21 years of age or who are pregnant individuals. Existing law requires the department, in determining the methodology and manner of distributing grants, to ensure that grant funds are awarded in an equitable…"
+   }
   }
  },
  {
@@ -1206,9 +1299,22 @@
   ],
   "sc": 7.0,
   "rs": {
-   "immigrant_vawa": "…ce, color, religion, ancestry, national origin, disability, medical condition, genetic information, marital status, sexual orientation, citizenship, primary language, or immigration status. This bill would provide that notwithstanding that act, a transportation network company or charter-party carrier of passengers, as defined, may allow a woman pas…",
-   "women_gender": "…migration status. This bill would provide that notwithstanding that act, a transportation network company or charter-party carrier of passengers, as defined, may allow a woman passenger on its online-enabled application or platform or a participating woman driver to indicate a preference to be matched with a woman driver or woman passenger, re…",
-   "faith": "…e jurisdiction of this state are entitled to full and equal accommodations in all business establishments of every kind whatsoever, regardless of their sex, race, color, religion, ancestry, national origin, disability, medical condition, genetic information, marital status, sexual orientation, citizenship, primary language, or immigration status.…"
+   "disability": {
+    "w": "disability",
+    "q": "…entitled to full and equal accommodations in all business establishments of every kind whatsoever, regardless of their sex, race, color, religion, ancestry, national origin, disability, medical condition, genetic information, marital status, sexual orientation, citizenship, primary language, or immigration status. This bill would provide that notwithstanding…"
+   },
+   "immigrant_vawa": {
+    "w": "immigration",
+    "q": "…race, color, religion, ancestry, national origin, disability, medical condition, genetic information, marital status, sexual orientation, citizenship, primary language, or immigration status. This bill would provide that notwithstanding that act, a transportation network company or charter-party carrier of passengers, as defined, may allow a woman passenger…"
+   },
+   "women_gender": {
+    "w": "woman",
+    "q": "…immigration status. This bill would provide that notwithstanding that act, a transportation network company or charter-party carrier of passengers, as defined, may allow a woman passenger on its online-enabled application or platform or a participating woman driver to indicate a preference to be matched with a woman driver or woman passenger, respectively,…"
+   },
+   "faith": {
+    "w": "religion",
+    "q": "…the jurisdiction of this state are entitled to full and equal accommodations in all business establishments of every kind whatsoever, regardless of their sex, race, color, religion, ancestry, national origin, disability, medical condition, genetic information, marital status, sexual orientation, citizenship, primary language, or immigration status.…"
+   }
   }
  },
  {
@@ -1267,7 +1373,12 @@
    "juvenile court"
   ],
   "sc": 7.0,
-  "rs": {}
+  "rs": {
+   "youth": {
+    "w": "minors",
+    "q": "…Authority be deemed a reference to the California Correctional Training and Rehabilitation Authority. (3) Existing law establishes the jurisdiction of the juvenile court over minors who are between 12 and 17 years of age, who have violated a federal, state, or local law or ordinance, as specified, and over minors under 12 years of age who have been alleged…"
+   }
+  }
  },
  {
   "id": "202520260AB1134",
@@ -1295,7 +1406,10 @@
   ],
   "sc": 6.0,
   "rs": {
-   "women_gender": "…peal, and add Section 2211 of the Family Code, and to amend Section 265 of the Penal Code, relating to marriage. (1) Existing law makes it a crime for a person to take a woman unlawfully, against her will, and by force, menace, or duress, compel her to marry that person, to marry any other person, or to be defiled, as specified. This bill woul…"
+   "women_gender": {
+    "w": "woman",
+    "q": "(1) Existing law makes it a crime for a person to take a woman unlawfully, against her will, and by force, menace, or duress, compel her to marry that person, to marry any other person, or to be defiled, as specified. This bill would…"
+   }
   }
  },
  {
@@ -1373,7 +1487,10 @@
   ],
   "sc": 6.0,
   "rs": {
-   "women_gender": "…on of domestic violence complaints and sexual assault. This bill would require those courses and guidelines to include trauma-informed methods for responding to victims, gender-neutral or gender-inclusive language in reporting, and best practices for bias prevention. The bill would require the commission to prepare a course on gender bias in re…"
+   "women_gender": {
+    "w": "gender",
+    "q": "…investigation of domestic violence complaints and sexual assault. This bill would require those courses and guidelines to include trauma-informed methods for responding to victims, gender-neutral or gender-inclusive language in reporting, and best practices for bias prevention. The bill would require the commission to prepare a course on gender bias in responding…"
+   }
   }
  },
  {
@@ -1572,7 +1689,10 @@
   ],
   "sc": 5.0,
   "rs": {
-   "women_gender": "…equires the council to set and measure progress toward goals to prevent and end homelessness among domestic violence survivors and their children and among unaccompanied women in California, as specified. The bill would require initial goals to be established by January 1, 2025, and those goals to be evaluated at least every 2 years to determi…"
+   "women_gender": {
+    "w": "women",
+    "q": "…requires the council to set and measure progress toward goals to prevent and end homelessness among domestic violence survivors and their children and among unaccompanied women in California, as specified. The bill would require initial goals to be established by January 1, 2025, and those goals to be evaluated at least every 2 years to determine…"
+   }
   }
  },
  {
@@ -1617,7 +1737,12 @@
    "human trafficking"
   ],
   "sc": 4.0,
-  "rs": {}
+  "rs": {
+   "youth": {
+    "w": "minor",
+    "q": "…extortion, as defined, guilty of human trafficking. Existing law makes a person who causes, induces, or persuades, or attempts to cause, induce, or persuade, a person who is a minor at the time of commission of the offense to engage in a commercial sex act, with the intent to effect or maintain a violation of various felony or misdemeanor offenses, also…"
+   }
+  }
  },
  {
   "id": "202520260AB2052",
@@ -1640,7 +1765,12 @@
    "victim"
   ],
   "sc": 4.0,
-  "rs": {}
+  "rs": {
+   "elder_dependent_adult": {
+    "w": "dependent adult",
+    "q": "…motion to suppress in progress in that court or another court. This bill would expand the types of cases that may support a finding of good cause to include a felony elder or dependent adult abuse violation where the victim is a cognitively impaired adult, as specified. The bill would define “cognitively impaired adult” for these purposes. This bill would incorporate…"
+   }
+  }
  },
  {
   "id": "202520260AB2133",
@@ -1725,7 +1855,22 @@
   ],
   "sc": 20.0,
   "rs": {
-   "immigrant_vawa": "…e Resettlement and who are present in the state. This bill would expand eligibility for legal services provided under the latter component of the program to also include immigrants younger than 21 years of age in removal proceedings and would expand the services to which eligible individuals are entitled under that component to include social servi…"
+   "elder_dependent_adult": {
+    "w": "elderly",
+    "q": "…care facilities and programs, including, among others, residential care facilities for persons with chronic, life-threatening illness, residential care facilities for the elderly, childcare centers, and home care services. This bill would authorize users of information technology systems and services under the jurisdiction of the department, as specified,…"
+   },
+   "tribal": {
+    "w": "tribal",
+    "q": "…Indian child when that child is removed from the custody of the child’s parent or guardian. Existing law specifies that the state is committed to protecting the essential tribal relations and best interest of an Indian child by promoting practices in accordance with ICWA. Existing law also provides for the state and an Indian tribe to enter into…"
+   },
+   "youth": {
+    "w": "minor",
+    "q": "…California Hope, Opportunity, Perseverance, and Empowerment (HOPE) for Children Trust Account Program to provide a trust fund account for eligible children, defined to include minor California residents who are specified dependents or wards under the jurisdiction of the juvenile court in foster care with reunification services terminated by court order,…"
+   },
+   "immigrant_vawa": {
+    "w": "immigrants",
+    "q": "…Refugee Resettlement and who are present in the state. This bill would expand eligibility for legal services provided under the latter component of the program to also include immigrants younger than 21 years of age in removal proceedings and would expand the services to which eligible individuals are entitled under that component to include social services.…"
+   }
   }
  },
  {
@@ -1769,7 +1914,22 @@
   ],
   "sc": 20.0,
   "rs": {
-   "immigrant_vawa": "…e Resettlement and who are present in the state. This bill would expand eligibility for legal services provided under the latter component of the program to also include immigrants younger than 21 years of age in removal proceedings and would expand the services to which eligible individuals are entitled under that component to include social servi…"
+   "elder_dependent_adult": {
+    "w": "elderly",
+    "q": "…care facilities and programs, including, among others, residential care facilities for persons with chronic, life-threatening illness, residential care facilities for the elderly, childcare centers, and home care services. This bill would authorize users of information technology systems and services under the jurisdiction of the department, as specified,…"
+   },
+   "tribal": {
+    "w": "tribal",
+    "q": "…Indian child when that child is removed from the custody of the child’s parent or guardian. Existing law specifies that the state is committed to protecting the essential tribal relations and best interest of an Indian child by promoting practices in accordance with ICWA. Existing law also provides for the state and an Indian tribe to enter into…"
+   },
+   "youth": {
+    "w": "minor",
+    "q": "…California Hope, Opportunity, Perseverance, and Empowerment (HOPE) for Children Trust Account Program to provide a trust fund account for eligible children, defined to include minor California residents who are specified dependents or wards under the jurisdiction of the juvenile court in foster care with reunification services terminated by court order,…"
+   },
+   "immigrant_vawa": {
+    "w": "immigrants",
+    "q": "…Refugee Resettlement and who are present in the state. This bill would expand eligibility for legal services provided under the latter component of the program to also include immigrants younger than 21 years of age in removal proceedings and would expand the services to which eligible individuals are entitled under that component to include social services.…"
+   }
   }
  },
  {
@@ -1808,7 +1968,12 @@
    "debt"
   ],
   "sc": 10.0,
-  "rs": {}
+  "rs": {
+   "youth": {
+    "w": "minors",
+    "q": "…governmental body and a local educational agency, as those terms are defined, to each adopt codes of conduct and a sexual assault prevention plan that promote a safe environment for minors, as specified. The bill would require a local governmental body and a local educational agency to each adopt written policies, plans, or specifications regarding how grooming…"
+   }
+  }
  },
  {
   "id": "202520260AB379",
@@ -1842,7 +2007,12 @@
    "hotline"
   ],
   "sc": 9.0,
-  "rs": {}
+  "rs": {
+   "youth": {
+    "w": "minor",
+    "q": "…$10,000 or as a felony by imprisonment in the county jail for 16 months or 2 or 3 years. This bill would additionally make that increased punishment applicable if the solicited minor was more than 3 years younger than the defendant at the time of the offense. The bill would require a defendant subject to that increased punishment, if granted probation,…"
+   }
+  }
  },
  {
   "id": "202520260AB2339",
@@ -1917,6 +2087,7 @@
    "privacy"
   ],
   "p": [
+   "lgbtq",
    "women_gender"
   ],
   "v": "Chaptered",
@@ -1935,7 +2106,14 @@
   ],
   "sc": 7.0,
   "rs": {
-   "women_gender": "…Under existing law, any person who makes a false statement in an application is guilty of a misdemeanor. This bill would expand the address confidentiality program to a gender-affirming health care provider, employee, or volunteer, as defined, who faces threats of violence or harassment from the public because of their affiliation with a gende…"
+   "lgbtq": {
+    "w": "gender-affirming",
+    "q": "…conditions. Under existing law, any person who makes a false statement in an application is guilty of a misdemeanor. This bill would expand the address confidentiality program to a gender-affirming health care provider, employee, or volunteer, as defined, who faces threats of violence or harassment from the public because of their affiliation with a gender-affirming…"
+   },
+   "women_gender": {
+    "w": "reproductive",
+    "q": "(1) Existing law authorizes reproductive health care service providers, employees, volunteers, and patients, and individuals who face threats of violence or violence or harassment from the public because of their…"
+   }
   }
  },
  {
@@ -1949,8 +2127,7 @@
    "custody"
   ],
   "p": [
-   "lgbtq",
-   "women_gender"
+   "lgbtq"
   ],
   "v": "Chaptered",
   "vid": "20250SB136494CHP",
@@ -1968,7 +2145,10 @@
   ],
   "sc": 7.0,
   "rs": {
-   "women_gender": "…orts from specified entities, including law enforcement and child protective services. Existing law prohibits the court from considering a person’s sex, gender identity, gender expression, or sexual orientation when determining the best interests of the child. The bill would also require the court to consider abuse that resulted in the concepti…"
+   "lgbtq": {
+    "w": "gender identity",
+    "q": "…consider written reports from specified entities, including law enforcement and child protective services. Existing law prohibits the court from considering a person’s sex, gender identity, gender expression, or sexual orientation when determining the best interests of the child. The bill would also require the court to consider abuse that resulted in the conception…"
+   }
   }
  },
  {
@@ -2028,7 +2208,12 @@
    "mental health"
   ],
   "sc": 6.0,
-  "rs": {}
+  "rs": {
+   "youth": {
+    "w": "minors",
+    "q": "…distributing funds to meet certain requirements, including, among other things, allowing youth survivors of gun violence, or their parents or guardians for survivors who are minors, to attest to their experiences of gun violence without requiring external documentation of the gun violence incident. The bill would create the Trauma Healing and Resilience…"
+   }
+  }
  },
  {
   "id": "202520260AB2624",
@@ -2044,6 +2229,7 @@
   ],
   "p": [
    "immigrant_vawa",
+   "lgbtq",
    "women_gender"
   ],
   "v": "Chaptered",
@@ -2061,8 +2247,18 @@
   ],
   "sc": 6.0,
   "rs": {
-   "immigrant_vawa": "…other individuals residing at the same home address. This bill would, commencing October 1, 2027, similarly establish an address confidentiality program for a designated immigration support services provider, employee, or volunteer, as defined, who faces threats of violence or harassment from the public because of their affiliation with a designated…",
-   "women_gender": "…rd and otherwise provide for confidentiality of identity for that person, subject to specified conditions. Existing law defines “designated health care services” to mean gender-affirming health care services or reproductive health care services. Under existing law, any person who makes a false statement in an application is guilty of a misdemea…"
+   "lgbtq": {
+    "w": "gender-affirming",
+    "q": "…record and otherwise provide for confidentiality of identity for that person, subject to specified conditions. Existing law defines “designated health care services” to mean gender-affirming health care services or reproductive health care services. Under existing law, any person who makes a false statement in an application is guilty of a misdemeanor. Existing…"
+   },
+   "immigrant_vawa": {
+    "w": "immigration",
+    "q": "…other individuals residing at the same home address. This bill would, commencing October 1, 2027, similarly establish an address confidentiality program for a designated immigration support services provider, employee, or volunteer, as defined, who faces threats of violence or harassment from the public because of their affiliation with a designated…"
+   },
+   "women_gender": {
+    "w": "reproductive",
+    "q": "…confidentiality of identity for that person, subject to specified conditions. Existing law defines “designated health care services” to mean gender-affirming health care services or reproductive health care services. Under existing law, any person who makes a false statement in an application is guilty of a misdemeanor. Existing law prohibits a person, business,…"
+   }
   }
  },
  {
@@ -2206,7 +2402,10 @@
   ],
   "sc": 5.0,
   "rs": {
-   "women_gender": "…dings would have been different. This bill would additionally authorize a writ of habeas corpus to be prosecuted on the basis that evidence or argument likely to trigger gender-based stereotypes was admitted or relied upon by the prosecution at trial in a manner that created a reasonable probability that the outcome would have been different if…"
+   "women_gender": {
+    "w": "gender",
+    "q": "…proceedings would have been different. This bill would additionally authorize a writ of habeas corpus to be prosecuted on the basis that evidence or argument likely to trigger gender-based stereotypes was admitted or relied upon by the prosecution at trial in a manner that created a reasonable probability that the outcome would have been different if…"
+   }
   }
  },
  {
@@ -2236,7 +2435,14 @@
   ],
   "sc": 5.0,
   "rs": {
-   "women_gender": "…and harassment, and that postsecondary educational institutions have an affirmative obligation to combat discrimination on the basis of, among other things, disability, gender, race, or ethnicity, and a responsibility to provide equal educational opportunity. A provision of the act applies to the University of California only to the extent tha…"
+   "disability": {
+    "w": "disability",
+    "q": "…discrimination and harassment, and that postsecondary educational institutions have an affirmative obligation to combat discrimination on the basis of, among other things, disability, gender, race, or ethnicity, and a responsibility to provide equal educational opportunity. A provision of the act applies to the University of California only to the extent…"
+   },
+   "women_gender": {
+    "w": "gender",
+    "q": "…discrimination and harassment, and that postsecondary educational institutions have an affirmative obligation to combat discrimination on the basis of, among other things, disability, gender, race, or ethnicity, and a responsibility to provide equal educational opportunity. A provision of the act applies to the University of California only to the extent that…"
+   }
   }
  },
  {
@@ -2320,7 +2526,10 @@
   ],
   "sc": 5.0,
   "rs": {
-   "women_gender": "…e campus’ implementation of and compliance with systemwide nondiscrimination policies, as provided. This bill would require the Attorney General to establish a statewide Gender and Sex Discrimination Educational Oversight Office. The bill would require the office to serve as a point of contact for students who are dissatisfied with their campus…"
+   "women_gender": {
+    "w": "Gender",
+    "q": "…the campus’ implementation of and compliance with systemwide nondiscrimination policies, as provided. This bill would require the Attorney General to establish a statewide Gender and Sex Discrimination Educational Oversight Office. The bill would require the office to serve as a point of contact for students who are dissatisfied with their campus-based…"
+   }
   }
  },
  {
@@ -2350,7 +2559,16 @@
    "title ix"
   ],
   "sc": 5.0,
-  "rs": {}
+  "rs": {
+   "youth": {
+    "w": "Youth",
+    "q": "…Quality Commission and requires the commission to, among other things, recommend curriculum frameworks to the State Board of Education. Existing law, the California Healthy Youth Act, requires school districts, charter schools, county boards of education, county superintendents of schools, the California School for the Deaf, and the California School…"
+   },
+   "disability": {
+    "w": "Deaf",
+    "q": "…the California Healthy Youth Act, requires school districts, charter schools, county boards of education, county superintendents of schools, the California School for the Deaf, and the California School for the Blind to ensure that all pupils in grades 7 to 12, inclusive, receive comprehensive sexual health education and human immunodeficiency…"
+   }
+  }
  },
  {
   "id": "202520260AB1100",
@@ -2378,7 +2596,12 @@
    "hospital"
   ],
   "sc": 4.0,
-  "rs": {}
+  "rs": {
+   "youth": {
+    "w": "minor",
+    "q": "…specified law, including authorization to compensate an adult derivative victim for loss of income if certain conditions are satisfied and to compensate a victim who is a minor at the time of the crime, as specified. Existing law prohibits the amount payable to derivative victims pursuant to these provisions from exceeding $100,000. This bill would…"
+   }
+  }
  },
  {
   "id": "202520260AB124",
@@ -2432,7 +2655,16 @@
    "grant program"
   ],
   "sc": 4.0,
-  "rs": {}
+  "rs": {
+   "lgbtq": {
+    "w": "gender identity",
+    "q": "…health condition, traumatic brain injury, sexual assault or harassment, or sexual orientation or who are able to demonstrate their characterization of service was connected to gender identity. This bill would additionally require the department, subject to an appropriation by the Legislature, to establish the Veteran’s Housing and Supportive Services Grant Program…"
+   },
+   "military": {
+    "w": "Armed Forces",
+    "q": "…them to assist, the initial licensure process for an applicant who supplies satisfactory evidence to the board that the applicant has served as an active duty member of the Armed Forces of the United States and was honorably discharged. This bill would extend that requirement and authorization to also include members who were discharged or received a discharge…"
+   }
+  }
  },
  {
   "id": "202520260AB1961",
@@ -2561,7 +2793,12 @@
    "hospital"
   ],
   "sc": 4.0,
-  "rs": {}
+  "rs": {
+   "elder_dependent_adult": {
+    "w": "Elderly",
+    "q": "…Parole Hearings, among other responsibilities, to conduct parole suitability hearings and determine whether an individual is suitable for parole. Existing law establishes the Elderly Parole Program for the purpose of reviewing parole suitability of inmates who are 50 years of age or older and who have served a minimum of 20 years of continuous incarceration…"
+   }
+  }
  },
  {
   "id": "202520260AB38",
@@ -2590,7 +2827,16 @@
    "sentenc"
   ],
   "sc": 4.0,
-  "rs": {}
+  "rs": {
+   "disability": {
+    "w": "disability",
+    "q": "…duress, menace, or fear, or rape accomplished against the victim’s will by threat of violent retaliation, but does not include rape of a person unable to give consent due to disability, rape under false pretenses, or rape accomplished by threat of incarceration, arrest, or deportation. This bill would also include specified crimes involving the rape or…"
+   },
+   "youth": {
+    "w": "minor",
+    "q": "…pretenses, or rape accomplished by threat of incarceration, arrest, or deportation. This bill would also include specified crimes involving the rape or sexual assault of a minor who has a developmental disability in the list of violent felonies. By expanding the scope of an enhancement, this bill would impose a state-mandated local program. The California…"
+   }
+  }
  },
  {
   "id": "202520260AB394",
@@ -2692,7 +2938,12 @@
    "campus"
   ],
   "sc": 4.0,
-  "rs": {}
+  "rs": {
+   "youth": {
+    "w": "youth",
+    "q": "…internet website and notify local educational agencies of the availability of a list of statewide resources, including community-based organizations, that provide support to youth, and their families, who have been subjected to school-based discrimination, harassment, intimidation, or bullying, as provided. Existing law requires a local educational…"
+   }
+  }
  },
  {
   "id": "202520260AB83",
@@ -2719,7 +2970,12 @@
    "financial institution"
   ],
   "sc": 4.0,
-  "rs": {}
+  "rs": {
+   "elder_dependent_adult": {
+    "w": "Elder",
+    "q": "…department has charge of the execution of specified laws relating to various financial institutions and financial products and services. This bill would enact the California Elder Financial Abuse Prevention Act, which would authorize a depository institution, as defined, to take specified actions when, based on their own observations or information…"
+   }
+  }
  },
  {
   "id": "202520260AB909",
@@ -2746,7 +3002,12 @@
    "financial institution"
   ],
   "sc": 4.0,
-  "rs": {}
+  "rs": {
+   "elder_dependent_adult": {
+    "w": "dependent adult",
+    "q": "…principles of law and equity. Existing law requires all officers and employees of a financial institution to report known or suspected instances of financial abuse of an elder or dependent adult, as specified. Existing law imposes a civil penalty for violation of this prohibition in an amount not exceeding $1,000 or, if the failure to report is willful, a civil penalty…"
+   }
+  }
  },
  {
   "id": "202520260SB1022",
@@ -2895,7 +3156,12 @@
    "victim compensation"
   ],
   "sc": 3.0,
-  "rs": {}
+  "rs": {
+   "youth": {
+    "w": "minor",
+    "q": "…enable the platform to contact, as specified, a reporting user. Existing law defines child sexual abuse material for these purposes to include obscene matter that depicts a minor personally engaging in, or personally simulating, sexual conduct. This bill would revise the definition of child sexual abuse material to instead include an intimate visual…"
+   }
+  }
  },
  {
   "id": "202520260AB2318",
@@ -2970,7 +3236,12 @@
    "financial institution"
   ],
   "sc": 3.0,
-  "rs": {}
+  "rs": {
+   "elder_dependent_adult": {
+    "w": "Dependent Adult",
+    "q": "Existing law, the Elder Abuse and Dependent Adult Civil Protection Act, establishes procedures for the reporting, investigation, and prosecution of elder and dependent adult abuse. Existing law requires a mandated reporter…"
+   }
+  }
  },
  {
   "id": "202520260SB337",

@@ -80,8 +80,8 @@
  {
   "term": "violence against women act",
   "kind": "direct",
-  "area": "immigration",
-  "note": "VAWA self-petitions"
+  "area": "",
+  "note": "federal DV law (housing, immigration, grants)"
  },
  {
   "term": "re:section 6211 of the family code",
@@ -1404,6 +1404,24 @@
   "note": ""
  },
  {
+  "term": "gender expression",
+  "kind": "population",
+  "area": "lgbtq",
+  "note": ""
+ },
+ {
+  "term": "gender-affirming",
+  "kind": "population",
+  "area": "lgbtq",
+  "note": "trans and nonbinary survivors"
+ },
+ {
+  "term": "transgender",
+  "kind": "population",
+  "area": "lgbtq",
+  "note": ""
+ },
+ {
   "term": "minor*",
   "kind": "population",
   "area": "youth",
@@ -1426,6 +1444,12 @@
   "kind": "population",
   "area": "immigrant_vawa",
   "note": ""
+ },
+ {
+  "term": "self-petition*",
+  "kind": "population",
+  "area": "immigrant_vawa",
+  "note": "VAWA self-petitions (immigration relief for abused spouses)"
  },
  {
   "term": "noncitizen*",
@@ -1459,18 +1483,6 @@
  },
  {
   "term": "public charge",
-  "kind": "population",
-  "area": "immigrant_vawa",
-  "note": ""
- },
- {
-  "term": "violence against women act",
-  "kind": "population",
-  "area": "immigrant_vawa",
-  "note": ""
- },
- {
-  "term": "re:\\bvawa\\b",
   "kind": "population",
   "area": "immigrant_vawa",
   "note": ""
@@ -1530,10 +1542,10 @@
   "note": ""
  },
  {
-  "term": "re:\\bgender\\b(?! identity)",
+  "term": "re:\\bgender\\b(?![ -](identity|expression|affirming))",
   "kind": "population",
   "area": "women_gender",
-  "note": ""
+  "note": "not gender identity/expression/gender-affirming (those are lgbtq)"
  },
  {
   "term": "pregnan*",
