@@ -498,7 +498,7 @@ function billHTML(b) {
       <p class="digest">${esc(b.x)}</p>
       <p class="title-line">${esc(b.t)}</p>
       <p class="why">Matched: ${b.k.map(k => `<code>${esc(k)}</code>`).join(" ")}</p>
-      ${Object.keys(b.rs || {}).length ? `<div class="where">${Object.entries(b.rs).map(([r, t]) => `<p><b>${esc(ID_NAME[r] || r)}:</b> <span>${esc(t)}</span></p>`).join("")}</div>` : ""}
+      ${Object.keys(b.rs || {}).length ? `<div class="where">${Object.entries(b.rs).map(([r, t]) => `<p><b>${esc(ID_NAME[r] || r)}:</b> <span>${esc(t.q || t)}</span></p>`).join("")}</div>` : ""}
     </details>
   </article>`;
 }

@@ -107,7 +107,43 @@ function AreaBars({ bills, area, setArea }) {
   );
 }
 
-function Bill({ b }) {
+// Highlight the matched words inside the quoted passage.
+function Quote({ q, w }) {
+  const i = w ? q.toLowerCase().indexOf(w.toLowerCase()) : -1;
+  if (i < 0) return <>“{q}”</>;
+  return <>“{q.slice(0, i)}<mark>{q.slice(i, i + w.length)}</mark>{q.slice(i + w.length)}”</>;
+}
+
+function WhyForIdentity({ b, ids }) {
+  const sel = IDS.filter((i) => ids.has(i.id));
+  if (!sel.length) return null;
+  const changes = b.a.map((a) => AREA_NAMES[a] || a);
+  return (
+    <div className="why-id">
+      {sel.map((i) => {
+        const r = (b.rs || {})[i.id];
+        const hit = r && typeof r === "object" ? r : r ? { q: r, w: "" } : null;
+        return (
+          <p key={i.id}>
+            <b>Why it&apos;s listed under {i.long}:</b>{" "}
+            {hit ? (
+              <>
+                the bill says <Quote q={hit.q} w={hit.w} />
+              </>
+            ) : (
+              <>its text uses this group&apos;s language.</>
+            )}
+            {changes.length > 0 && (
+              <> What it changes: <b>{changes.slice(0, -1).join(", ")}{changes.length > 1 ? " and " : ""}{changes[changes.length - 1]}</b>.</>
+            )}
+          </p>
+        );
+      })}
+    </div>
+  );
+}
+
+function Bill({ b, ids }) {
   const st = stageOf(b.v);
   const law = b.v === "Chaptered";
   return (
@@ -129,6 +165,7 @@ function Bill({ b }) {
         {b.a.map((a) => <span key={a} className="tag">{AREA_NAMES[a] || a}</span>)}
         {b.p.map((p) => <span key={p} className="tag pop">{ID_NAME[p] || p}</span>)}
       </div>
+      <WhyForIdentity b={b} ids={ids} />
       <details>
         <summary>Summary and why it was flagged</summary>
         <p className="digest">{b.x}</p>
@@ -136,7 +173,7 @@ function Bill({ b }) {
         <p className="why">Matched: {b.k.map((k) => <code key={k}>{k}</code>)}</p>
         {Object.keys(b.rs || {}).length > 0 && (
           <div className="where">
-            {Object.entries(b.rs).map(([r, t]) => <p key={r}><b>{ID_NAME[r] || r}:</b> <span>{t}</span></p>)}
+            {Object.entries(b.rs).map(([r, t]) => <p key={r}><b>{ID_NAME[r] || r}:</b> <span>{t.q || t}</span></p>)}
           </div>
         )}
       </details>
@@ -212,7 +249,7 @@ export default function CaliforniaExplorer({ bills, related }) {
           </span>
         </div>
         <div className="list">
-          {rows.length ? rows.map((b) => <Bill key={b.id || b.m} b={b} />)
+          {rows.length ? rows.map((b) => <Bill key={b.id || b.m} b={b} ids={ids} />)
             : <p className="empty">No flagged bills match these filters. Try fewer identities or clear the filters.</p>}
         </div>
       </section>

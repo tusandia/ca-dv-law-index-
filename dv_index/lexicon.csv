@@ -15,7 +15,7 @@ battered spouse,direct,,1,,1,0.33,0.43,0.0000,supporting term in 1/4 sources
 batterer*,direct,,2,includes batterer's intervention programs,3,12.25,12.21,0.0002,supporting term in 3/4 sources
 coercive control,direct,,3,Fam. Code 6320(c) since SB 1141 (2020),2,1.65,5.37,0.0005,statutory term (California or federal DV law)
 domestic violence prevention act,direct,courts,3,,0,0.0,-0.18,0.0009,statutory term (California or federal DV law)
-violence against women act,direct,immigration,3,VAWA self-petitions,2,2.8,6.39,0.0002,statutory term (California or federal DV law)
+violence against women act,direct,,3,"federal DV law (housing, immigration, grants)",2,2.8,6.39,0.0002,statutory term (California or federal DV law)
 re:section 6211 of the family code,direct,,3,definition of domestic violence,0,0.0,0.05,0.0000,statutory term (California or federal DV law)
 re:section 6203 of the family code,direct,,3,definition of abuse,0,0.0,0.05,0.0000,statutory term (California or federal DV law)
 re:section 273\.5 of the penal code,direct,courts,3,corporal injury on spouse/cohabitant,0,0.0,-0.11,0.0005,statutory term (California or federal DV law)
@@ -239,19 +239,21 @@ indian tribe*,population,tribal,1,,,,,,
 native american*,population,tribal,1,,,,,,
 lgbt*,population,lgbtq,1,,,,,,
 gender identity,population,lgbtq,1,,,,,,
+gender expression,population,lgbtq,1,,,,,,
+gender-affirming,population,lgbtq,1,trans and nonbinary survivors,,,,,
+transgender,population,lgbtq,1,,,,,,
 minor*,population,youth,1,,,,,,
 youth,population,youth,1,,,,,,
 # realm: immigrant and VAWA survivors
 immigrant*,population,immigrant_vawa,1,,,,,,
 immigra*,population,immigrant_vawa,1,,0,0.0,-1.43,0.0239,
+self-petition*,population,immigrant_vawa,1,VAWA self-petitions (immigration relief for abused spouses),,,,,
 noncitizen*,population,immigrant_vawa,1,,0,0.0,-0.26,0.0021,
 undocumented,population,immigrant_vawa,1,,0,0.0,-0.3,0.0028,
 asylum,population,immigrant_vawa,1,,,,,,
 asylee*,population,immigrant_vawa,1,,,,,,
 refugee*,population,immigrant_vawa,1,,,,,,
 public charge,population,immigrant_vawa,1,,,,,,
-violence against women act,population,immigrant_vawa,1,,2,2.8,6.39,0.0002,
-re:\bvawa\b,population,immigrant_vawa,1,,,,,,
 u visa*,population,immigrant_vawa,1,,0,0.0,0.05,0.0000,
 t visa*,population,immigrant_vawa,1,,0,0.0,0.05,0.0000,
 re:form i-91[48],population,immigrant_vawa,1,,0,0.0,0.05,0.0000,
@@ -262,7 +264,7 @@ immigration document*,population,immigrant_vawa,1,,0,0.0,-0.08,0.0002,
 # realm: women and gender
 re:\bwom[ae]n\b,population,women_gender,1,,,,,,
 gender-based violence,population,women_gender,1,,,,,,
-re:\bgender\b(?! identity),population,women_gender,1,,,,,,
+re:\bgender\b(?![ -](identity|expression|affirming)),population,women_gender,1,not gender identity/expression/gender-affirming (those are lgbtq),,,,,
 pregnan*,population,women_gender,1,,1,0.74,-0.57,0.0115,
 reproductive,population,women_gender,1,,2,2.39,3.16,0.0061,
 forced marriage,population,women_gender,1,,0,0.0,-0.22,0.0005,

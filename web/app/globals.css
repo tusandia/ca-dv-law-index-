@@ -277,3 +277,8 @@ footer { color: var(--muted); font-size: 0.82rem; }
 .news-meta { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; font-size: 0.85rem; color: var(--muted); }
 .empty-box { border: 1px dashed var(--line); border-radius: 10px; padding: 18px; color: var(--muted); max-width: 70ch; }
 @media (max-width: 620px) { .upd { grid-template-columns: 6rem 1fr; } .upd > :nth-child(n+3) { grid-column: 2; } }
+
+/* Why a bill is listed for the selected identity */
+.why-id { display: grid; gap: 6px; border-left: 3px solid var(--accent); background: var(--accent-soft); padding: 8px 12px; border-radius: 0 8px 8px 0; max-width: 78ch; font-size: 0.9rem; }
+.why-id p { margin: 0; }
+.why-id mark { background: transparent; color: var(--accent); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }

@@ -74,16 +74,22 @@ def terms(matched):
 
 
 def realm_snippets(text, lexicon, width=170):
-    """For each realm, the first sentence-ish window of text that triggered it."""
+    """For each identity (population tag) the bill reaches: the words that
+    matched ("w") and the passage around them ("q"), so the site can show why
+    the bill is listed for that group. Pass the digest first so the quote
+    comes from the Legislative Counsel's summary when it can."""
     out = {}
     for t in lexicon:
-        if t.kind != "population" or t.area not in REALMS or t.area in out:
+        if t.kind != "population" or t.area in out:
             continue
         m = t.pattern.search(text)
         if m:
             a, b = max(0, m.start() - width), min(len(text), m.end() + width)
+            a = text.rfind(" ", 0, a) + 1 if a else 0      # don't cut words in half
+            b = (text.find(" ", b) if text.find(" ", b) != -1 else len(text)) if b < len(text) else b
             snip = re.sub(r"\s+", " ", text[a:b]).strip()
-            out[t.area] = ("…" if a else "") + snip + ("…" if b < len(text) else "")
+            out[t.area] = {"w": re.sub(r"\s+", " ", m.group(0)),
+                           "q": ("…" if a else "") + snip + ("…" if b < len(text) else "")}
     return out
 
 
@@ -115,7 +121,7 @@ def bill_record(r, lexicon):
         "p": [x for x in r["populations"].split(";") if x],
         "v": r["version_action"], "vid": r["version_id"], "d": r["action_date"], "u": r["url"],
         "x": excerpt(r["digest"]), "k": terms(r["matched_terms"]), "sc": float(r["score"] or 0),
-        "rs": realm_snippets(f"{r['title']} {r['digest']}", lexicon),
+        "rs": realm_snippets(f"{r['digest']} {r['subject']}", lexicon),
     }
 
 
@@ -135,7 +141,7 @@ def main():
         "p": [x for x in r.populations.split(";") if x],
         "v": r.version_action, "d": r.action_date, "u": r.url,
         "x": excerpt(r.digest), "k": terms(r.matched_terms), "sc": float(r.score or 0),
-        "rs": realm_snippets(f"{r.title} {r.digest}", lexicon),
+        "rs": realm_snippets(f"{r.digest} {r.subject}", lexicon),
     } for r in flagged.itertuples()]
     related = {realm: [{"m": m, "note": note, "u": (f.loc[f["measure"] == m, "url"].iloc[0]
                                                     if (f["measure"] == m).any() else "")}
