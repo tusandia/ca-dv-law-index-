@@ -22,6 +22,7 @@ import re
 import sys
 import urllib.request
 import xml.etree.ElementTree as ET
+from collections import Counter
 from pathlib import Path
 
 from flag import classify, load_lexicon
@@ -101,14 +102,22 @@ LAW_RX = re.compile(r"\b(bills?|laws?|legislat\w*|statutes?|codes?|courts?|judge
                     r"sentenc\w*|charged?|funding|budget|grants?)\b", re.I)
 
 
-def relevant(item, lexicon):
-    """Keep a story only if it is about California, about law or policy, and the
-    lexicon finds it DV-relevant."""
+def judge(item, lexicon):
+    """(classification, None) if the story is about California, about law or
+    policy, and DV-relevant by the lexicon; otherwise (None, reason)."""
     text = f"{item['title']}. {item['summary']}"
-    if not re.search(CA_RX.pattern, f"{text} {item['source']}", re.I) or not LAW_RX.search(text):
-        return None
+    if not re.search(CA_RX.pattern, f"{text} {item['source']}", re.I):
+        return None, "not California"
+    if not LAW_RX.search(text):
+        return None, "no law/policy word"
     r = classify(text, lexicon)
-    return r if r["pred_label"] in ("direct", "indirect") else None
+    if r["pred_label"] not in ("direct", "indirect"):
+        return None, "not DV"
+    return r, None
+
+
+def relevant(item, lexicon):
+    return judge(item, lexicon)[0]
 
 
 def norm_title(t):
@@ -139,11 +148,17 @@ def main():
             print(f"{src['name']}: {e}, skipped", file=sys.stderr)
             continue
         before = added
+        why = Counter()
         for e in entries:
-            if not e["title"] or not e["link"] or e["link"] in seen or norm_title(e["title"]) in seen:
+            if not e["title"] or not e["link"]:
+                why["no title/link"] += 1
                 continue
-            r = relevant(e, lexicon)
+            if e["link"] in seen or norm_title(e["title"]) in seen:
+                why["already saved"] += 1
+                continue
+            r, reason = judge(e, lexicon)
             if not r:
+                why[reason] += 1
                 continue
             e["label"] = r["pred_label"]
             e["areas"] = [a for a in r["pred_areas"].split(";") if a]
@@ -152,7 +167,8 @@ def main():
             items.append(e)
             seen |= {e["link"], norm_title(e["title"])}
             added += 1
-        print(f"{src['name']}: {len(entries)} items read, {added - before} kept")
+        dropped = ", ".join(f"{n} {k}" for k, n in why.most_common())
+        print(f"{src['name']}: {len(entries)} read, {added - before} kept" + (f"; dropped: {dropped}" if dropped else ""))
 
     cutoff = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=MAX_AGE_DAYS)).isoformat()
     items = [i for i in items if not i["published"] or i["published"] >= cutoff]
