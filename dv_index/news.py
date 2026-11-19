@@ -1,7 +1,8 @@
 """Collect news headlines about California domestic violence law from RSS/Atom feeds.
 
 Reads the feed list in ../web/data/news_sources.json, keeps items the lexicon
-says are DV-related, notes any bill numbers they mention (so the site can link
+says are DV-related (and about California: a feed marked "california": true is a
+California outlet, so its stories count without naming the state), notes any bill numbers they mention (so the site can link
 a story to the bill), and merges them into ../web/data/news.json.
 
 Only headlines, links, source names and dates are stored, never article text.
@@ -102,11 +103,13 @@ LAW_RX = re.compile(r"\b(bills?|laws?|legislat\w*|statutes?|codes?|courts?|judge
                     r"sentenc\w*|charged?|funding|budget|grants?)\b", re.I)
 
 
-def judge(item, lexicon):
+def judge(item, lexicon, california_source=False):
     """(classification, None) if the story is about California, about law or
-    policy, and DV-relevant by the lexicon; otherwise (None, reason)."""
+    policy, and DV-relevant by the lexicon; otherwise (None, reason).
+    Stories from a feed marked "california": true (a California outlet or
+    section) are taken to be about California; others must say so."""
     text = f"{item['title']}. {item['summary']}"
-    if not re.search(CA_RX.pattern, f"{text} {item['source']}", re.I):
+    if not california_source and not re.search(CA_RX.pattern, f"{text} {item['source']}", re.I):
         return None, "not California"
     if not LAW_RX.search(text):
         return None, "no law/policy word"
@@ -156,7 +159,7 @@ def main():
             if e["link"] in seen or norm_title(e["title"]) in seen:
                 why["already saved"] += 1
                 continue
-            r, reason = judge(e, lexicon)
+            r, reason = judge(e, lexicon, src.get("california", False))
             if not r:
                 why[reason] += 1
                 continue

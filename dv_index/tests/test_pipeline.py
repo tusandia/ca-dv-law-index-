@@ -168,6 +168,13 @@ def test_news_filter(tmp):
     assert [i["title"] for i in items] == ["Assembly passes AB 1753 on domestic violence restraining orders"], items
     assert items[0]["bills"] == ["AB 1753"] and items[0]["source"] == "Example News"
     assert items[0]["published"] == "2026-11-16T08:00+00:00"
+    # a California outlet's story counts without naming the state
+    import news
+    from flag import load_lexicon
+    lex = load_lexicon()
+    story = {"title": "Lawmakers pass bill on domestic violence shelters", "summary": "", "source": "KQED"}
+    assert news.judge(story, lex)[1] == "not California"
+    assert news.judge(story, lex, california_source=True)[0] is not None
 
 
 if __name__ == "__main__":
