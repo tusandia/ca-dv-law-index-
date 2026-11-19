@@ -228,6 +228,114 @@
   "note": "cites a DVPA section (Fam. Code 6200-6409)"
  },
  {
+  "term": "physical abuse",
+  "kind": "direct",
+  "area": "",
+  "note": "all 4 sources"
+ },
+ {
+  "term": "emotional abuse",
+  "kind": "direct",
+  "area": "",
+  "note": "all 4 sources"
+ },
+ {
+  "term": "psychological abuse",
+  "kind": "direct",
+  "area": "",
+  "note": "all 4 sources"
+ },
+ {
+  "term": "verbal abuse",
+  "kind": "direct",
+  "area": "",
+  "note": "all 4 sources"
+ },
+ {
+  "term": "power and control",
+  "kind": "direct",
+  "area": "",
+  "note": "all 4 sources; the Duluth 'power and control wheel'"
+ },
+ {
+  "term": "abusive relationship*",
+  "kind": "direct",
+  "area": "",
+  "note": "3 sources"
+ },
+ {
+  "term": "abusive partner*",
+  "kind": "direct",
+  "area": "",
+  "note": "2 sources"
+ },
+ {
+  "term": "protection order*",
+  "kind": "direct",
+  "area": "courts",
+  "note": "3 sources; like 'protective order', also used for non-DV orders"
+ },
+ {
+  "term": "financial abuse",
+  "kind": "direct",
+  "area": "financial",
+  "note": "2 sources"
+ },
+ {
+  "term": "spiritual abuse",
+  "kind": "direct",
+  "area": "",
+  "note": "2 sources; abuse that uses religion or faith"
+ },
+ {
+  "term": "sexual coercion",
+  "kind": "direct",
+  "area": "health",
+  "note": "2 sources"
+ },
+ {
+  "term": "reproductive coercion",
+  "kind": "direct",
+  "area": "health",
+  "note": "1 source"
+ },
+ {
+  "term": "gaslighting",
+  "kind": "direct",
+  "area": "",
+  "note": "1 source"
+ },
+ {
+  "term": "teen dating violence",
+  "kind": "direct",
+  "area": "education",
+  "note": "2 sources; also matched by 'dating violence'"
+ },
+ {
+  "term": "re:\\b(cohabitants?|household members?|former spouses?|dating relationships?|fianc[eé]e?s?)\\b[^.;]{0,150}\\b(abus\\w*|batter\\w*|injur\\w*|threat\\w*|stalk\\w*|harass\\w*|violen\\w*)",
+  "kind": "direct",
+  "area": "",
+  "note": "relationship + abuse in one clause, as statutes define DV (Lovell 2025)"
+ },
+ {
+  "term": "re:\\b(abus\\w*|batter\\w*|injur\\w*|threat\\w*|stalk\\w*|harass\\w*|violen\\w*)\\b[^.;]{0,150}\\b(cohabitants?|household members?|former spouses?|dating relationships?|fianc[eé]e?s?)\\b",
+  "kind": "direct",
+  "area": "",
+  "note": "abuse + relationship in one clause (reverse order)"
+ },
+ {
+  "term": "intimidat*",
+  "kind": "anchor",
+  "area": "",
+  "note": "all 4 sources"
+ },
+ {
+  "term": "stalk*",
+  "kind": "anchor",
+  "area": "",
+  "note": "replaces 'stalking'; all 4 sources"
+ },
+ {
   "term": "victim*",
   "kind": "anchor",
   "area": "",
@@ -244,12 +352,6 @@
   "kind": "anchor",
   "area": "",
   "note": "see excludes for substance abuse etc."
- },
- {
-  "term": "stalking",
-  "kind": "anchor",
-  "area": "",
-  "note": ""
  },
  {
   "term": "sexual assault",

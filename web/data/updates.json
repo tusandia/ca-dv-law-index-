@@ -1,1 +1,352 @@
-[]
+[
+ {
+  "date": "2026-11-18",
+  "change": "NEW",
+  "id": "202520260AB772",
+  "m": "AB 772",
+  "l": "indirect",
+  "s": "Cyberbullying: off-campus acts: model policy.",
+  "v": "Chaptered",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB772"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "NEW",
+  "id": "202520260AB2551",
+  "m": "AB 2551",
+  "l": "indirect",
+  "s": "Equity in Higher Education Act: time, place, and manner policies: student code of conduct violations: open forum.",
+  "v": "Enrolled",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2551"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "NEW",
+  "id": "202520260AB2212",
+  "m": "AB 2212",
+  "l": "indirect",
+  "s": "Postsecondary education: sexual harassment, harassment, intimidation, and bullying policies: student training.",
+  "v": "Chaptered",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2212"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "NEW",
+  "id": "202520260AB871",
+  "m": "AB 871",
+  "l": "indirect",
+  "s": "Mandated reporters of suspected financial abuse of an elder or dependent adult.",
+  "v": "Chaptered",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB871"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB121",
+  "m": "AB 121",
+  "l": "none",
+  "s": "Education finance: education omnibus budget trailer bill.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB121"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260SB121",
+  "m": "SB 121",
+  "l": "none",
+  "s": "Education finance: education omnibus budget trailer bill.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB121"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB172",
+  "m": "AB 172",
+  "l": "none",
+  "s": "State government.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB172"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260SB172",
+  "m": "SB 172",
+  "l": "none",
+  "s": "State government.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB172"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260SB452",
+  "m": "SB 452",
+  "l": "none",
+  "s": "Child welfare services: prevention legal services.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB452"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB1201",
+  "m": "AB 1201",
+  "l": "none",
+  "s": "Family reunification services.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1201"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB1318",
+  "m": "AB 1318",
+  "l": "none",
+  "s": "Public social services: tax-exempt nonprofit organizations.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1318"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB880",
+  "m": "AB 880",
+  "l": "none",
+  "s": "State government grants and contracts: payment of claims and grantees’ indirect costs.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB880"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB1545",
+  "m": "AB 1545",
+  "l": "none",
+  "s": "Sexually violent predators.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1545"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB184",
+  "m": "AB 184",
+  "l": "none",
+  "s": "State government.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB184"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB1994",
+  "m": "AB 1994",
+  "l": "none",
+  "s": "Defending Immigrant Victims Act.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1994"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB2273",
+  "m": "AB 2273",
+  "l": "none",
+  "s": "Crimes: SCRIVNER Act.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2273"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB433",
+  "m": "AB 433",
+  "l": "none",
+  "s": "Mental health diversion.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB433"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB548",
+  "m": "AB 548",
+  "l": "none",
+  "s": "Enhanced Services for Asylees and Vulnerable Noncitizens program.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB548"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260SB1446",
+  "m": "SB 1446",
+  "l": "none",
+  "s": "Incarcerated persons: release and parole.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1446"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260SB184",
+  "m": "SB 184",
+  "l": "none",
+  "s": "State government.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB184"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260SB380",
+  "m": "SB 380",
+  "l": "none",
+  "s": "Sexually violent predators: transitional housing facilities: report.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB380"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260SB396",
+  "m": "SB 396",
+  "l": "none",
+  "s": "Corrections: supervision.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB396"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB1094",
+  "m": "AB 1094",
+  "l": "none",
+  "s": "Crimes: torture of a minor: parole.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1094"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB1247",
+  "m": "AB 1247",
+  "l": "none",
+  "s": "Classified employees: school districts and community college districts: contracting out: training requirements.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1247"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB1535",
+  "m": "AB 1535",
+  "l": "none",
+  "s": "Hate crimes: political affiliation.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1535"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB1681",
+  "m": "AB 1681",
+  "l": "none",
+  "s": "Victim’s and witness’ rights.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1681"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB1701",
+  "m": "AB 1701",
+  "l": "none",
+  "s": "Recall and resentencing: school shootings.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1701"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB2297",
+  "m": "AB 2297",
+  "l": "none",
+  "s": "Restitution: diversion.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2297"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB2342",
+  "m": "AB 2342",
+  "l": "none",
+  "s": "Parole.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2342"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB528",
+  "m": "AB 528",
+  "l": "none",
+  "s": "Criminal procedure: child pornography.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB528"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260AB535",
+  "m": "AB 535",
+  "l": "none",
+  "s": "Threatening a witness: assisting a prosecution.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB535"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260SB1077",
+  "m": "SB 1077",
+  "l": "none",
+  "s": "CalFresh: federal government shutdowns.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1077"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260SB1208",
+  "m": "SB 1208",
+  "l": "none",
+  "s": "Money laundering: digital assets.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1208"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260SB1339",
+  "m": "SB 1339",
+  "l": "none",
+  "s": "Diversion.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1339"
+ },
+ {
+  "date": "2026-11-18",
+  "change": "REMOVED",
+  "id": "202520260SB672",
+  "m": "SB 672",
+  "l": "none",
+  "s": "The Youth Rehabilitation and Opportunity Act.",
+  "v": "",
+  "u": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB672"
+ }
+]
