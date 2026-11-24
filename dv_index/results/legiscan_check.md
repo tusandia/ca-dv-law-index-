@@ -1,12 +1,12 @@
 # LegiScan full-text search vs. the flagging tool
 
-425 AB/SB bills returned by 12 LegiScan searches (CA, year code 2); 132 bills flagged by the tool.
+425 AB/SB bills returned by 12 LegiScan searches (CA, year code 2); 105 bills flagged by the tool.
 
 | | Bills |
 |---|---|
-| Found by both | 112 |
-| LegiScan only (candidate misses) | 313 |
-| Tool only | 20 |
+| Found by both | 90 |
+| LegiScan only (candidate misses) | 335 |
+| Tool only | 15 |
 
 LegiScan is a second keyword system, not a gold standard. Read the "LegiScan only" bills and code them: each one that is truly relevant points to a missing term or rule; each one that isn't shows a false hit the tool avoided.
 
@@ -14,6 +14,7 @@ LegiScan is a second keyword system, not a gold standard. Read the "LegiScan onl
 
 | Bill | Relevance | Found by | Title |
 |---|---|---|---|
+| [AB 1994](https://legiscan.com/CA/bill/AB1994/2025) | 100 | U and T visas, VAWA; protective and restraining orders; victims and housing | Defending Immigrant Victims Act. |
 | [SB 1243](https://legiscan.com/CA/bill/SB1243/2025) | 100 | domestic violence; protective and restraining orders; victims and custody; victims and firearms; victims and housing | Unlawful detainer: Tenant Protections for Immigrant Families Act of 2026. |
 | [SB 174](https://legiscan.com/CA/bill/SB174/2025) | 100 | domestic violence; interpreters for victims; protective and restraining orders; victims and custody; victims and housing | Courts. |
 | [AB 1231](https://legiscan.com/CA/bill/AB1231/2025) | 99 | domestic violence; victims and firearms | Criminal procedure: Safer Communities Through Opportunities Act. |
@@ -24,6 +25,7 @@ LegiScan is a second keyword system, not a gold standard. Read the "LegiScan onl
 | [SB 551](https://legiscan.com/CA/bill/SB551/2025) | 99 | intimate partner / dating / family violence; victims and custody | Corrections and rehabilitation: state policy. |
 | [SB 802](https://legiscan.com/CA/bill/SB802/2025) | 99 | domestic violence; victims and housing | Housing finance and development: Sacramento Regional Housing and Homelessness Joint Powers Authority Act. |
 | [AB 1195](https://legiscan.com/CA/bill/AB1195/2025) | 98 | victims and custody | Juveniles: incarcerated parent: visitation. |
+| [AB 1201](https://legiscan.com/CA/bill/AB1201/2025) | 98 | victims and custody | Family reunification services. |
 | [AB 1365](https://legiscan.com/CA/bill/AB1365/2025) | 98 | address confidentiality; coercive control / economic abuse; domestic violence; survivors; victims and housing | CalAccount Program. |
 | [AB 1628](https://legiscan.com/CA/bill/AB1628/2025) | 98 | domestic violence; intimate partner / dating / family violence; victims and custody | Child protection: safe surrender. |
 | [AB 1632](https://legiscan.com/CA/bill/AB1632/2025) | 98 | domestic violence; victims and firearms; victims and housing | Trespass. |
@@ -39,6 +41,7 @@ LegiScan is a second keyword system, not a gold standard. Read the "LegiScan onl
 | [SB 479](https://legiscan.com/CA/bill/SB479/2025) | 98 | domestic violence | Homeless adult and family multidisciplinary personnel teams. |
 | [AB 1109](https://legiscan.com/CA/bill/AB1109/2025) | 97 | domestic violence | Evidentiary privileges: union agent-represented worker privilege. |
 | [AB 112](https://legiscan.com/CA/bill/AB112/2025) | 97 | domestic violence; interpreters for victims; survivors; victims and custody; victims and housing | Budget Acts of 2022, 2023, 2024, and 2025. |
+| [AB 1318](https://legiscan.com/CA/bill/AB1318/2025) | 97 | domestic violence | Public social services: tax-exempt nonprofit organizations. |
 | [AB 1928](https://legiscan.com/CA/bill/AB1928/2025) | 97 | domestic violence; interpreters for victims | Sex equity: sexual harassment complaints. |
 | [AB 2066](https://legiscan.com/CA/bill/AB2066/2025) | 97 | domestic violence | Triggering event: pregnancy. |
 | [AB 2434](https://legiscan.com/CA/bill/AB2434/2025) | 97 | victims and custody | Inmates: visitation. |
@@ -50,6 +53,7 @@ LegiScan is a second keyword system, not a gold standard. Read the "LegiScan onl
 | [AB 653](https://legiscan.com/CA/bill/AB653/2025) | 97 | victims and custody | Child abuse: mandated reporters: talent agents, managers, and coaches. |
 | [SB 114](https://legiscan.com/CA/bill/SB114/2025) | 97 | domestic violence; forced marriage, dowry, abandonment; interpreters for victims; intimate partner / dating / family violence; survivors; victims and housing | Budget Acts of 2022, 2023, 2024, and 2025. |
 | [SB 119](https://legiscan.com/CA/bill/SB119/2025) | 97 | domestic violence; interpreters for victims; victims and custody; victims and housing | Public social services trailer bill. |
+| [SB 452](https://legiscan.com/CA/bill/SB452/2025) | 97 | domestic violence; protective and restraining orders; survivors; victims and custody | Child welfare services: prevention legal services. |
 | [SB 459](https://legiscan.com/CA/bill/SB459/2025) | 97 | domestic violence | Peace officers: confidential communications: exceptions: group peer support services. |
 | [AB 1006](https://legiscan.com/CA/bill/AB1006/2025) | 96 | protective and restraining orders; victims and firearms | Firearms: concealed carry. |
 | [AB 1097](https://legiscan.com/CA/bill/AB1097/2025) | 96 | domestic violence; victims and firearms; victims and housing | Trespass. |
@@ -74,7 +78,6 @@ LegiScan is a second keyword system, not a gold standard. Read the "LegiScan onl
 | [AB 1521](https://legiscan.com/CA/bill/AB1521/2025) | 95 | interpreters for victims; protective and restraining orders; victims and custody; victims and housing | Committee on Judiciary: judiciary omnibus. |
 | [AB 2147](https://legiscan.com/CA/bill/AB2147/2025) | 95 | domestic violence | Criminal procedure: jurisdiction of public offenses. |
 | [AB 2165](https://legiscan.com/CA/bill/AB2165/2025) | 95 | domestic violence | Triggering event: loss of minimum essential coverage. |
-| [AB 2212](https://legiscan.com/CA/bill/AB2212/2025) | 95 | survivors | Postsecondary education: sexual harassment, harassment, intimidation, and bullying policies: student training. |
 | [AB 2555](https://legiscan.com/CA/bill/AB2555/2025) | 95 | protective and restraining orders | English learners: reclassification. |
 | [AB 342](https://legiscan.com/CA/bill/AB342/2025) | 95 | domestic violence | Alcoholic beverages: hours of sale: hospitality zones. |
 | [AB 461](https://legiscan.com/CA/bill/AB461/2025) | 95 | domestic violence | Truancy. |
@@ -85,6 +88,7 @@ LegiScan is a second keyword system, not a gold standard. Read the "LegiScan onl
 | [SB 378](https://legiscan.com/CA/bill/SB378/2025) | 95 | interpreters for victims; victims and custody | Online marketplaces: illicit cannabis: reporting and liability. |
 | [SB 873](https://legiscan.com/CA/bill/SB873/2025) | 95 | domestic violence; interpreters for victims; victims and custody | Courthouses: privilege from civil arrest. |
 | [AB 1187](https://legiscan.com/CA/bill/AB1187/2025) | 94 | domestic violence | Firearms: safety certificates. |
+| [AB 1701](https://legiscan.com/CA/bill/AB1701/2025) | 94 | intimate partner / dating / family violence; victims and custody; victims and firearms | Recall and resentencing: school shootings. |
 | [AB 1730](https://legiscan.com/CA/bill/AB1730/2025) | 94 | U and T visas, VAWA; domestic violence | Community colleges: external resolution services for civil rights compliance: managing entity and civil rights coordinator. |
 | [AB 1824](https://legiscan.com/CA/bill/AB1824/2025) | 94 | domestic violence; protective and restraining orders | Indian children: guardianship or conservatorship proceedings. |
 | [AB 2438](https://legiscan.com/CA/bill/AB2438/2025) | 94 | intimate partner / dating / family violence; victims and custody | Imprisonment. |
@@ -108,6 +112,7 @@ LegiScan is a second keyword system, not a gold standard. Read the "LegiScan onl
 | [AB 1643](https://legiscan.com/CA/bill/AB1643/2025) | 93 | domestic violence | Child support. |
 | [AB 2299](https://legiscan.com/CA/bill/AB2299/2025) | 93 | domestic violence | California Antihunger Response and Employment Training Act of 2026. |
 | [AB 2600](https://legiscan.com/CA/bill/AB2600/2025) | 93 | domestic violence | Immigration: access to legal counsel. |
+| [AB 548](https://legiscan.com/CA/bill/AB548/2025) | 93 | domestic violence | Enhanced Services for Asylees and Vulnerable Noncitizens program. |
 | [AB 896](https://legiscan.com/CA/bill/AB896/2025) | 93 | domestic violence; interpreters for victims; survivors; victims and custody | Foster care: placement transition planning. |
 | [SB 109](https://legiscan.com/CA/bill/SB109/2025) | 93 | U and T visas, VAWA; domestic violence; interpreters for victims; protective and restraining orders; survivors; victims and custody; victims and firearms; victims and housing | Budget Act of 2026. |
 | [SB 290](https://legiscan.com/CA/bill/SB290/2025) | 93 | domestic violence | CalWORKs. |
@@ -136,6 +141,9 @@ LegiScan is a second keyword system, not a gold standard. Read the "LegiScan onl
 | [AB 1662](https://legiscan.com/CA/bill/AB1662/2025) | 87 | domestic violence | Misdemeanor diversion. |
 | [AB 1966](https://legiscan.com/CA/bill/AB1966/2025) | 87 | domestic violence | Sentencing enhancements: crimes against undocumented individuals. |
 | [SB 1390](https://legiscan.com/CA/bill/SB1390/2025) | 87 | domestic violence | Online dating services: background checks. |
+| [AB 121](https://legiscan.com/CA/bill/AB121/2025) | 86 | interpreters for victims; victims and custody; victims and housing | Education finance: education omnibus budget trailer bill. |
+| [SB 672](https://legiscan.com/CA/bill/SB672/2025) | 86 | domestic violence | The Youth Rehabilitation and Opportunity Act. |
+| [SB 121](https://legiscan.com/CA/bill/SB121/2025) | 85 | interpreters for victims; victims and custody; victims and housing | Education finance: education omnibus budget trailer bill. |
 | [AB 104](https://legiscan.com/CA/bill/AB104/2025) | 83 | survivors; victims and firearms | Budget Act of 2025. |
 | [SB 775](https://legiscan.com/CA/bill/SB775/2025) | 83 | interpreters for victims; victims and custody; victims and housing | Board of Psychology and Board of Behavioral Sciences. |
 | [AB 150](https://legiscan.com/CA/bill/AB150/2025) | 82 | domestic violence | Early care and education. |
@@ -158,13 +166,16 @@ LegiScan is a second keyword system, not a gold standard. Read the "LegiScan onl
 | [AB 164](https://legiscan.com/CA/bill/AB164/2025) | 64 | interpreters for victims; survivors; victims and custody; victims and housing | Health. |
 | [SB 1421](https://legiscan.com/CA/bill/SB1421/2025) | 64 | victims and custody | California Child and Family Service Review System: nonminor dependents. |
 | [AB 1011](https://legiscan.com/CA/bill/AB1011/2025) | 63 | victims and custody | Crimes: child abuse and neglect: sentence credits. |
+| [AB 1094](https://legiscan.com/CA/bill/AB1094/2025) | 63 | victims and custody | Crimes: torture of a minor: parole. |
 | [AB 1178](https://legiscan.com/CA/bill/AB1178/2025) | 63 | victims and custody; victims and firearms | Peace officers: confidentiality of records. |
 | [AB 1376](https://legiscan.com/CA/bill/AB1376/2025) | 63 | victims and custody | Wards: probation. |
 | [AB 1388](https://legiscan.com/CA/bill/AB1388/2025) | 63 | victims and custody; victims and firearms | Law enforcement: settlement agreements. |
 | [AB 15](https://legiscan.com/CA/bill/AB15/2025) | 63 | intimate partner / dating / family violence; survivors; victims and custody | Open unsolved homicide: review and reinvestigation. |
+| [AB 1545](https://legiscan.com/CA/bill/AB1545/2025) | 63 | victims and custody; victims and firearms | Sexually violent predators. |
 | [AB 1568](https://legiscan.com/CA/bill/AB1568/2025) | 63 | victims and custody | Sex offenses: registration. |
 | [AB 1688](https://legiscan.com/CA/bill/AB1688/2025) | 63 | interpreters for victims; victims and custody | Child abuse or neglect: reporting. |
 | [AB 22](https://legiscan.com/CA/bill/AB22/2025) | 63 | victims and custody; victims and firearms; victims and housing | Crime. |
+| [AB 2273](https://legiscan.com/CA/bill/AB2273/2025) | 63 | victims and custody; victims and firearms | Crimes: SCRIVNER Act. |
 | [AB 2274](https://legiscan.com/CA/bill/AB2274/2025) | 63 | victims and custody; victims and firearms | Crimes: plea deals. |
 | [AB 2405](https://legiscan.com/CA/bill/AB2405/2025) | 63 | victims and custody | Mental health. |
 | [AB 568](https://legiscan.com/CA/bill/AB568/2025) | 63 | interpreters for victims; victims and custody; victims and firearms | Tule East Groundwater Sustainability Agency Act. |
@@ -172,6 +183,7 @@ LegiScan is a second keyword system, not a gold standard. Read the "LegiScan onl
 | [AB 812](https://legiscan.com/CA/bill/AB812/2025) | 63 | intimate partner / dating / family violence; victims and custody | Recall and resentencing: incarcerated firefighters. |
 | [AB 847](https://legiscan.com/CA/bill/AB847/2025) | 63 | victims and custody; victims and firearms | Peace officers: confidentiality of records. |
 | [SB 1009](https://legiscan.com/CA/bill/SB1009/2025) | 63 | victims and custody | Juveniles: detention. |
+| [SB 1208](https://legiscan.com/CA/bill/SB1208/2025) | 63 | victims and custody | Money laundering: digital assets. |
 | [SB 1285](https://legiscan.com/CA/bill/SB1285/2025) | 63 | interpreters for victims | Juvenile court: procedure. |
 | [SB 1373](https://legiscan.com/CA/bill/SB1373/2025) | 63 | victims and custody; victims and firearms | Diversion. |
 | [SB 759](https://legiscan.com/CA/bill/SB759/2025) | 63 | victims and custody | Crimes: supervised release. |
@@ -182,15 +194,19 @@ LegiScan is a second keyword system, not a gold standard. Read the "LegiScan onl
 | [AB 1667](https://legiscan.com/CA/bill/AB1667/2025) | 62 | victims and custody; victims and firearms | Serious felonies: furnishing fentanyl to a minor. |
 | [AB 1676](https://legiscan.com/CA/bill/AB1676/2025) | 62 | victims and custody | Mental health services: assisted outpatient treatment: involuntary medication. |
 | [AB 1897](https://legiscan.com/CA/bill/AB1897/2025) | 62 | victims and custody; victims and firearms | Mentally disordered offenders: criteria for commitment. |
+| [AB 2342](https://legiscan.com/CA/bill/AB2342/2025) | 62 | interpreters for victims; survivors; victims and housing | Parole. |
 | [AB 2393](https://legiscan.com/CA/bill/AB2393/2025) | 62 | victims and custody; victims and firearms | False imprisonment: false arrest: remedies. |
 | [AB 2582](https://legiscan.com/CA/bill/AB2582/2025) | 62 | victims and custody; victims and housing | Crimes: prostitution. |
 | [AB 2636](https://legiscan.com/CA/bill/AB2636/2025) | 62 | victims and custody; victims and firearms | Juveniles. |
 | [AB 2683](https://legiscan.com/CA/bill/AB2683/2025) | 62 | protective and restraining orders; victims and custody; victims and firearms | Crimes: child endangerment. |
 | [AB 381](https://legiscan.com/CA/bill/AB381/2025) | 62 | interpreters for victims | State contracts: certification process: forced labor and human trafficking. |
 | [AB 46](https://legiscan.com/CA/bill/AB46/2025) | 62 | victims and custody; victims and firearms | Diversion. |
+| [AB 528](https://legiscan.com/CA/bill/AB528/2025) | 62 | victims and custody | Criminal procedure: child pornography. |
 | [AB 63](https://legiscan.com/CA/bill/AB63/2025) | 62 | victims and custody | Loitering with intent to commit prostitution. |
 | [AB 991](https://legiscan.com/CA/bill/AB991/2025) | 62 | intimate partner / dating / family violence; victims and firearms | Sentencing: dismissal of enhancements. |
 | [SB 1264](https://legiscan.com/CA/bill/SB1264/2025) | 62 | interpreters for victims | Probate: notice of death for child support obligations. |
+| [SB 1446](https://legiscan.com/CA/bill/SB1446/2025) | 62 | victims and custody | Incarcerated persons: release and parole. |
+| [SB 396](https://legiscan.com/CA/bill/SB396/2025) | 62 | protective and restraining orders; victims and custody | Corrections: supervision. |
 | [SB 423](https://legiscan.com/CA/bill/SB423/2025) | 62 | victims and custody; victims and housing | California Public Records Act: private detention facilities. |
 | [SB 432](https://legiscan.com/CA/bill/SB432/2025) | 62 | victims and custody | Serious felonies: furnishing fentanyl to a minor. |
 | [SB 552](https://legiscan.com/CA/bill/SB552/2025) | 62 | victims and custody | Juveniles: wards: case plans. |
@@ -198,8 +214,10 @@ LegiScan is a second keyword system, not a gold standard. Read the "LegiScan onl
 | [SB 734](https://legiscan.com/CA/bill/SB734/2025) | 62 | protective and restraining orders; victims and custody | Criminal procedure: discrimination. |
 | [AB 126](https://legiscan.com/CA/bill/AB126/2025) | 61 | domestic violence | Education finance: education omnibus trailer bill. |
 | [AB 1647](https://legiscan.com/CA/bill/AB1647/2025) | 61 | victims and firearms | Juveniles: transfer to criminal court: criminal procedure. |
+| [AB 1681](https://legiscan.com/CA/bill/AB1681/2025) | 61 | victims and custody | Victim’s and witness’ rights. |
 | [AB 1763](https://legiscan.com/CA/bill/AB1763/2025) | 61 | victims and custody | Pupil attendance: excused absences: religious observance. |
 | [AB 1825](https://legiscan.com/CA/bill/AB1825/2025) | 61 | victims and custody; victims and firearms | Health care: state hospitals. |
+| [AB 184](https://legiscan.com/CA/bill/AB184/2025) | 61 | victims and custody; victims and housing | State government. |
 | [AB 1884](https://legiscan.com/CA/bill/AB1884/2025) | 61 | protective and restraining orders; victims and custody; victims and firearms | Interscholastic athletics: drug testing: suspensions: nicotine use. |
 | [AB 1958](https://legiscan.com/CA/bill/AB1958/2025) | 61 | interpreters for victims; protective and restraining orders | Criminal procedure: discrimination. |
 | [AB 1968](https://legiscan.com/CA/bill/AB1968/2025) | 61 | victims and firearms | Juveniles: transfer to court of criminal jurisdiction: offense. |
@@ -221,6 +239,7 @@ LegiScan is a second keyword system, not a gold standard. Read the "LegiScan onl
 | [SB 758](https://legiscan.com/CA/bill/SB758/2025) | 61 | interpreters for victims | Public health: nitrous oxide. |
 | [AB 2570](https://legiscan.com/CA/bill/AB2570/2025) | 60 | victims and custody | Elderly Parole Program. |
 | [AB 284](https://legiscan.com/CA/bill/AB284/2025) | 60 | victims and custody | Law enforcement: Racial and Identity Profiling Advisory Board (RIPA). |
+| [AB 433](https://legiscan.com/CA/bill/AB433/2025) | 60 | victims and custody; victims and firearms | Mental health diversion. |
 | [SB 48](https://legiscan.com/CA/bill/SB48/2025) | 60 | U and T visas, VAWA; interpreters for victims; victims and custody | Educational equity: discrimination prevention coordinators. |
 | [SB 81](https://legiscan.com/CA/bill/SB81/2025) | 60 | intimate partner / dating / family violence; victims and custody | Health and care facilities: information sharing. |
 | [SB 98](https://legiscan.com/CA/bill/SB98/2025) | 60 | interpreters for victims; victims and custody | Elementary, secondary, and postsecondary education: immigration enforcement: notification. |
@@ -230,6 +249,8 @@ LegiScan is a second keyword system, not a gold standard. Read the "LegiScan onl
 | [AB 791](https://legiscan.com/CA/bill/AB791/2025) | 59 | interpreters for victims | Student financial aid: Cal Grant Program: cost of attendance. |
 | [SB 1027](https://legiscan.com/CA/bill/SB1027/2025) | 59 | interpreters for victims; survivors | California Street Prostitution Issues and Options Task Force. |
 | [SB 1445](https://legiscan.com/CA/bill/SB1445/2025) | 59 | interpreters for victims | Healing arts. |
+| [SB 172](https://legiscan.com/CA/bill/SB172/2025) | 59 | interpreters for victims; victims and housing | State government. |
+| [SB 184](https://legiscan.com/CA/bill/SB184/2025) | 59 | victims and custody; victims and housing | State government. |
 | [SB 728](https://legiscan.com/CA/bill/SB728/2025) | 59 | interpreters for victims; victims and housing | California Consumer Financial Protection Law: commercial financing. |
 | [AB 1782](https://legiscan.com/CA/bill/AB1782/2025) | 58 | victims and firearms | Incarcerated persons: mental health evaluations. |
 | [AB 2017](https://legiscan.com/CA/bill/AB2017/2025) | 58 | interpreters for victims; victims and custody | State holidays: Eid. |
@@ -238,6 +259,7 @@ LegiScan is a second keyword system, not a gold standard. Read the "LegiScan onl
 | [AB 324](https://legiscan.com/CA/bill/AB324/2025) | 58 | U and T visas, VAWA; interpreters for victims; victims and custody | California Values Act: exception. |
 | [AB 421](https://legiscan.com/CA/bill/AB421/2025) | 58 | U and T visas, VAWA; interpreters for victims; victims and custody | Immigration enforcement: prohibitions on access, sharing information, and law enforcement collaboration. |
 | [SB 126](https://legiscan.com/CA/bill/SB126/2025) | 58 | domestic violence | Education finance: education omnibus trailer bill. |
+| [AB 172](https://legiscan.com/CA/bill/AB172/2025) | 57 | interpreters for victims; victims and housing | State government. |
 | [AB 32](https://legiscan.com/CA/bill/AB32/2025) | 57 | victims and custody | Tribal judges. |
 | [SB 721](https://legiscan.com/CA/bill/SB721/2025) | 57 | victims and custody | Pupil attendance: excused absences: career technical education. |
 | [AB 1192](https://legiscan.com/CA/bill/AB1192/2025) | 55 | victims and custody | Child abuse or neglect: reporting. |
@@ -333,22 +355,17 @@ LegiScan is a second keyword system, not a gold standard. Read the "LegiScan onl
 | Bill | Label | Subject |
 |---|---|---|
 | AB 124 | indirect | Public resources trailer bill. |
-| AB 1247 | indirect | Classified employees: school districts and community college districts: contracting out: training requirements. |
-| AB 1535 | indirect | Hate crimes: political affiliation. |
 | AB 1775 | indirect | Veterans. |
 | AB 1918 | indirect | Human trafficking: body art practitioners. |
-| AB 2297 | indirect | Restitution: diversion. |
 | AB 2318 | indirect | Law enforcement: facilitating medical care. |
 | AB 2384 | indirect | Crimes: records: sealing. |
-| AB 535 | indirect | Threatening a witness: assisting a prosecution. |
+| AB 2551 | indirect | Equity in Higher Education Act: time, place, and manner policies: student code of conduct violations: open forum. |
 | AB 704 | indirect | Criminal records: destruction. |
+| AB 772 | indirect | Cyberbullying: off-campus acts: model policy. |
 | AB 83 | indirect | The California Elder Financial Abuse Prevention Act. |
 | AB 848 | indirect | Sexual battery. |
-| AB 880 | indirect | State government grants and contracts: payment of claims and grantees’ indirect costs. |
+| AB 871 | indirect | Mandated reporters of suspected financial abuse of an elder or dependent adult. |
 | SB 1022 | indirect | Human trafficking: California Multidisciplinary Alliance to Stop Trafficking Act. |
-| SB 1077 | indirect | CalFresh: federal government shutdowns. |
 | SB 124 | indirect | Public resources trailer bill. |
 | SB 1284 | indirect | Medi-Cal benefits: employer reports. |
-| SB 1339 | indirect | Diversion. |
 | SB 289 | indirect | Postsecondary education: Gender and Sex Discrimination Educational Oversight Office. |
-| SB 380 | indirect | Sexually violent predators: transitional housing facilities: report. |

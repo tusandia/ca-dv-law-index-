@@ -1,6 +1,6 @@
 measure,in_tool,tool_label,legiscan_relevance,queries,title,last_action,legiscan_url
 AB 1753,True,direct,100,"U and T visas, VAWA; domestic violence; intimate partner / dating / family violence; protective and restraining orders; survivors; victims and custody; victims and firearms; victims and housing",Protective orders: firearms and ammunition: notice and procedures.,"Chaptered by Secretary of State - Chapter 458, Statutes of 2026.",https://legiscan.com/CA/bill/AB1753/2025
-AB 1994,True,indirect,100,"U and T visas, VAWA; protective and restraining orders; victims and housing",Defending Immigrant Victims Act.,"Chaptered by Secretary of State - Chapter 746, Statutes of 2026.",https://legiscan.com/CA/bill/AB1994/2025
+AB 1994,False,,100,"U and T visas, VAWA; protective and restraining orders; victims and housing",Defending Immigrant Victims Act.,"Chaptered by Secretary of State - Chapter 746, Statutes of 2026.",https://legiscan.com/CA/bill/AB1994/2025
 AB 969,True,direct,100,domestic violence; interpreters for victims; intimate partner / dating / family violence; survivors,CalWORKs: family violence option and gender-based violence information.,"Chaptered by Secretary of State - Chapter 386, Statutes of 2025.",https://legiscan.com/CA/bill/AB969/2025
 SB 1192,True,direct,100,domestic violence; intimate partner / dating / family violence; protective and restraining orders; survivors,Domestic violence: Reclaim Act.,"Chaptered by Secretary of State. Chapter 847, Statutes of 2026.",https://legiscan.com/CA/bill/SB1192/2025
 SB 1243,False,,100,domestic violence; protective and restraining orders; victims and custody; victims and firearms; victims and housing,Unlawful detainer: Tenant Protections for Immigrant Families Act of 2026.,May 14 hearing: Held in committee and under submission.,https://legiscan.com/CA/bill/SB1243/2025
@@ -48,7 +48,7 @@ SB 99,True,direct,99,domestic violence; protective and restraining orders; victi
 AB 1078,True,indirect,98,domestic violence; protective and restraining orders; victims and firearms,Firearms.,"Chaptered by Secretary of State - Chapter 570, Statutes of 2025.",https://legiscan.com/CA/bill/AB1078/2025
 AB 1100,True,indirect,98,domestic violence; protective and restraining orders; victims and custody,Victim compensation.,From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/AB1100/2025
 AB 1195,False,,98,victims and custody,Juveniles: incarcerated parent: visitation.,Ordered to inactive file at the request of Assembly Member Quirk-Silva.,https://legiscan.com/CA/bill/AB1195/2025
-AB 1201,True,indirect,98,victims and custody,Family reunification services.,"Chaptered by Secretary of State - Chapter 514, Statutes of 2026.",https://legiscan.com/CA/bill/AB1201/2025
+AB 1201,False,,98,victims and custody,Family reunification services.,"Chaptered by Secretary of State - Chapter 514, Statutes of 2026.",https://legiscan.com/CA/bill/AB1201/2025
 AB 134,True,direct,98,domestic violence; interpreters for victims; victims and custody,Public Safety.,"Chaptered by Secretary of State - Chapter 10, Statutes of 2025.",https://legiscan.com/CA/bill/AB134/2025
 AB 1365,False,,98,address confidentiality; coercive control / economic abuse; domestic violence; survivors; victims and housing,CalAccount Program.,From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/AB1365/2025
 AB 1573,True,direct,98,domestic violence,Land use: housing elements: target population.,"Chaptered by Secretary of State - Chapter 524, Statutes of 2026.",https://legiscan.com/CA/bill/AB1573/2025
@@ -76,7 +76,7 @@ SB 479,False,,98,domestic violence,Homeless adult and family multidisciplinary p
 SB 577,True,indirect,98,interpreters for victims; victims and custody; victims and firearms; victims and housing,Public entities.,"Chaptered by Secretary of State. Chapter 971, Statutes of 2026.",https://legiscan.com/CA/bill/SB577/2025
 AB 1109,False,,97,domestic violence,Evidentiary privileges: union agent-represented worker privilege.,In committee: Held under submission.,https://legiscan.com/CA/bill/AB1109/2025
 AB 112,False,,97,domestic violence; interpreters for victims; survivors; victims and custody; victims and housing,"Budget Acts of 2022, 2023, 2024, and 2025.","Chaptered by Secretary of State - Chapter 22, Statutes of 2026.",https://legiscan.com/CA/bill/AB112/2025
-AB 1318,True,indirect,97,domestic violence,Public social services: tax-exempt nonprofit organizations.,"Chaptered by Secretary of State - Chapter 451, Statutes of 2025.",https://legiscan.com/CA/bill/AB1318/2025
+AB 1318,False,,97,domestic violence,Public social services: tax-exempt nonprofit organizations.,"Chaptered by Secretary of State - Chapter 451, Statutes of 2025.",https://legiscan.com/CA/bill/AB1318/2025
 AB 152,True,indirect,97,"U and T visas, VAWA; domestic violence; interpreters for victims; survivors; victims and custody",Human services.,"Chaptered by Secretary of State - Chapter 26, Statutes of 2026.",https://legiscan.com/CA/bill/AB152/2025
 AB 1928,False,,97,domestic violence; interpreters for victims,Sex equity: sexual harassment complaints.,"Chaptered by Secretary of State - Chapter 134, Statutes of 2026.",https://legiscan.com/CA/bill/AB1928/2025
 AB 2066,False,,97,domestic violence,Triggering event: pregnancy.,Vetoed by Governor.,https://legiscan.com/CA/bill/AB2066/2025
@@ -92,7 +92,7 @@ SB 114,False,,97,"domestic violence; forced marriage, dowry, abandonment; interp
 SB 119,False,,97,domestic violence; interpreters for victims; victims and custody; victims and housing,Public social services trailer bill.,"Chaptered by Secretary of State. Chapter 79, Statutes of 2025.",https://legiscan.com/CA/bill/SB119/2025
 SB 134,True,direct,97,domestic violence; interpreters for victims; victims and custody,Public Safety.,From committee with author's amendments. Read second time and amended. Re-referred to Com. on BUDGET.,https://legiscan.com/CA/bill/SB134/2025
 SB 146,True,direct,97,domestic violence,Human services.,"Chaptered by Secretary of State. Chapter 107, Statutes of 2025.",https://legiscan.com/CA/bill/SB146/2025
-SB 452,True,indirect,97,domestic violence; protective and restraining orders; survivors; victims and custody,Child welfare services: prevention legal services.,July 1 set for first hearing canceled at the request of author.,https://legiscan.com/CA/bill/SB452/2025
+SB 452,False,,97,domestic violence; protective and restraining orders; survivors; victims and custody,Child welfare services: prevention legal services.,July 1 set for first hearing canceled at the request of author.,https://legiscan.com/CA/bill/SB452/2025
 SB 459,False,,97,domestic violence,Peace officers: confidential communications: exceptions: group peer support services.,"Chaptered by Secretary of State. Chapter 456, Statutes of 2025.",https://legiscan.com/CA/bill/SB459/2025
 SB 814,True,direct,97,domestic violence; survivors,Homelessness.,Returned to Secretary of Senate pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/SB814/2025
 AB 1006,False,,96,protective and restraining orders; victims and firearms,Firearms: concealed carry.,From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/AB1006/2025
@@ -128,7 +128,7 @@ AB 1716,True,indirect,95,domestic violence; protective and restraining orders,Ca
 AB 2133,True,direct,95,domestic violence,Inmate release: notice to victims.,"In committee: Set, first hearing. Hearing canceled at the request of author.",https://legiscan.com/CA/bill/AB2133/2025
 AB 2147,False,,95,domestic violence,Criminal procedure: jurisdiction of public offenses.,"Chaptered by Secretary of State - Chapter 73, Statutes of 2026.",https://legiscan.com/CA/bill/AB2147/2025
 AB 2165,False,,95,domestic violence,Triggering event: loss of minimum essential coverage.,Re-referred to Com. on HEALTH.,https://legiscan.com/CA/bill/AB2165/2025
-AB 2212,False,,95,survivors,"Postsecondary education: sexual harassment, harassment, intimidation, and bullying policies: student training.","Chaptered by Secretary of State - Chapter 388, Statutes of 2026.",https://legiscan.com/CA/bill/AB2212/2025
+AB 2212,True,indirect,95,survivors,"Postsecondary education: sexual harassment, harassment, intimidation, and bullying policies: student training.","Chaptered by Secretary of State - Chapter 388, Statutes of 2026.",https://legiscan.com/CA/bill/AB2212/2025
 AB 2555,False,,95,protective and restraining orders,English learners: reclassification.,"Chaptered by Secretary of State - Chapter 619, Statutes of 2026.",https://legiscan.com/CA/bill/AB2555/2025
 AB 342,False,,95,domestic violence,Alcoholic beverages: hours of sale: hospitality zones.,"In committee: Set, first hearing. Hearing canceled at the request of author.",https://legiscan.com/CA/bill/AB342/2025
 AB 461,False,,95,domestic violence,Truancy.,"Chaptered by Secretary of State - Chapter 154, Statutes of 2025.",https://legiscan.com/CA/bill/AB461/2025
@@ -139,7 +139,7 @@ SB 1427,False,,95,protective and restraining orders; victims and custody; victim
 SB 378,False,,95,interpreters for victims; victims and custody,Online marketplaces: illicit cannabis: reporting and liability.,"Chaptered by Secretary of State. Chapter 411, Statutes of 2025.",https://legiscan.com/CA/bill/SB378/2025
 SB 873,False,,95,domestic violence; interpreters for victims; victims and custody,Courthouses: privilege from civil arrest.,"Chaptered by Secretary of State. Chapter 753, Statutes of 2026.",https://legiscan.com/CA/bill/SB873/2025
 AB 1187,False,,94,domestic violence,Firearms: safety certificates.,From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/AB1187/2025
-AB 1701,True,indirect,94,intimate partner / dating / family violence; victims and custody; victims and firearms,Recall and resentencing: school shootings.,From committee: Without further action pursuant to Joint Rule 62(a).,https://legiscan.com/CA/bill/AB1701/2025
+AB 1701,False,,94,intimate partner / dating / family violence; victims and custody; victims and firearms,Recall and resentencing: school shootings.,From committee: Without further action pursuant to Joint Rule 62(a).,https://legiscan.com/CA/bill/AB1701/2025
 AB 1730,False,,94,"U and T visas, VAWA; domestic violence",Community colleges: external resolution services for civil rights compliance: managing entity and civil rights coordinator.,In committee: Held under submission.,https://legiscan.com/CA/bill/AB1730/2025
 AB 1824,False,,94,domestic violence; protective and restraining orders,Indian children: guardianship or conservatorship proceedings.,"Chaptered by Secretary of State - Chapter 454, Statutes of 2026.",https://legiscan.com/CA/bill/AB1824/2025
 AB 2438,False,,94,intimate partner / dating / family violence; victims and custody,Imprisonment.,From committee: Without further action pursuant to Joint Rule 62(a).,https://legiscan.com/CA/bill/AB2438/2025
@@ -165,7 +165,7 @@ AB 1643,False,,93,domestic violence,Child support.,In committee: Held under subm
 AB 2299,False,,93,domestic violence,California Antihunger Response and Employment Training Act of 2026.,In committee: Held under submission.,https://legiscan.com/CA/bill/AB2299/2025
 AB 2585,True,direct,93,domestic violence,California Guaranteed Income Pilot Program.,In committee: Held under submission.,https://legiscan.com/CA/bill/AB2585/2025
 AB 2600,False,,93,domestic violence,Immigration: access to legal counsel.,In committee: Held under submission.,https://legiscan.com/CA/bill/AB2600/2025
-AB 548,True,indirect,93,domestic violence,Enhanced Services for Asylees and Vulnerable Noncitizens program.,From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/AB548/2025
+AB 548,False,,93,domestic violence,Enhanced Services for Asylees and Vulnerable Noncitizens program.,From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/AB548/2025
 AB 896,False,,93,domestic violence; interpreters for victims; survivors; victims and custody,Foster care: placement transition planning.,"Chaptered by Secretary of State - Chapter 564, Statutes of 2025.",https://legiscan.com/CA/bill/AB896/2025
 SB 109,False,,93,"U and T visas, VAWA; domestic violence; interpreters for victims; protective and restraining orders; survivors; victims and custody; victims and firearms; victims and housing",Budget Act of 2026.,From committee with author's amendments. Read second time and amended. Re-referred to Com. on BUDGET.,https://legiscan.com/CA/bill/SB109/2025
 SB 1246,True,direct,93,domestic violence,Autonomous vehicles.,"Chaptered by Secretary of State. Chapter 1021, Statutes of 2026.",https://legiscan.com/CA/bill/SB1246/2025
@@ -198,9 +198,9 @@ AB 1966,False,,87,domestic violence,Sentencing enhancements: crimes against undo
 AB 919,True,direct,87,address confidentiality; domestic violence,Confidentiality of voter information: cognitively impaired individuals.,From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/AB919/2025
 SB 1390,False,,87,domestic violence,Online dating services: background checks.,April 20 set for first hearing canceled at the request of author.,https://legiscan.com/CA/bill/SB1390/2025
 SB 768,True,direct,87,domestic violence,Courts: data reporting.,Returned to Secretary of Senate pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/SB768/2025
-AB 121,True,indirect,86,interpreters for victims; victims and custody; victims and housing,Education finance: education omnibus budget trailer bill.,"Chaptered by Secretary of State - Chapter 8, Statutes of 2025.",https://legiscan.com/CA/bill/AB121/2025
-SB 672,True,indirect,86,domestic violence,The Youth Rehabilitation and Opportunity Act.,June 9 set for final hearing canceled at the request of author.,https://legiscan.com/CA/bill/SB672/2025
-SB 121,True,indirect,85,interpreters for victims; victims and custody; victims and housing,Education finance: education omnibus budget trailer bill.,From committee with author's amendments. Read second time and amended. Re-referred to Com. on BUDGET.,https://legiscan.com/CA/bill/SB121/2025
+AB 121,False,,86,interpreters for victims; victims and custody; victims and housing,Education finance: education omnibus budget trailer bill.,"Chaptered by Secretary of State - Chapter 8, Statutes of 2025.",https://legiscan.com/CA/bill/AB121/2025
+SB 672,False,,86,domestic violence,The Youth Rehabilitation and Opportunity Act.,June 9 set for final hearing canceled at the request of author.,https://legiscan.com/CA/bill/SB672/2025
+SB 121,False,,85,interpreters for victims; victims and custody; victims and housing,Education finance: education omnibus budget trailer bill.,From committee with author's amendments. Read second time and amended. Re-referred to Com. on BUDGET.,https://legiscan.com/CA/bill/SB121/2025
 AB 104,False,,83,survivors; victims and firearms,Budget Act of 2025.,"Chaptered by Secretary of State - Chapter 77, Statutes of 2025.",https://legiscan.com/CA/bill/AB104/2025
 SB 775,False,,83,interpreters for victims; victims and custody; victims and housing,Board of Psychology and Board of Behavioral Sciences.,"Chaptered by Secretary of State. Chapter 787, Statutes of 2025.",https://legiscan.com/CA/bill/SB775/2025
 AB 150,False,,82,domestic violence,Early care and education.,"Chaptered by Secretary of State - Chapter 25, Statutes of 2026.",https://legiscan.com/CA/bill/AB150/2025
@@ -225,16 +225,16 @@ SB 164,False,,65,interpreters for victims; survivors; victims and custody; victi
 AB 164,False,,64,interpreters for victims; survivors; victims and custody; victims and housing,Health.,Ordered to inactive file at the request of Senator Laird.,https://legiscan.com/CA/bill/AB164/2025
 SB 1421,False,,64,victims and custody,California Child and Family Service Review System: nonminor dependents.,"Chaptered by Secretary of State. Chapter 712, Statutes of 2026.",https://legiscan.com/CA/bill/SB1421/2025
 AB 1011,False,,63,victims and custody,Crimes: child abuse and neglect: sentence credits.,In committee: Held under submission.,https://legiscan.com/CA/bill/AB1011/2025
-AB 1094,True,indirect,63,victims and custody,Crimes: torture of a minor: parole.,"Chaptered by Secretary of State - Chapter 631, Statutes of 2025.",https://legiscan.com/CA/bill/AB1094/2025
+AB 1094,False,,63,victims and custody,Crimes: torture of a minor: parole.,"Chaptered by Secretary of State - Chapter 631, Statutes of 2025.",https://legiscan.com/CA/bill/AB1094/2025
 AB 1178,False,,63,victims and custody; victims and firearms,Peace officers: confidentiality of records.,"Chaptered by Secretary of State - Chapter 635, Statutes of 2025.",https://legiscan.com/CA/bill/AB1178/2025
 AB 1376,False,,63,victims and custody,Wards: probation.,"Chaptered by Secretary of State - Chapter 575, Statutes of 2025.",https://legiscan.com/CA/bill/AB1376/2025
 AB 1388,False,,63,victims and custody; victims and firearms,Law enforcement: settlement agreements.,"Chaptered by Secretary of State - Chapter 729, Statutes of 2025.",https://legiscan.com/CA/bill/AB1388/2025
 AB 15,False,,63,intimate partner / dating / family violence; survivors; victims and custody,Open unsolved homicide: review and reinvestigation.,Consideration of Governor's veto stricken from file.,https://legiscan.com/CA/bill/AB15/2025
-AB 1545,True,indirect,63,victims and custody; victims and firearms,Sexually violent predators.,In committee: Held under submission.,https://legiscan.com/CA/bill/AB1545/2025
+AB 1545,False,,63,victims and custody; victims and firearms,Sexually violent predators.,In committee: Held under submission.,https://legiscan.com/CA/bill/AB1545/2025
 AB 1568,False,,63,victims and custody,Sex offenses: registration.,"In committee: Set, first hearing. Hearing canceled at the request of author.",https://legiscan.com/CA/bill/AB1568/2025
 AB 1688,False,,63,interpreters for victims; victims and custody,Child abuse or neglect: reporting.,"Chaptered by Secretary of State - Chapter 888, Statutes of 2026.",https://legiscan.com/CA/bill/AB1688/2025
 AB 22,False,,63,victims and custody; victims and firearms; victims and housing,Crime.,From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/AB22/2025
-AB 2273,True,indirect,63,victims and custody; victims and firearms,Crimes: SCRIVNER Act.,"Chaptered by Secretary of State - Chapter 298, Statutes of 2026.",https://legiscan.com/CA/bill/AB2273/2025
+AB 2273,False,,63,victims and custody; victims and firearms,Crimes: SCRIVNER Act.,"Chaptered by Secretary of State - Chapter 298, Statutes of 2026.",https://legiscan.com/CA/bill/AB2273/2025
 AB 2274,False,,63,victims and custody; victims and firearms,Crimes: plea deals.,"Chaptered by Secretary of State - Chapter 840, Statutes of 2026.",https://legiscan.com/CA/bill/AB2274/2025
 AB 2405,False,,63,victims and custody,Mental health.,"Chaptered by Secretary of State - Chapter 939, Statutes of 2026.",https://legiscan.com/CA/bill/AB2405/2025
 AB 2727,True,indirect,63,victims and custody,Corrections: parole and prerelease treatment.,"Chaptered by Secretary of State - Chapter 962, Statutes of 2026.",https://legiscan.com/CA/bill/AB2727/2025
@@ -245,7 +245,7 @@ AB 572,False,,63,victims and custody,Criminal procedure: interrogations.,"Chapte
 AB 812,False,,63,intimate partner / dating / family violence; victims and custody,Recall and resentencing: incarcerated firefighters.,"Chaptered by Secretary of State - Chapter 712, Statutes of 2025.",https://legiscan.com/CA/bill/AB812/2025
 AB 847,False,,63,victims and custody; victims and firearms,Peace officers: confidentiality of records.,"Chaptered by Secretary of State - Chapter 383, Statutes of 2025.",https://legiscan.com/CA/bill/AB847/2025
 SB 1009,False,,63,victims and custody,Juveniles: detention.,"Chaptered by Secretary of State. Chapter 996, Statutes of 2026.",https://legiscan.com/CA/bill/SB1009/2025
-SB 1208,True,indirect,63,victims and custody,Money laundering: digital assets.,"Chaptered by Secretary of State. Chapter 483, Statutes of 2026.",https://legiscan.com/CA/bill/SB1208/2025
+SB 1208,False,,63,victims and custody,Money laundering: digital assets.,"Chaptered by Secretary of State. Chapter 483, Statutes of 2026.",https://legiscan.com/CA/bill/SB1208/2025
 SB 1285,False,,63,interpreters for victims,Juvenile court: procedure.,"Chaptered by Secretary of State. Chapter 690, Statutes of 2026.",https://legiscan.com/CA/bill/SB1285/2025
 SB 1373,False,,63,victims and custody; victims and firearms,Diversion.,August 13 hearing: Held in committee and under submission.,https://legiscan.com/CA/bill/SB1373/2025
 SB 759,False,,63,victims and custody,Crimes: supervised release.,August 29 hearing: Held in committee and under submission.,https://legiscan.com/CA/bill/SB759/2025
@@ -256,7 +256,7 @@ AB 1504,False,,62,survivors; victims and custody,California Massage Therapy Coun
 AB 1667,False,,62,victims and custody; victims and firearms,Serious felonies: furnishing fentanyl to a minor.,Ordered to inactive file at the request of Assembly Member Boerner.,https://legiscan.com/CA/bill/AB1667/2025
 AB 1676,False,,62,victims and custody,Mental health services: assisted outpatient treatment: involuntary medication.,"In committee: Set, first hearing. Hearing canceled at the request of author.",https://legiscan.com/CA/bill/AB1676/2025
 AB 1897,False,,62,victims and custody; victims and firearms,Mentally disordered offenders: criteria for commitment.,"Chaptered by Secretary of State - Chapter 558, Statutes of 2026.",https://legiscan.com/CA/bill/AB1897/2025
-AB 2342,True,indirect,62,interpreters for victims; survivors; victims and housing,Parole.,"In committee: Set, second hearing. Hearing canceled at the request of author.",https://legiscan.com/CA/bill/AB2342/2025
+AB 2342,False,,62,interpreters for victims; survivors; victims and housing,Parole.,"In committee: Set, second hearing. Hearing canceled at the request of author.",https://legiscan.com/CA/bill/AB2342/2025
 AB 2393,False,,62,victims and custody; victims and firearms,False imprisonment: false arrest: remedies.,"Chaptered by Secretary of State - Chapter 602, Statutes of 2026.",https://legiscan.com/CA/bill/AB2393/2025
 AB 2582,False,,62,victims and custody; victims and housing,Crimes: prostitution.,In committee: Held under submission.,https://legiscan.com/CA/bill/AB2582/2025
 AB 2636,False,,62,victims and custody; victims and firearms,Juveniles.,"Chaptered by Secretary of State - Chapter 464, Statutes of 2026.",https://legiscan.com/CA/bill/AB2636/2025
@@ -264,12 +264,12 @@ AB 2683,False,,62,protective and restraining orders; victims and custody; victim
 AB 38,True,indirect,62,victims and custody,Crimes: serious and violent felonies.,From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/AB38/2025
 AB 381,False,,62,interpreters for victims,State contracts: certification process: forced labor and human trafficking.,In committee: Held under submission.,https://legiscan.com/CA/bill/AB381/2025
 AB 46,False,,62,victims and custody; victims and firearms,Diversion.,"Chaptered by Secretary of State - Chapter 18, Statutes of 2026.",https://legiscan.com/CA/bill/AB46/2025
-AB 528,True,indirect,62,victims and custody,Criminal procedure: child pornography.,In committee: Held under submission.,https://legiscan.com/CA/bill/AB528/2025
+AB 528,False,,62,victims and custody,Criminal procedure: child pornography.,In committee: Held under submission.,https://legiscan.com/CA/bill/AB528/2025
 AB 63,False,,62,victims and custody,Loitering with intent to commit prostitution.,From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/AB63/2025
 AB 991,False,,62,intimate partner / dating / family violence; victims and firearms,Sentencing: dismissal of enhancements.,From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/AB991/2025
 SB 1264,False,,62,interpreters for victims,Probate: notice of death for child support obligations.,"Chaptered by Secretary of State. Chapter 427, Statutes of 2026.",https://legiscan.com/CA/bill/SB1264/2025
-SB 1446,True,indirect,62,victims and custody,Incarcerated persons: release and parole.,In Senate. Concurrence in Assembly amendments pending.,https://legiscan.com/CA/bill/SB1446/2025
-SB 396,True,indirect,62,protective and restraining orders; victims and custody,Corrections: supervision.,Returned to Secretary of Senate pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/SB396/2025
+SB 1446,False,,62,victims and custody,Incarcerated persons: release and parole.,In Senate. Concurrence in Assembly amendments pending.,https://legiscan.com/CA/bill/SB1446/2025
+SB 396,False,,62,protective and restraining orders; victims and custody,Corrections: supervision.,Returned to Secretary of Senate pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/SB396/2025
 SB 423,False,,62,victims and custody; victims and housing,California Public Records Act: private detention facilities.,"Chaptered by Secretary of State. Chapter 751, Statutes of 2026.",https://legiscan.com/CA/bill/SB423/2025
 SB 432,False,,62,victims and custody,Serious felonies: furnishing fentanyl to a minor.,Returned to Secretary of Senate pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/SB432/2025
 SB 552,False,,62,victims and custody,Juveniles: wards: case plans.,Returned to Secretary of Senate pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/SB552/2025
@@ -278,10 +278,10 @@ SB 734,False,,62,protective and restraining orders; victims and custody,Criminal
 AB 126,False,,61,domestic violence,Education finance: education omnibus trailer bill.,"Chaptered by Secretary of State - Chapter 65, Statutes of 2026.",https://legiscan.com/CA/bill/AB126/2025
 AB 1566,True,indirect,61,victims and custody,Crimes: mandated reporters: severe neglect.,Ordered to inactive file at the request of Assembly Member Jackson.,https://legiscan.com/CA/bill/AB1566/2025
 AB 1647,False,,61,victims and firearms,Juveniles: transfer to criminal court: criminal procedure.,Vetoed by Governor.,https://legiscan.com/CA/bill/AB1647/2025
-AB 1681,True,indirect,61,victims and custody,Victim’s and witness’ rights.,In committee: Held under submission.,https://legiscan.com/CA/bill/AB1681/2025
+AB 1681,False,,61,victims and custody,Victim’s and witness’ rights.,In committee: Held under submission.,https://legiscan.com/CA/bill/AB1681/2025
 AB 1763,False,,61,victims and custody,Pupil attendance: excused absences: religious observance.,"Chaptered by Secretary of State - Chapter 893, Statutes of 2026.",https://legiscan.com/CA/bill/AB1763/2025
 AB 1825,False,,61,victims and custody; victims and firearms,Health care: state hospitals.,In committee: Held under submission.,https://legiscan.com/CA/bill/AB1825/2025
-AB 184,True,indirect,61,victims and custody; victims and housing,State government.,"Chaptered by Secretary of State - Chapter 255, Statutes of 2026.",https://legiscan.com/CA/bill/AB184/2025
+AB 184,False,,61,victims and custody; victims and housing,State government.,"Chaptered by Secretary of State - Chapter 255, Statutes of 2026.",https://legiscan.com/CA/bill/AB184/2025
 AB 1884,False,,61,protective and restraining orders; victims and custody; victims and firearms,Interscholastic athletics: drug testing: suspensions: nicotine use.,"In committee: Set, first hearing. Hearing canceled at the request of author.",https://legiscan.com/CA/bill/AB1884/2025
 AB 1958,False,,61,interpreters for victims; protective and restraining orders,Criminal procedure: discrimination.,Read third time. Refused passage. (Ayes 33. Noes 22. Page 5545.).,https://legiscan.com/CA/bill/AB1958/2025
 AB 1968,False,,61,victims and firearms,Juveniles: transfer to court of criminal jurisdiction: offense.,From committee: Without further action pursuant to Joint Rule 62(a).,https://legiscan.com/CA/bill/AB1968/2025
@@ -304,7 +304,7 @@ SB 574,False,,61,victims and custody,"Attorneys, arbitrators, judicial officers,
 SB 758,False,,61,interpreters for victims,Public health: nitrous oxide.,"Chaptered by Secretary of State. Chapter 979, Statutes of 2026.",https://legiscan.com/CA/bill/SB758/2025
 AB 2570,False,,60,victims and custody,Elderly Parole Program.,"In committee: Set, first hearing. Hearing canceled at the request of author.",https://legiscan.com/CA/bill/AB2570/2025
 AB 284,False,,60,victims and custody,Law enforcement: Racial and Identity Profiling Advisory Board (RIPA).,From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/AB284/2025
-AB 433,True,indirect,60,victims and custody; victims and firearms,Mental health diversion.,From committee: Without further action pursuant to Joint Rule 62(a).,https://legiscan.com/CA/bill/AB433/2025
+AB 433,False,,60,victims and custody; victims and firearms,Mental health diversion.,From committee: Without further action pursuant to Joint Rule 62(a).,https://legiscan.com/CA/bill/AB433/2025
 SB 48,False,,60,"U and T visas, VAWA; interpreters for victims; victims and custody",Educational equity: discrimination prevention coordinators.,"Chaptered by Secretary of State. Chapter 429, Statutes of 2025.",https://legiscan.com/CA/bill/SB48/2025
 SB 81,False,,60,intimate partner / dating / family violence; victims and custody,Health and care facilities: information sharing.,"Chaptered by Secretary of State. Chapter 123, Statutes of 2025.",https://legiscan.com/CA/bill/SB81/2025
 SB 98,False,,60,interpreters for victims; victims and custody,"Elementary, secondary, and postsecondary education: immigration enforcement: notification.","Chaptered by Secretary of State. Chapter 124, Statutes of 2025.",https://legiscan.com/CA/bill/SB98/2025
@@ -314,8 +314,8 @@ AB 2073,False,,59,victims and custody,Child protection: safe surrender.,"In comm
 AB 791,False,,59,interpreters for victims,Student financial aid: Cal Grant Program: cost of attendance.,From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/AB791/2025
 SB 1027,False,,59,interpreters for victims; survivors,California Street Prostitution Issues and Options Task Force.,May 14 hearing: Held in committee and under submission.,https://legiscan.com/CA/bill/SB1027/2025
 SB 1445,False,,59,interpreters for victims,Healing arts.,"Chaptered by Secretary of State. Chapter 237, Statutes of 2026.",https://legiscan.com/CA/bill/SB1445/2025
-SB 172,True,indirect,59,interpreters for victims; victims and housing,State government.,"Chaptered by Secretary of State. Chapter 84, Statutes of 2026.",https://legiscan.com/CA/bill/SB172/2025
-SB 184,True,indirect,59,victims and custody; victims and housing,State government.,Ordered to third reading.,https://legiscan.com/CA/bill/SB184/2025
+SB 172,False,,59,interpreters for victims; victims and housing,State government.,"Chaptered by Secretary of State. Chapter 84, Statutes of 2026.",https://legiscan.com/CA/bill/SB172/2025
+SB 184,False,,59,victims and custody; victims and housing,State government.,Ordered to third reading.,https://legiscan.com/CA/bill/SB184/2025
 SB 728,False,,59,interpreters for victims; victims and housing,California Consumer Financial Protection Law: commercial financing.,Returned to Secretary of Senate pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/SB728/2025
 AB 1782,False,,58,victims and firearms,Incarcerated persons: mental health evaluations.,From committee: Without further action pursuant to Joint Rule 62(a).,https://legiscan.com/CA/bill/AB1782/2025
 AB 2017,False,,58,interpreters for victims; victims and custody,State holidays: Eid.,"Chaptered by Secretary of State - Chapter 571, Statutes of 2026.",https://legiscan.com/CA/bill/AB2017/2025
@@ -325,7 +325,7 @@ AB 324,False,,58,"U and T visas, VAWA; interpreters for victims; victims and cus
 AB 421,False,,58,"U and T visas, VAWA; interpreters for victims; victims and custody","Immigration enforcement: prohibitions on access, sharing information, and law enforcement collaboration.",From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/AB421/2025
 SB 126,False,,58,domestic violence,Education finance: education omnibus trailer bill.,Re-referred to Com. on BUDGET pursuant to Assembly Rule 97.,https://legiscan.com/CA/bill/SB126/2025
 AB 1134,True,direct,57,"forced marriage, dowry, abandonment",Coerced marriage.,"Chaptered by Secretary of State - Chapter 633, Statutes of 2025.",https://legiscan.com/CA/bill/AB1134/2025
-AB 172,True,indirect,57,interpreters for victims; victims and housing,State government.,Ordered to inactive file at the request of Senator Laird.,https://legiscan.com/CA/bill/AB172/2025
+AB 172,False,,57,interpreters for victims; victims and housing,State government.,Ordered to inactive file at the request of Senator Laird.,https://legiscan.com/CA/bill/AB172/2025
 AB 32,False,,57,victims and custody,Tribal judges.,From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/AB32/2025
 SB 721,False,,57,victims and custody,Pupil attendance: excused absences: career technical education.,Returned to Secretary of Senate pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/SB721/2025
 AB 1192,False,,55,victims and custody,Child abuse or neglect: reporting.,From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.,https://legiscan.com/CA/bill/AB1192/2025
